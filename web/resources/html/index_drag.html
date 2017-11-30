@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>微广告效果研究</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../js/swiper.min.css">
+    <link href='../dist/dragula.css' rel='stylesheet' type='text/css' />
+    <link href='../example/example.css' rel='stylesheet' type='text/css' />
+
+    <!-- Demo styles -->
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: 宋体;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .swiper-slide {
+            text-align: left;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        input{
+            border-bottom: 1px solid ;
+            border-top:0px;
+            border-left:0px;
+            border-right:0px;
+            height: 20px;
+            text-align:center;
+            font-family: 宋体;
+            /*vertical-align:middle;*/
+            /*font-size:20px;*/
+            font-weight:700;
+            font-size:18px;
+        }
+
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" data-swiper-autoplay="200000">
+            <div class="parent">
+
+                <label>请按你喜欢的程度拖拽排序:</label>
+                <div class='wrapper'>
+                    <div id='left-defaults' class='container'>
+                        <div>苹果</div>
+                        <div>香蕉</div>
+                        <div>葡萄</div>
+                        <div>橘子</div>
+                    </div>
+                    <div id='right-defaults' class='container'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="swiper-slide" >
+            bbbb
+        </div>
+
+        <div class="swiper-slide">
+            <h4>
+                谢谢，请填写问卷。
+            </h4>
+
+        </div>
+
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+</div>
+
+<!-- Swiper JS -->
+<script src="../js/swiper.min.js"></script>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src='../dist/dragula.js'></script>
+<script src='../example/example.min.js'></script>
+
+<!-- Initialize Swiper -->
+<script>
+
+
+    var swiper = new Swiper('.swiper-container', {
+        //pagination: '.swiper-pagination',
+        // 设置方向 up
+        paginationClickable: true,
+        direction: 'vertical',
+        allowSwipeToPrev: false,
+
+        // 拖拽触发函数
+        onSlideChangeStart: function (swiper) {
+        }
+    });
+
+
+
+
+
+</script>
+</body>
+</html>
