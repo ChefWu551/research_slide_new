@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="../js/swiper.min.css">
+    <link rel="stylesheet" href="../js/swiper.min_up.css">
     <link href='../dist/dragula.css' rel='stylesheet' type='text/css' />
     <link href='../example/example.css' rel='stylesheet' type='text/css' />
 
@@ -64,6 +64,9 @@
             font-weight:700;
             font-size:18px;
         }
+        /*#button-next{*/
+            /*margin-left: 50%;*/
+        /*}*/
 
     </style>
 </head>
@@ -72,27 +75,159 @@
 <div class="swiper-container">
 
     <div class="swiper-wrapper">
-        <div class="swiper-slide" data-swiper-autoplay="200000">
-            <div class="parent">
+        <div class="swiper-slide">
+            <div class="examples">
+                <div class="parent">
 
-                <label>请按你喜欢的程度拖拽排序:</label>
-                <div class='wrapper'>
-                    <div id='left-defaults' class='container'>
-                        <div>苹果</div>
-                        <div>香蕉</div>
-                        <div>葡萄</div>
-                        <div>橘子</div>
-                    </div>
-                    <div id='right-defaults' class='container'>
+                    <label>请按你喜欢的程度拖拽排序:</label>
+                    <div class='wrapper'>
+                        <div id='left-defaults' class='container'>
+                            <div class="kkk">A</div>
+                            <div class="kkk">B</div>
+                            <div class="kkk">C</div>
+                            <div class="kkk">D</div>
+                        </div>
+                        <div id='right-defaults' class='container'>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <div class="swiper-slide" >
-            bbbb
+        <div class="swiper-slide">
+            <div>
+            不同价格你会买哪样：
+                <form id="form1">
+                    <table border="solid 1px">
+                        <tr>
+                            <td id="first_page_content1"></td>
+                            <td id="first_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="first_page_value1"></td>
+                            <td id="first_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td id="first_page_label1"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                            <td id="first_page_label2"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </div>
+
+        <div class="swiper-slide" id="dynamic_generate">
+            <div>
+                不同价格你会买哪样：
+                <form id="form2">
+                    <table border="solid 1px">
+                        <tr>
+                            <td id="second_page_content1"></td>
+                            <td id="second_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="second_page_value1"></td>
+                            <td id="second_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td id="second_page_label1"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                            <td id="second_page_label2"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide" id="dynamic_generate">
+            <div>
+                不同价格你会买哪样：
+                <form id="form3">
+                    <table border="solid 1px">
+                        <tr>
+                            <td id="third_page_content1"></td>
+                            <td id="third_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="third_page_value1"></td>
+                            <td id="third_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td id="third_page_label1"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                            <td id="third_page_label2"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide" id="dynamic_generate">
+            <div>
+                不同价格你会买哪样：
+                <form id="form4">
+                    <table border="solid 1px">
+                        <tr>
+                            <td id="fourth_page_content1"></td>
+                            <td id="fourth_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="fourth_page_value1"></td>
+                            <td id="fourth_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td id="fourth_page_label1"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                            <td id="fourth_page_label2"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide" id="dynamic_generate">
+            <div>
+                不同价格你会买哪样：
+                <form id="form5">
+                    <table border="solid 1px">
+                        <tr>
+                            <td id="fifth_page_content1"></td>
+                            <td id="fifth_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="fifth_page_value1"></td>
+                            <td id="fifth_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td id="fifth_page_label1"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                            <td id="fifth_page_label2"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide" id="dynamic_generate">
+            <div>
+                不同价格你会买哪样：
+                <form id="form6">
+                    <table border="solid 1px">
+                        <tr>
+                            <td id="sixth_page_content1"></td>
+                            <td id="sixth_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="sixth_page_value1"></td>
+                            <td id="sixth_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td id="sixth_page_label1"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                            <td id="sixth_page_label2"><label><input type="radio" name="gender" value="1" for="form1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+
 
         <div class="swiper-slide">
             <h4>
@@ -100,13 +235,16 @@
             </h4>
 
         </div>
-
-
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-
+<div class="swiper-button-next"></div>
 </div>
+
+
+    <!--</div>-->
+    <!--&lt;!&ndash; Add Pagination &ndash;&gt;-->
+
+
+<!--</div>-->
 
 <!-- Swiper JS -->
 <script src="../js/swiper.min.js"></script>
@@ -117,21 +255,193 @@
 <!-- Initialize Swiper -->
 <script>
 
-
+    var sort_value = [];
+    var sort_style = [];
     var swiper = new Swiper('.swiper-container', {
         //pagination: '.swiper-pagination',
         // 设置方向 up
         paginationClickable: true,
         direction: 'vertical',
         allowSwipeToPrev: false,
+        onlyExternal:true,
+        nextButton:'.swiper-button-next',
 
         // 拖拽触发函数
         onSlideChangeStart: function (swiper) {
+
+            try{
+                var first_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[0].innerText;
+                var seconde_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[1].innerText;
+                var third_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[2].innerText;
+                var fourth_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[3].innerText;
+                var first_price = "价格：50";
+                var second_price = "价格：48";
+                var third_price = "价格：46";
+                var forth_price = "价格：44";
+            }catch (err){
+                alert("必须四个都选择,本次数据不存储,该页面自动刷新");
+                location.reload();
+            }
+            sort_value.push(first_value, seconde_value, third_value, fourth_value);
+            console.log(document.getElementById("first_page_content1").innerText);
+            if(document.getElementById("first_page_content1").innerText == ''){
+                console.log("要分配");
+                // 动态分配值到页面
+                console.log(Math.random());
+
+                if(Math.random() > 0.5){
+                    // page1
+                    $("#first_page_content1").append(first_value);
+                    $("#first_page_value1").append(first_price);
+                    $("#first_page_content2").append(seconde_value);
+                    $("#first_page_value2").append(second_price);
+                }else {
+                    // page1
+                    $("#first_page_content1").append(seconde_value);
+                    $("#first_page_value1").append(second_price);
+                    $("#first_page_content2").append(first_value);
+                    $("#first_page_value2").append(first_price);
+                }
+
+                if(Math.random() > 0.5){
+                    // page2
+                    $("#second_page_content1").append(seconde_value);
+                    $("#second_page_value1").append(second_price);
+                    $("#second_page_content2").append(third_value);
+                    $("#second_page_value2").append(third_price);
+
+                }else {
+                    // page2 third_value third_price
+                    $("#second_page_content1").append(third_value);
+                    $("#second_page_value1").append(third_price);
+                    $("#second_page_content2").append(seconde_value);
+                    $("#second_page_value2").append(second_price);
+
+                }
+
+                if(Math.random() > 0.5){
+                    // page3
+                    $("#third_page_content1").append(third_value);
+                    $("#third_page_value1").append(third_price);
+                    $("#third_page_content2").append(fourth_value);
+                    $("#third_page_value2").append(forth_price);
+
+
+                }else {
+                    // page3  third_value  third_price
+                    $("#third_page_content1").append(fourth_value);
+                    $("#third_page_value1").append(forth_price);
+                    $("#third_page_content2").append(third_value);
+                    $("#third_page_value2").append(third_price);
+                }
+
+                if(Math.random() > 0.5){
+                    // page4
+                    $("#fourth_page_content1").append(first_value);
+                    $("#fourth_page_value1").append(first_price);
+                    $("#fourth_page_content2").append(third_value);
+                    $("#fourth_page_value2").append(third_price);
+
+                }else {
+                    // page4 first_value first_price
+                    $("#fourth_page_content1").append(third_value);
+                    $("#fourth_page_value1").append(third_price);
+                    $("#fourth_page_content2").append(first_value);
+                    $("#fourth_page_value2").append(first_price);
+                }
+
+                if(Math.random() > 0.5){
+                    // page5
+                    $("#fifth_page_content1").append(seconde_value);
+                    $("#fifth_page_value1").append(second_price);
+                    $("#fifth_page_content2").append(fourth_value);
+                    $("#fifth_page_value2").append(forth_price);
+
+                }else {
+                    // page5 seconde_value second_price
+                    $("#fifth_page_content1").append(fourth_value);
+                    $("#fifth_page_value1").append(forth_price);
+                    $("#fifth_page_content2").append(seconde_value);
+                    $("#fifth_page_value2").append(second_price);
+                }
+
+                if(Math.random() > 0.5){
+                    // page6
+                    $("#sixth_page_content1").append(first_value);
+                    $("#sixth_page_value1").append(first_price);
+                    $("#sixth_page_content2").append(fourth_value);
+                    $("#sixth_page_value2").append(forth_price);
+
+                }else {
+                    // page6 first_value first_price
+                    $("#sixth_page_content1").append(fourth_value);
+                    $("#sixth_page_value1").append(forth_price);
+                    $("#sixth_page_content2").append(first_value);
+                    $("#sixth_page_value2").append(first_price);
+                }
+
+            }else {
+                console.log("不用分配了");
+            }
+            console.log(sort_value);
+
+//            console.log(seconde_value);
+//            console.log(third_value);
+//            console.log(fourth_value);
+
+
+//            if()
+//            alert(value_list);
+//            dynamicAddContent();
         }
     });
 
+    function circularPop(sort_value) {
+
+    }
 
 
+    function atrributeSortStyle(sort_value) {
+        var page1_list = [sort_value[0], sort_value[1]];
+        var page2_list = [sort_value[1], sort_value[2]];
+        var page3_list = [sort_value[2], sort_value[3]];
+        var page4_list = [sort_value[0], sort_value[2]];
+        var page5_list = [sort_value[1], sort_value[3]];
+        var page6_list = [sort_value[0], sort_value[3]];
+        return sort_style.push(page1_list, page2_list, page2_list, page3_list, page4_list, page5_list, page6_list);
+
+    }
+
+    // 动态生成
+    var divId=1;
+    //动态生成单纯的div
+    function dynamicAddContent() {
+        var para = document.createElement("p");
+        var txt1 = document.createTextNode("I inserted ");
+        var emphasis = document.createElement("em");
+        var txt2 = document.createTextNode("this");
+        var txt3 = document.createTextNode(" content123456.");
+        para.appendChild(txt1);
+        emphasis.appendChild(txt2);
+        para.appendChild(emphasis);
+        para.appendChild(txt3);
+        var testdiv = document.getElementById("dynamic_generate");
+        testdiv.appendChild(para);
+    }
+
+    function dynamicAddPage2() {
+        var para = document.createElement("tr");
+        var txt1 = document.createTextNode("I inserted ");
+        var emphasis = document.createElement("em");
+        var txt2 = document.createTextNode("this");
+        var txt3 = document.createTextNode(" content123456.");
+        para.appendChild(txt1);
+        emphasis.appendChild(txt2);
+        para.appendChild(emphasis);
+        para.appendChild(txt3);
+        var testdiv = document.getElementById("first_contrast");
+        testdiv.appendChild(para);
+    }
 
 
 </script>
