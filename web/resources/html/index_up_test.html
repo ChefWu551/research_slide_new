@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>微广告效果研究</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../js/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: 宋体;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .swiper-slide {
+            text-align: left;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .lm_page1{
+            text-align: left;
+            white-space:nowrap;
+            font-size: 10px;
+            padding-right: 3%;
+        }
+
+        h4{
+            text-indent:2em;
+            padding-right: 5%;
+            padding-left: 7%;
+        }
+
+
+        input{
+            border-bottom: 1px solid ;
+            border-top:0px;
+            border-left:0px;
+            border-right:0px;
+            height: 20px;
+            text-align:center;
+            font-family: 宋体;
+            /*vertical-align:middle;*/
+            /*font-size:20px;*/
+            font-weight:700;
+            font-size:18px;
+        }
+
+        .main-content{
+            align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container" dir="ltr">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <h3>编号：<b><input type="text" id="number" size="15" value="" ></b></h3>
+        </div>
+
+        <div class="swiper-slide" id="swiper-slide1" >
+            <h4>
+                请向上滑动，看广告。
+            </h4>
+        </div>
+
+        <!--<div class="swiper-slide"><img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/slide_up1.PNG"></div>-->
+        <!--<div class="swiper-slide"><img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/slide_up2.PNG"></div>-->
+        <!--<div class="swiper-slide"><img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/slide_up3.PNG"></div>-->
+        <!--<div class="swiper-slide"><img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/slide_up4.PNG"></div>-->
+        <!--<div class="swiper-slide"><img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/slide_up5.PNG"></div>-->
+        <!--<div class="swiper-slide"><div><h4>练习结束，有任何疑问请向研究人员提出。</h4>-->
+        <!--<h4>若没有疑问，请保持手势，继续向上滑动，进入正式实验。</h4></div>-->
+        <!--</div>-->
+
+        <!--<div class="swiper-slide">-->
+        <!--<h4>-->
+        <!--下面，将呈现两张钢笔的广告图片，请仔细阅读，按刚才练习的操作方式进行操作、浏览。请根据平时观看广告的习惯，认真阅读。现在请向上滑动，开始浏览广告图片。-->
+        <!--</h4>-->
+        <!--</div>-->
+        <div class="swiper-slide">
+            <div>
+                <br>
+                <br>
+                <div class="main-content" style="padding-left: 3%; padding-right: 3%">
+                    <div>
+                        <img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/1.jpg" width="96%" height="96%">
+                    </div>
+                    <div class="lm_page1">
+                        <p><b>LM 白色亮杆常规墨水笔钢笔</b></p>
+                        <p><font color="red">两种用墨方式，既可吸墨水也<br>可使用一次性水芯</font></p>
+
+                        <p>商品编号：29982000023</p>
+                        <p>上架时间：2017-11-16 18:49</p>
+                        <p>商品类型：文具用品</p>
+                        <p>
+                            <span><font color="red">价格：¥337.00</font></span>
+                            <span style="text-decoration:line-through;"><font color="gray">¥698.00</font></span>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <center>
+                        <img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/direction_up.png" width="6%" height="6%">
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide" >
+            <div>
+                <br>
+                <br>
+                <div class="main-content" style="padding-left: 5%;">
+                    <div>
+                        <img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/2.jpg" width="85%" height="85%">
+                    </div>
+                    <div class="lm_page1">
+                        <p>低调奢华，大气典雅，&nbsp;&nbsp;&nbsp;</p>
+                        <p>时尚造型，精良制作。</p>
+                        <p>爱上书写，告别懒惰，</p>
+                        <p>就选LM钢笔。</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <center>
+                        <img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/direction_up.png" width="5%" height="5%">
+                    </center>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-slide">
+            <h4>
+                谢谢，请填写问卷。
+            </h4>
+            <form id="testForm" method="get" target="nm_iframe" action="../jsp/datastore.jsp">
+
+            </form>
+        </div>
+
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+</div>
+
+<!-- Swiper JS -->
+<script src="../js/swiper.min.js"></script>
+<script src="../js/jquery-3.2.1.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var result = {};
+    var page_break_string = "";
+    var page_11_12_totle_time = 0;
+    var timeList = new Array();
+    var swiper = new Swiper('.swiper-container', {
+        //pagination: '.swiper-pagination',
+
+        // direction: up
+        paginationClickable: true,
+        direction: 'vertical',
+        allowSwipeToPrev: false,
+        // direction: right
+//        allowSwipeToPrev : false,
+//        paginationClickable: true,
+//        controlInverse:true,
+
+        // 拖拽触发函数
+        onSlideChangeStart: function (swiper) {
+            // 获取选中的label 通过get请求发送
+            var id_value = $('#number').val();
+
+            var page1_2_time = new Date;
+            timeList.push(page1_2_time);
+            // 计算时间差
+            if(timeList.length == 4){
+                for (var i=1; i<timeList.length; i++){
+                    page_break = timeList[i].getTime() - timeList[i-1].getTime();
+                    // 获取第11和12张的阅览时间
+                    if(i == 2 || i == 3){
+                        page_11_12_totle_time = page_11_12_totle_time + (timeList[i].getTime() - timeList[i-1].getTime());
+                    }
+
+                    page_break_string = page_break_string + page_break + "-";
+
+                }
+                result = {"id_value": id_value, "page_break_string": page_break_string, "page_11_12_totle_time": page_11_12_totle_time};
+//                result = id_value + "-" + page_break_string;
+
+                console.log(result);
+
+
+                $.ajax({
+                    url:"/resources/jsp/datastore.jsp",
+                    type:"post",
+//                    data:"result=" + "id_value: " + id_value+", " + "page_break_string: " +  page_break_string + ", " + "page_11_12_totle_time: " +  page_11_12_totle_time,
+//                    data: '{"id_value": "'+id_value+'", "page_break_string": "'+page_break_string+'", "page_11_12_totle_time": "'+page_11_12_totle_time+'"}',
+                    data: result,
+                    dataType: 'json',
+                    success:function(data){
+                        console.log("over..");
+                    },
+                    error:function(e){
+//                        alert("错误！！");
+                        console.log("err..");
+                    }
+                });
+
+
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
