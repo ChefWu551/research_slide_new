@@ -81,7 +81,8 @@
 
                     <label>请按你喜欢的程度拖拽排序:</label>
                     <div class='wrapper'>
-                        <div id='left-defaults' class='container'>
+                        <div id='left-defaults' class='container' style="width: 130px; height: 200px;overflow: hidden; ">
+
                             <div class="kkk">A</div>
                             <div class="kkk">B</div>
                             <div class="kkk">C</div>
@@ -97,8 +98,8 @@
 
         <div class="swiper-slide">
             <div>
-            不同价格你会买哪样：
-                <form id="form1">
+            不同价格你会买哪样1：
+                <form class="question1">
                     <table border="solid 1px">
                         <tr>
                             <td id="first_page_content1"></td>
@@ -117,10 +118,10 @@
             </div>
         </div>
 
-        <div class="swiper-slide" id="dynamic_generate">
+        <div class="swiper-slide">
             <div>
-                不同价格你会买哪样：
-                <form id="form2">
+                不同价格你会买哪样2：
+                <form class="question2">
                     <table border="solid 1px">
                         <tr>
                             <td id="second_page_content1"></td>
@@ -139,10 +140,10 @@
             </div>
         </div>
 
-        <div class="swiper-slide" id="dynamic_generate">
+        <div class="swiper-slide">
             <div>
-                不同价格你会买哪样：
-                <form id="form3">
+                不同价格你会买哪样3：
+                <form class="question3">
                     <table border="solid 1px">
                         <tr>
                             <td id="third_page_content1"></td>
@@ -161,9 +162,9 @@
             </div>
         </div>
 
-        <div class="swiper-slide" id="dynamic_generate">
+        <div class="swiper-slide">
             <div>
-                不同价格你会买哪样：
+                不同价格你会买哪样4：
                 <form id="form4">
                     <table border="solid 1px">
                         <tr>
@@ -183,7 +184,7 @@
             </div>
         </div>
 
-        <div class="swiper-slide" id="dynamic_generate">
+        <div class="swiper-slide">
             <div>
                 不同价格你会买哪样：
                 <form id="form5">
@@ -236,7 +237,7 @@
 
         </div>
     </div>
-<div class="swiper-button-next"></div>
+<div class="swiper-button-next" onclick="valueDetect()"></div>
 </div>
 
 
@@ -254,9 +255,10 @@
 
 <!-- Initialize Swiper -->
 <script>
-
+    var page_index = 0;
     var sort_value = [];
-    var sort_style = [];
+    var sort_price = ["价格：50", "价格：48", "价格：46", "价格：44"];
+
     var swiper = new Swiper('.swiper-container', {
         //pagination: '.swiper-pagination',
         // 设置方向 up
@@ -266,6 +268,7 @@
         onlyExternal:true,
         nextButton:'.swiper-button-next',
 
+
         // 拖拽触发函数
         onSlideChangeStart: function (swiper) {
 
@@ -274,173 +277,137 @@
                 var seconde_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[1].innerText;
                 var third_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[2].innerText;
                 var fourth_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[3].innerText;
-                var first_price = "价格：50";
-                var second_price = "价格：48";
-                var third_price = "价格：46";
-                var forth_price = "价格：44";
+
             }catch (err){
                 alert("必须四个都选择,本次数据不存储,该页面自动刷新");
                 location.reload();
             }
-            sort_value.push(first_value, seconde_value, third_value, fourth_value);
-            console.log(document.getElementById("first_page_content1").innerText);
+
             if(document.getElementById("first_page_content1").innerText == ''){
-                console.log("要分配");
                 // 动态分配值到页面
-                console.log(Math.random());
-
-                if(Math.random() > 0.5){
-                    // page1
-                    $("#first_page_content1").append(first_value);
-                    $("#first_page_value1").append(first_price);
-                    $("#first_page_content2").append(seconde_value);
-                    $("#first_page_value2").append(second_price);
-                }else {
-                    // page1
-                    $("#first_page_content1").append(seconde_value);
-                    $("#first_page_value1").append(second_price);
-                    $("#first_page_content2").append(first_value);
-                    $("#first_page_value2").append(first_price);
-                }
-
-                if(Math.random() > 0.5){
-                    // page2
-                    $("#second_page_content1").append(seconde_value);
-                    $("#second_page_value1").append(second_price);
-                    $("#second_page_content2").append(third_value);
-                    $("#second_page_value2").append(third_price);
-
-                }else {
-                    // page2 third_value third_price
-                    $("#second_page_content1").append(third_value);
-                    $("#second_page_value1").append(third_price);
-                    $("#second_page_content2").append(seconde_value);
-                    $("#second_page_value2").append(second_price);
-
-                }
-
-                if(Math.random() > 0.5){
-                    // page3
-                    $("#third_page_content1").append(third_value);
-                    $("#third_page_value1").append(third_price);
-                    $("#third_page_content2").append(fourth_value);
-                    $("#third_page_value2").append(forth_price);
-
-
-                }else {
-                    // page3  third_value  third_price
-                    $("#third_page_content1").append(fourth_value);
-                    $("#third_page_value1").append(forth_price);
-                    $("#third_page_content2").append(third_value);
-                    $("#third_page_value2").append(third_price);
-                }
-
-                if(Math.random() > 0.5){
-                    // page4
-                    $("#fourth_page_content1").append(first_value);
-                    $("#fourth_page_value1").append(first_price);
-                    $("#fourth_page_content2").append(third_value);
-                    $("#fourth_page_value2").append(third_price);
-
-                }else {
-                    // page4 first_value first_price
-                    $("#fourth_page_content1").append(third_value);
-                    $("#fourth_page_value1").append(third_price);
-                    $("#fourth_page_content2").append(first_value);
-                    $("#fourth_page_value2").append(first_price);
-                }
-
-                if(Math.random() > 0.5){
-                    // page5
-                    $("#fifth_page_content1").append(seconde_value);
-                    $("#fifth_page_value1").append(second_price);
-                    $("#fifth_page_content2").append(fourth_value);
-                    $("#fifth_page_value2").append(forth_price);
-
-                }else {
-                    // page5 seconde_value second_price
-                    $("#fifth_page_content1").append(fourth_value);
-                    $("#fifth_page_value1").append(forth_price);
-                    $("#fifth_page_content2").append(seconde_value);
-                    $("#fifth_page_value2").append(second_price);
-                }
-
-                if(Math.random() > 0.5){
-                    // page6
-                    $("#sixth_page_content1").append(first_value);
-                    $("#sixth_page_value1").append(first_price);
-                    $("#sixth_page_content2").append(fourth_value);
-                    $("#sixth_page_value2").append(forth_price);
-
-                }else {
-                    // page6 first_value first_price
-                    $("#sixth_page_content1").append(fourth_value);
-                    $("#sixth_page_value1").append(forth_price);
-                    $("#sixth_page_content2").append(first_value);
-                    $("#sixth_page_value2").append(first_price);
-                }
+                sort_value.push(first_value, seconde_value, third_value, fourth_value);
+                dynamicAddPageValue(sort_value);
 
             }else {
                 console.log("不用分配了");
             }
-            console.log(sort_value);
+            // 页面第一页索引为0
+            page_index = page_index + 1;
 
-//            console.log(seconde_value);
-//            console.log(third_value);
-//            console.log(fourth_value);
-
-
-//            if()
-//            alert(value_list);
-//            dynamicAddContent();
         }
+
     });
 
-    function circularPop(sort_value) {
+    // 每一页值检测
+    function valueDetect() {
+        switch (page_index){
+            case 1:
+                var form1_value1 = $('.question1').find(':radio:checked').val();
+                detectPageValue(form1_value1);
+                break;
+            case 2:
+                var form1_value2 = $('.question2').find(':radio:checked').val();
+                detectPageValue(form1_value2);
+                break;
+            case 3:
+                var form1_value3 = $('.question3').find(':radio:checked').val();
+                detectPageValue(form1_value3);
+                break;
+        }
 
     }
 
-
-    function atrributeSortStyle(sort_value) {
-        var page1_list = [sort_value[0], sort_value[1]];
-        var page2_list = [sort_value[1], sort_value[2]];
-        var page3_list = [sort_value[2], sort_value[3]];
-        var page4_list = [sort_value[0], sort_value[2]];
-        var page5_list = [sort_value[1], sort_value[3]];
-        var page6_list = [sort_value[0], sort_value[3]];
-        return sort_style.push(page1_list, page2_list, page2_list, page3_list, page4_list, page5_list, page6_list);
-
+    // 检测值是否为空，若空则不滑动提示
+    function detectPageValue(page_value) {
+        if(page_value == undefined){
+            swiper.lockSwipes();
+            alert("必须有选择项");
+        }else {
+            swiper.unlockSwipes();
+        }
     }
 
-    // 动态生成
-    var divId=1;
-    //动态生成单纯的div
-    function dynamicAddContent() {
-        var para = document.createElement("p");
-        var txt1 = document.createTextNode("I inserted ");
-        var emphasis = document.createElement("em");
-        var txt2 = document.createTextNode("this");
-        var txt3 = document.createTextNode(" content123456.");
-        para.appendChild(txt1);
-        emphasis.appendChild(txt2);
-        para.appendChild(emphasis);
-        para.appendChild(txt3);
-        var testdiv = document.getElementById("dynamic_generate");
-        testdiv.appendChild(para);
-    }
+    // 动态增加页面值
+    function dynamicAddPageValue(sort_value) {
+            if(Math.random() > 0.5){
+                // page1
+                $("#first_page_content1").append(sort_value[0]);
+                $("#first_page_value1").append(sort_price[0]);
+                $("#first_page_content2").append(sort_value[1]);
+                $("#first_page_value2").append(sort_price[1]);
+            }else {
+                // page1
+                $("#first_page_content1").append(sort_value[1]);
+                $("#first_page_value1").append(sort_price[1]);
+                $("#first_page_content2").append(sort_value[0]);
+                $("#first_page_value2").append(sort_price[0]);
+            }
+            if(Math.random() > 0.5){
+                // page2
+                $("#second_page_content1").append(sort_value[1]);
+                $("#second_page_value1").append(sort_price[1]);
+                $("#second_page_content2").append(sort_value[2]);
+                $("#second_page_value2").append(sort_price[2]);
+            }else {
+                // page2 third_value third_price
+                $("#second_page_content1").append(sort_value[2]);
+                $("#second_page_value1").append(sort_price[2]);
+                $("#second_page_content2").append(sort_value[1]);
+                $("#second_page_value2").append(sort_price[1]);
+            }
+            if(Math.random() > 0.5){
+                // page3
+                $("#third_page_content1").append(sort_value[2]);
+                $("#third_page_value1").append(sort_price[2]);
+                $("#third_page_content2").append(sort_value[3]);
+                $("#third_page_value2").append(sort_price[3]);
+            }else {
+                // page3  third_value  third_price
+                $("#third_page_content1").append(sort_value[3]);
+                $("#third_page_value1").append(sort_price[3]);
+                $("#third_page_content2").append(sort_value[2]);
+                $("#third_page_value2").append(sort_price[2]);
+            }
+            if(Math.random() > 0.5){
+                // page4
+                $("#fourth_page_content1").append(sort_value[0]);
+                $("#fourth_page_value1").append(sort_price[0]);
+                $("#fourth_page_content2").append(sort_value[2]);
+                $("#fourth_page_value2").append(sort_price[2]);
+            }else {
+                // page4 first_value first_price
+                $("#fourth_page_content1").append(sort_value[2]);
+                $("#fourth_page_value1").append(sort_price[2]);
+                $("#fourth_page_content2").append(sort_value[0]);
+                $("#fourth_page_value2").append(sort_price[0]);
+            }
+            if(Math.random() > 0.5){
+                // page5
+                $("#fifth_page_content1").append(sort_value[1]);
+                $("#fifth_page_value1").append(sort_price[1]);
+                $("#fifth_page_content2").append(sort_value[3]);
+                $("#fifth_page_value2").append(sort_price[3]);
+            }else {
+                // page5 seconde_value second_price
+                $("#fifth_page_content1").append(sort_value[3]);
+                $("#fifth_page_value1").append(sort_price[3]);
+                $("#fifth_page_content2").append(sort_value[1]);
+                $("#fifth_page_value2").append(sort_price[1]);
+            }
+            if(Math.random() > 0.5){
+                // page6
+                $("#sixth_page_content1").append(sort_value[0]);
+                $("#sixth_page_value1").append(sort_price[0]);
+                $("#sixth_page_content2").append(sort_value[3]);
+                $("#sixth_page_value2").append(sort_price[3]);
+            }else {
+                // page6 first_value first_price
+                $("#sixth_page_content1").append(sort_value[3]);
+                $("#sixth_page_value1").append(sort_price[3]);
+                $("#sixth_page_content2").append(sort_value[0]);
+                $("#sixth_page_value2").append(sort_price[0]);
+            }
 
-    function dynamicAddPage2() {
-        var para = document.createElement("tr");
-        var txt1 = document.createTextNode("I inserted ");
-        var emphasis = document.createElement("em");
-        var txt2 = document.createTextNode("this");
-        var txt3 = document.createTextNode(" content123456.");
-        para.appendChild(txt1);
-        emphasis.appendChild(txt2);
-        para.appendChild(emphasis);
-        para.appendChild(txt3);
-        var testdiv = document.getElementById("first_contrast");
-        testdiv.appendChild(para);
     }
 
 

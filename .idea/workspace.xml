@@ -7,13 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="095fd696-1fe1-4450-a7dc-82df3cf669f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/html/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/js/swiper.min_up.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/js/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/example/example.css" afterPath="$PROJECT_DIR$/web/resources/example/example.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/html/index_drag.html" afterPath="$PROJECT_DIR$/web/resources/html/index_drag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/html/index_up.html" afterPath="$PROJECT_DIR$/web/resources/html/index_up.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +45,20 @@
       <file leaf-file-name="index_drag.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="287" column="35" lean-forward="true" selection-start-line="287" selection-start-column="35" selection-end-line="287" selection-end-column="35" />
+            <state relative-caret-position="187">
+              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="swiper.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/js/swiper.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="14" column="14224" lean-forward="false" selection-start-line="14" selection-start-column="14224" selection-end-line="14" selection-end-column="14224" />
               <folding />
             </state>
           </provider>
@@ -82,8 +89,8 @@
       <file leaf-file-name="example.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resources/example/example.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="143" column="28" lean-forward="true" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
+            <state relative-caret-position="161">
+              <caret line="145" column="14" lean-forward="false" selection-start-line="145" selection-start-column="14" selection-end-line="145" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -127,19 +134,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="54">
-                <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dragula.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resources/dist/dragula.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -179,6 +173,8 @@
       <find>page_11_12_totle_time</find>
       <find>swiper-button-next</find>
       <find>%3Csvg%20xmlns%3D</find>
+      <find>sixth_page_content1</find>
+      <find>question1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,10 +203,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/web/resources/html/research_drag.html" />
         <option value="$PROJECT_DIR$/web/resources/html/index_up.html" />
-        <option value="$PROJECT_DIR$/web/resources/example/example.css" />
         <option value="$PROJECT_DIR$/web/resources/js/swiper.min_up.css" />
         <option value="$PROJECT_DIR$/web/resources/html/test.html" />
         <option value="$PROJECT_DIR$/web/resources/js/test.js" />
+        <option value="$PROJECT_DIR$/web/resources/example/example.css" />
         <option value="$PROJECT_DIR$/web/resources/html/index_drag.html" />
       </list>
     </option>
@@ -232,8 +228,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="206" />
-    <option name="y" value="123" />
+    <option name="x" value="20" />
+    <option name="y" value="162" />
     <option name="width" value="1622" />
     <option name="height" value="981" />
   </component>
@@ -1006,15 +1002,15 @@
       <workItem from="1511960509782" duration="2385000" />
       <workItem from="1511962933749" duration="1092000" />
       <workItem from="1512003725292" duration="219000" />
-      <workItem from="1512023023059" duration="15681000" />
+      <workItem from="1512023023059" duration="25159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29409000" />
+    <option name="totallyTimeSpent" value="38887000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="206" y="123" width="1622" height="981" extended-state="0" />
+    <frame x="20" y="162" width="1622" height="981" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1248,13 +1244,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/index_up_test.html" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/datastore.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/resources/js/swiper.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/datastore.jsp" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/index_up_test.html" />
     <entry file="file://$PROJECT_DIR$/web/index_up_test.html" />
@@ -1382,14 +1371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/example/example.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="143" column="28" lean-forward="true" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/js/swiper.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -1450,11 +1431,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/swiper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="14" column="14224" lean-forward="false" selection-start-line="14" selection-start-column="14224" selection-end-line="14" selection-end-column="14224" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/example/example.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="145" column="14" lean-forward="false" selection-start-line="145" selection-start-column="14" selection-end-line="145" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="287" column="35" lean-forward="true" selection-start-line="287" selection-start-column="35" selection-end-line="287" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
