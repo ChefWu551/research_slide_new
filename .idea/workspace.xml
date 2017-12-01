@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="095fd696-1fe1-4450-a7dc-82df3cf669f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/example/example.css" afterPath="$PROJECT_DIR$/web/resources/example/example.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/html/index_drag.html" afterPath="$PROJECT_DIR$/web/resources/html/index_drag.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/html/index_up_shake.html" afterPath="$PROJECT_DIR$/web/resources/html/index_up_shake.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,21 +32,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index_up.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index_up.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/resources/html/index_up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="121" column="15" lean-forward="true" selection-start-line="121" selection-start-column="15" selection-end-line="121" selection-end-column="15" />
+            <state relative-caret-position="227">
+              <caret line="236" column="8" lean-forward="true" selection-start-line="236" selection-start-column="8" selection-end-line="237" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_drag.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index_drag.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="241">
+              <caret line="260" column="0" lean-forward="true" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -115,6 +115,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index_up_shake.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/html/index_up_shake.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="236" column="18" lean-forward="true" selection-start-line="236" selection-start-column="18" selection-end-line="236" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="swiper.min_up.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resources/js/swiper.min_up.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -139,16 +149,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1523">
               <caret line="886" column="10" lean-forward="true" selection-start-line="886" selection-start-column="10" selection-end-line="886" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="research_drag.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/html/research_drag.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -199,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/main/com/research/model/ResearchPage.java" />
         <option value="$PROJECT_DIR$/src/main/com/research/util/MysqlUtil.java" />
         <option value="$PROJECT_DIR$/web/resources/jsp/datashow.jsp" />
-        <option value="$PROJECT_DIR$/web/resources/html/index_up_shake.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/web/resources/html/research_drag.html" />
         <option value="$PROJECT_DIR$/web/resources/html/index_up.html" />
@@ -208,6 +207,7 @@
         <option value="$PROJECT_DIR$/web/resources/js/test.js" />
         <option value="$PROJECT_DIR$/web/resources/example/example.css" />
         <option value="$PROJECT_DIR$/web/resources/html/index_drag.html" />
+        <option value="$PROJECT_DIR$/web/resources/html/index_up_shake.html" />
       </list>
     </option>
   </component>
@@ -1002,12 +1002,12 @@
       <workItem from="1511960509782" duration="2385000" />
       <workItem from="1511962933749" duration="1092000" />
       <workItem from="1512003725292" duration="219000" />
-      <workItem from="1512023023059" duration="25159000" />
+      <workItem from="1512023023059" duration="25409000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38887000" />
+    <option name="totallyTimeSpent" value="39137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="162" width="1622" height="981" extended-state="0" />
@@ -1328,14 +1328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/html/index_up_shake.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7776">
-          <caret line="288" column="22" lean-forward="false" selection-start-line="288" selection-start-column="22" selection-end-line="288" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1423,14 +1415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/html/index_up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="121" column="15" lean-forward="true" selection-start-line="121" selection-start-column="15" selection-end-line="121" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/js/swiper.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1449,11 +1433,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="241">
+          <caret line="260" column="0" lean-forward="true" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/html/index_up_shake.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="236" column="18" lean-forward="true" selection-start-line="236" selection-start-column="18" selection-end-line="236" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/html/index_up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="236" column="8" lean-forward="true" selection-start-line="236" selection-start-column="8" selection-end-line="237" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
