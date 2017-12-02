@@ -146,7 +146,7 @@
                 <br>
                 <div class="main-content" style="padding-left: 3%; padding-right: 3%">
                     <div>
-                        <img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/1.jpg" width="96%" height="96%">
+                        <img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/pen1.jpg" width="96%" height="96%">
                     </div>
                     <div class="lm_page1">
                         <p><b>LM 白色亮杆常规墨水笔钢笔</b></p>
@@ -178,7 +178,7 @@
                 <br>
                 <div class="main-content" style="padding-left: 5%;">
                     <div>
-                        <img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/2.jpg" width="85%" height="85%">
+                        <img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/pen2.jpg" width="85%" height="85%">
                     </div>
                     <div class="lm_page1">
                         <p>低调奢华，大气典雅，&nbsp;&nbsp;&nbsp;</p>
@@ -264,11 +264,16 @@
             // 到第三、四页停止滑动
             if(timeList.length == 2 || timeList.length == 3){
                 swiper.stopAutoplay();
-                console.log("shaking");
-                shake_phone();
+
             }else {
                 swiper.startAutoplay();
             }
+
+            if(timeList.length == 3 || timeList.length == 4){
+                console.log("shaking");
+                shake_phone();
+            }
+
 
             // 计算时间差
             if(timeList.length == 4){
