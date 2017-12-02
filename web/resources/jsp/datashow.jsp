@@ -32,7 +32,7 @@
     <body>
         <br/>
         <table border="1" width="100%">
-            <tr> <td>方向及振动</td> <td>编号</td> <td>A-B-C-D时间</td><td>B-C-D时间</td>
+            <tr> <td>方向及振动</td> <td>编号</td> <td>2-3-4-5时间</td><td>2-3-4时间</td>
             </tr>
             <%
                 Connection conn = MysqlUtil.getMysqlConnectiong();

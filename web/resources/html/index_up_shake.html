@@ -100,7 +100,7 @@
 <div class="swiper-container">
 
     <div class="swiper-wrapper">
-        <div class="swiper-slide" data-swiper-autoplay="200000">
+        <div class="swiper-slide"  data-swiper-autoplay="200000">
             <div>
                 <h3>编号：<b><input type="text" id="number" size="15" value="" ></b></h3>
                 <br>
@@ -116,11 +116,12 @@
 
         <div class="swiper-slide  stop-swiping" id="swiper-slide1" data-swiper-autoplay="10000">
             <div>
-                <h4>
+                <h4><center>
                     请观看广告
+                </center>
                 </h4>
                 <p>
-                    <font color="#39b5ff" >(本页自动跳转，请稍候)</font>
+                    <font color="#39b5ff" >(本页自动跳转，请稍等)</font>
                 </p>
             </div>
         </div>
@@ -171,7 +172,7 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-slide stop-swiping" data-swiper-autoplay="10000">
+        <div class="swiper-slide">
             <div>
                 <br>
                 <br>
@@ -192,7 +193,8 @@
                 <br>
                 <div>
                     <p><center>
-                    <font color="#39b5ff" >(本页自动跳转，请稍候)</font></center>
+                    <img src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchSlide/direction_up.png" width="5%" height="5%">
+                </center>
                     </p>
                 </div>
             </div>
@@ -248,20 +250,22 @@
         onSlideChangeStart: function (swiper) {
 
             var id_value = $('#number').val();
-
+            console.log(id_value);
+            if (id_value == ''){
+                alert("编号不能为空，且必须是存数字");
+                location.reload();
+            }
             // 获取选中的label 通过get请求发送
 
             var page1_2_time = new Date;
             timeList.push(page1_2_time);
-            // 指定震动
-            if(timeList.length == 3){
+
+
+            // 到第三、四页停止滑动
+            if(timeList.length == 2 || timeList.length == 3){
+                swiper.stopAutoplay();
                 console.log("shaking");
                 shake_phone();
-            }
-
-            // 到第三页停止滑动
-            if(timeList.length == 2){
-                swiper.stopAutoplay();
             }else {
                 swiper.startAutoplay();
             }
@@ -278,7 +282,7 @@
                     page_break_string = page_break_string + page_break + "-";
 
                 }
-                result = {"direction": "up_with_shaking","id_value": id_value, "page_break_string": page_break_string, "page_3_4_totle_time": page_3_4_totle_time};
+                result = {"direction": "up_without_shaking", "id_value": id_value, "page_break_string": page_break_string, "page_3_4_totle_time": page_3_4_totle_time};
 
                 console.log(result);
                 $.ajax({
@@ -305,6 +309,8 @@
             navigator.vibrate([500]);
 
     }
+
+
 
 
 
