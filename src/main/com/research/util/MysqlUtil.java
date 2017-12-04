@@ -52,14 +52,14 @@ public class MysqlUtil {
         return 0;
     }
 
-    public static int insertDragData2Mysql(Connection conn, String sort_value_name, String prefer_result,
-                                       String involvement_measure, String mood_measure_value,
+    public static int insertDragData2Mysql(Connection conn, String sort_value_class, String sort_value_name,String sort_value_interval,
+                                           String prefer_result, String involvement_measure, String mood_measure_value,
                                        String price_sensitivity_value, String self_confidence, String basic_info){
         Statement stmt = null;
         try {
             stmt = conn.createStatement();
-            String sql=String.format("insert into "+tableNameDrag+" ( `sort_value_name`, `prefer_result`, `involvement_measure`, `mood_measure_value`, `price_sensitivity_value`, `self_confidence`, `basic_info`)" +
-                    " values ('%s','%s', '%s', '%s', '%s', '%s', '%s')", sort_value_name, prefer_result, involvement_measure, mood_measure_value, price_sensitivity_value, self_confidence, basic_info);
+            String sql=String.format("insert into "+tableNameDrag+" ( `sort_value_class`,`sort_value_name`, `sort_value_interval`, `prefer_result`, `involvement_measure`, `mood_measure_value`, `price_sensitivity_value`, `self_confidence`, `basic_info`)" +
+                    " values ('%s','%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')", sort_value_class, sort_value_name, sort_value_interval, prefer_result, involvement_measure, mood_measure_value, price_sensitivity_value, self_confidence, basic_info);
             int rs;
             rs = stmt.executeUpdate(sql);
             return rs;

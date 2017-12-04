@@ -17,7 +17,9 @@
 <%
     System.out.println(response);
     String datetime = new SimpleDateFormat("yyyyMMddhhmmss").format(Calendar.getInstance().getTime());
+    String sort_value_class = request.getParameter("sort_value_class");
     String sort_value_name = request.getParameter("sort_value_name");
+    String sort_value_interval = request.getParameter("sort_value_interval");
     String prefer_result = request.getParameter("prefer_result");
     String involvement_measure = request.getParameter("involvement_measure");
     String mood_measure_value = request.getParameter("mood_measure_value");
@@ -31,7 +33,7 @@
 //    ps.println(gradeLevel);
 //    ps.close();
     Connection conn = MysqlUtil.getMysqlConnectiong();
-    int rs = MysqlUtil.insertDragData2Mysql(conn, sort_value_name, prefer_result, involvement_measure,
+    int rs = MysqlUtil.insertDragData2Mysql(conn, sort_value_class, sort_value_name, sort_value_interval, prefer_result, involvement_measure,
             mood_measure_value, price_sensitivity_value, self_confidence, basic_info);
     System.out.println(rs);
     conn.close();
