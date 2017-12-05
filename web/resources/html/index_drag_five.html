@@ -116,7 +116,7 @@
         }
 
         .question{
-            width: 90%;
+            /*width: 90%;*/
             border: 1px solid #000000;
             height: 100%;
             font-size: 12px;
@@ -682,7 +682,7 @@
 
             <div class="swiper-slide">
                 <div>
-                    <p>以下是一些陈述，请根据自身情况客观评价：<p>
+                    <p>以下是一些陈述，请根据自身情况客观评价</p>
                         <table class="question"  border="1px">
                             <tr>
                                 <td>序号</td>
@@ -1107,27 +1107,27 @@
                     </p>
                 </div>
 
-                <p>月均消费：</p>
-                <div style="margin-left: 8%;" class="question_last_page"  id="question38">
-                    <p style="font-size: 13px" >
-                        <input type="radio" name="question38" value="1"  id="question38_value1"><label for="question38_value1">1000元及以下</label>
-                    </p>
-                    <p style="font-size: 13px">
-                        <input type="radio" name="question38" value="2"  id="question38_value2"><label for="question38_value2">1001-2000元</label>
-                    </p>
-                    <p style="font-size: 13px">
-                        <input type="radio" name="question38" value="3"  id="question38_value3"><label for="question38_value3">2001-3000元</label>
-                    </p>
-                    <p style="font-size: 13px">
-                        <input type="radio" name="question38" value="4"  id="question38_value4"><label for="question38_value4">3001-4000元</label>
-                    </p>
-                    <p style="font-size: 13px">
-                        <input type="radio" name="question38" value="5"  id="question38_value5"><label for="question38_value5">4001-5000元</label>
-                    </p>
-                    <p style="font-size: 13px">
-                        <input type="radio" name="question38" value="6"  id="question38_value6"><label for="question38_value6">5000元以上</label>
-                    </p>
-                </div>
+                <!--<p>月均消费：</p>-->
+                <!--<div style="margin-left: 8%;" class="question_last_page"  id="question38">-->
+                    <!--<p style="font-size: 13px" >-->
+                        <!--<input type="radio" name="question38" value="1"  id="question38_value1"><label for="question38_value1">1000元及以下</label>-->
+                    <!--</p>-->
+                    <!--<p style="font-size: 13px">-->
+                        <!--<input type="radio" name="question38" value="2"  id="question38_value2"><label for="question38_value2">1001-2000元</label>-->
+                    <!--</p>-->
+                    <!--<p style="font-size: 13px">-->
+                        <!--<input type="radio" name="question38" value="3"  id="question38_value3"><label for="question38_value3">2001-3000元</label>-->
+                    <!--</p>-->
+                    <!--<p style="font-size: 13px">-->
+                        <!--<input type="radio" name="question38" value="4"  id="question38_value4"><label for="question38_value4">3001-4000元</label>-->
+                    <!--</p>-->
+                    <!--<p style="font-size: 13px">-->
+                        <!--<input type="radio" name="question38" value="5"  id="question38_value5"><label for="question38_value5">4001-5000元</label>-->
+                    <!--</p>-->
+                    <!--<p style="font-size: 13px">-->
+                        <!--<input type="radio" name="question38" value="6"  id="question38_value6"><label for="question38_value6">5000元以上</label>-->
+                    <!--</p>-->
+                <!--</div>-->
 
 
             </div>
@@ -1205,14 +1205,14 @@
                         sort_value_class.push(first_value_class, seconde_value_class, third_value_class, fourth_value_class, fifth_value_class);
                         result["sort_value_class"] = sort_value_class.join("-");
                         dynamicAddPageValue(sort_value);
-
                     }else {
                         console.log("不用分配了");
                     }
                 }
             }catch (err){
+
                 alert("五个都选择才可以往下拉。");
-                location.reload();
+
             }
 
 
@@ -1292,11 +1292,11 @@
                 var form1_value12 = $('#question12').find(':radio:checked').val();
                 var form1_value13 = $('#question13').find(':radio:checked').val();
                 var form1_value14 = $('#question14').find(':radio:checked').val();
-
-                detectPageValue(form1_value11);
-                detectPageValue(form1_value12);
-                detectPageValue(form1_value13);
-                detectPageValue(form1_value14);
+                detectPageArrValue([form1_value11, form1_value12, form1_value13, form1_value14]);
+//                detectPageValue(form1_value11);
+//                detectPageValue(form1_value12);
+//                detectPageValue(form1_value13);
+//                detectPageValue(form1_value14);
 
                 result['involvement_measure'] = [form1_value11, form1_value12, form1_value13, form1_value14].join("-");
                 break;
@@ -1308,13 +1308,14 @@
                 var form1_value18 = $('#question18').find(':radio:checked').val();
                 var form1_value19 = $('#question19').find(':radio:checked').val();
                 var form1_value20 = $('#question20').find(':radio:checked').val();
+                detectPageArrValue([form1_value15, form1_value16, form1_value17, form1_value18, form1_value19, form1_value20]);
 
-                detectPageValue(form1_value15);
-                detectPageValue(form1_value16);
-                detectPageValue(form1_value17);
-                detectPageValue(form1_value18);
-                detectPageValue(form1_value19);
-                detectPageValue(form1_value20);
+//                detectPageValue(form1_value15);
+//                detectPageValue(form1_value16);
+//                detectPageValue(form1_value17);
+//                detectPageValue(form1_value18);
+//                detectPageValue(form1_value19);
+//                detectPageValue(form1_value20);
                 result['mood_measure_value'] = [form1_value15, form1_value16, form1_value17, form1_value18, form1_value19, form1_value20].join("-");
                 break;
 
@@ -1325,13 +1326,14 @@
                 var form1_value24 = $('#question24').find(':radio:checked').val();
                 var form1_value25 = $('#question25').find(':radio:checked').val();
                 var form1_value26 = $('#question26').find(':radio:checked').val();
+                detectPageArrValue([form1_value21, form1_value22, form1_value23, form1_value24, form1_value25, form1_value26]);
 
-                detectPageValue(form1_value21);
-                detectPageValue(form1_value22);
-                detectPageValue(form1_value23);
-                detectPageValue(form1_value24);
-                detectPageValue(form1_value25);
-                detectPageValue(form1_value26);
+//                detectPageValue(form1_value21);
+//                detectPageValue(form1_value22);
+//                detectPageValue(form1_value23);
+//                detectPageValue(form1_value24);
+//                detectPageValue(form1_value25);
+//                detectPageValue(form1_value26);
 
                 result['price_sensitivity_value'] = [form1_value21, form1_value22, form1_value23, form1_value24, form1_value25, form1_value26].join("-");
                 break;
@@ -1345,14 +1347,16 @@
                 var form1_value32 = $('#question32').find(':radio:checked').val();
                 var form1_value33 = $('#question33').find(':radio:checked').val();
                 var form1_value34 = $('#question34').find(':radio:checked').val();
-                detectPageValue(form1_value27);
-                detectPageValue(form1_value28);
-                detectPageValue(form1_value29);
-                detectPageValue(form1_value30);
-                detectPageValue(form1_value31);
-                detectPageValue(form1_value32);
-                detectPageValue(form1_value33);
-                detectPageValue(form1_value34);
+                detectPageArrValue([form1_value27, form1_value28, form1_value29, form1_value30,
+                    form1_value31, form1_value32, form1_value33, form1_value34]);
+//                detectPageValue(form1_value27);
+//                detectPageValue(form1_value28);
+//                detectPageValue(form1_value29);
+//                detectPageValue(form1_value30);
+//                detectPageValue(form1_value31);
+//                detectPageValue(form1_value32);
+//                detectPageValue(form1_value33);
+//                detectPageValue(form1_value34);
                 result['self_confidence'] = [form1_value27, form1_value28, form1_value29, form1_value30,
                                             form1_value31, form1_value32, form1_value33, form1_value34].join("-");
 
@@ -1362,6 +1366,8 @@
                 var form1_value36 = document.getElementById("question36").value;
                 var form1_value37 = $('#question37').find(':radio:checked').val();
                 var form1_value38 = $('#question38').find(':radio:checked').val();
+                detectPageArrValue([form1_value35, form1_value37, form1_value38]);
+                detectQuestion36(form1_value36);
 //                detectPageValue(form1_value35);
 //                detectPageValue(form1_value36);
 //                detectPageValue(form1_value37);
@@ -1399,6 +1405,27 @@
         if(page_value == undefined){
             swiper.lockSwipes();
             alert("必须有选择项");
+        }else {
+            swiper.unlockSwipes();
+        }
+    }
+
+    function detectPageArrValue(page_value_arr) {
+        for(var i=0; i < page_value_arr.length; i++){
+            if(page_value_arr[i] == undefined){
+                swiper.lockSwipes();
+                alert("您有遗漏的选择项");
+                break;
+            }else {
+                swiper.unlockSwipes();
+            }
+        }
+    }
+
+    function detectQuestion36(value) {
+        if(value == ""){
+            swiper.lockSwipes();
+            alert("请填写您的年龄");
         }else {
             swiper.unlockSwipes();
         }
