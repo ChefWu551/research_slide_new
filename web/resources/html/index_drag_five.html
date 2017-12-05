@@ -1184,37 +1184,41 @@
         // 拖拽触发函数
         onSlideChangeStart: function (swiper) {
 
-            try{
+//            try{
                 if(page_index == 1) {
                     console.log("###" + page_index);
-                    var first_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[0].getElementsByTagName("img")[0].src;
-                    var seconde_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[1].getElementsByTagName("img")[0].src;
-                    var third_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[2].getElementsByTagName("img")[0].src;
-                    var fourth_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[3].getElementsByTagName("img")[0].src;
-                    var fifth_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[4].getElementsByTagName("img")[0].src;
+                    try {
+                        var first_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[0].getElementsByTagName("img")[0].src;
+                        var seconde_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[1].getElementsByTagName("img")[0].src;
+                        var third_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[2].getElementsByTagName("img")[0].src;
+                        var fourth_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[3].getElementsByTagName("img")[0].src;
+                        var fifth_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[4].getElementsByTagName("img")[0].src;
 
-                    var first_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[0].getElementsByTagName("img")[0].className;
-                    var seconde_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[1].getElementsByTagName("img")[0].className;
-                    var third_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[2].getElementsByTagName("img")[0].className;
-                    var fourth_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[3].getElementsByTagName("img")[0].className;
-                    var fifth_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[4].getElementsByTagName("img")[0].className;
+                        var first_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[0].getElementsByTagName("img")[0].className;
+                        var seconde_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[1].getElementsByTagName("img")[0].className;
+                        var third_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[2].getElementsByTagName("img")[0].className;
+                        var fourth_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[3].getElementsByTagName("img")[0].className;
+                        var fifth_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[4].getElementsByTagName("img")[0].className;
 
-                    if(document.getElementById("first_page_value1").innerText == ''){
-                        // 动态分配值到页面
-                        sort_value.push(first_value, seconde_value, third_value, fourth_value, fifth_value);
-                        sort_value_class.push(first_value_class, seconde_value_class, third_value_class, fourth_value_class, fifth_value_class);
-                        result["sort_value_class"] = sort_value_class.join("-");
-                        dynamicAddPageValue(sort_value);
-                    }else {
-                        console.log("不用分配了");
+                        if(document.getElementById("first_page_value1").innerText == ''){
+                            // 动态分配值到页面
+                            sort_value.push(first_value, seconde_value, third_value, fourth_value, fifth_value);
+                            sort_value_class.push(first_value_class, seconde_value_class, third_value_class, fourth_value_class, fifth_value_class);
+                            result["sort_value_class"] = sort_value_class.join("-");
+                            dynamicAddPageValue(sort_value);
+                        }else {
+                            console.log("不用分配了");
+                        }
+                    }catch (err){
+                        alert("五个都选择才可以往下拉。");
+                        location.reload();
                     }
                 }
-            }catch (err){
-
-                alert("五个都选择才可以往下拉。");
-                local.reload();
-
-            }
+//            }catch (err){
+//
+//                alert("五个都选择才可以往下拉。");
+//
+//            }
 
 
             // 页面第一页索引为0
