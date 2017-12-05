@@ -180,9 +180,9 @@
             <!--</div>-->
         </div>
 
-            <div class="swiper-slide" style="padding-top: 2px">
+            <div class="swiper-slide">
                 <div >
-                    <div class="parent" style="margin-top: 2px" >
+                    <div class="parent" style="margin-top: 10px" >
                         <p style="font-size: 15px;">请将左边的图片拖拽到右边的方框中，并根据偏好排序。排序越靠近上面表示越喜欢，越靠近下面表示越不喜欢。</p>
 
                         <div class='wrapper'>
@@ -851,7 +851,7 @@
             </div>
 
             <div class="swiper-slide">
-                <div>
+                <div  style="margin-top: 10px" >
                     <p>以下是一些陈述，请根据自身情况进行评价<p>
                     <!--<form class="question11">-->
                     <table class="question"  border="1px">
@@ -1388,7 +1388,7 @@
     // 发送结果
     function  sendResult(result) {
         $.ajax({
-            url:"/resources/jsp/datastore_drag_five.jsp",
+            url:"research_slide_drag_five/resources/jsp/datastore_drag_five.jsp",
             type:"post",
             data: result,
             dataType: 'json',
