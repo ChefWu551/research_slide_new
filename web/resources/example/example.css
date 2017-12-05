@@ -143,14 +143,14 @@ button:hover {
   display: table;
   background-color: #f2fffb;
   width: 80%;
-  height: 60%;
-  padding-bottom: 10%;
+  height: 55%;
+  /*padding-bottom: 10%;*/
   margin: auto;
 }
 .container {
   display: table-cell;
   background-color: rgba(255, 255, 255, 0.2);
-  width: 60%;
+  width: 55%;
 }
 .container:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.2);
