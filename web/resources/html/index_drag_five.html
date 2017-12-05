@@ -189,11 +189,11 @@
 
                             <div id='left-defaults' class='container' style="width: 50%; height: 30%;">
 
-                                <div class="kkk"><img class="image0" src='http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img0.PNG'  width="90%" height="90%"></div>
-                                <div class="kkk"><img class="image1" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img1.PNG" width="90%" height="90%"></div>
-                                <div class="kkk"><img class="image2" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img2.PNG"  width="90%" height="90%"></div>
-                                <div class="kkk"><img class="image3" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img3.PNG"   width="90%" height="90%"></div>
-                                <div class="kkk"><img class="image4" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img4.PNG"   width="90%" height="90%"></div>
+                                <div class="kkk"><img class="image0" src='http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img0.PNG'  width="80%" height="80%"></div>
+                                <div class="kkk"><img class="image1" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img1.PNG" width="80%" height="80%"></div>
+                                <div class="kkk"><img class="image2" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img2.PNG"  width="80%" height="80%"></div>
+                                <div class="kkk"><img class="image3" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img3.PNG"   width="80%" height="80%"></div>
+                                <div class="kkk"><img class="image4" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img4.PNG"   width="80%" height="80%"></div>
                             </div>
                             <div id='right-defaults' class='container'  style="width: 50%; height: 30%;">
                             </div>
@@ -1184,10 +1184,10 @@
         // 拖拽触发函数
         onSlideChangeStart: function (swiper) {
 
-//            try{
+            try{
                 if(page_index == 1) {
                     console.log("###" + page_index);
-                    try {
+
                         var first_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[0].getElementsByTagName("img")[0].src;
                         var seconde_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[1].getElementsByTagName("img")[0].src;
                         var third_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[2].getElementsByTagName("img")[0].src;
@@ -1209,16 +1209,12 @@
                         }else {
                             console.log("不用分配了");
                         }
-                    }catch (err){
-                        alert("五个都选择才可以往下拉。");
-                        location.reload();
-                    }
+
                 }
-//            }catch (err){
-//
-//                alert("五个都选择才可以往下拉。");
-//
-//            }
+            }catch (err){
+                alert("五个都选择才可以往下拉。");
+                location.reload();
+            }
 
 
             // 页面第一页索引为0
