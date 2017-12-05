@@ -1366,14 +1366,14 @@
                 var form1_value35 = $('#question35').find(':radio:checked').val();
                 var form1_value36 = document.getElementById("question36").value;
                 var form1_value37 = $('#question37').find(':radio:checked').val();
-                var form1_value38 = $('#question38').find(':radio:checked').val();
-                detectPageArrValue([form1_value35, form1_value37, form1_value38]);
+//                var form1_value38 = $('#question38').find(':radio:checked').val();
+                detectPageArrValue([form1_value35, form1_value37]);
                 detectQuestion36(form1_value36);
 //                detectPageValue(form1_value35);
 //                detectPageValue(form1_value36);
 //                detectPageValue(form1_value37);
 //                detectPageValue(form1_value38);
-                result["basic_info"] = [form1_value35, form1_value36, form1_value37, form1_value38].join("-");
+                result["basic_info"] = [form1_value35, form1_value36, form1_value37].join("-");
                 console.log(page_index);
                 console.log("result：");
                 console.log(result);
