@@ -1306,12 +1306,6 @@
                 var form1_value20 = $('#question20').find(':radio:checked').val();
                 detectPageArrValue([form1_value15, form1_value16, form1_value17, form1_value18, form1_value19, form1_value20]);
 
-//                detectPageValue(form1_value15);
-//                detectPageValue(form1_value16);
-//                detectPageValue(form1_value17);
-//                detectPageValue(form1_value18);
-//                detectPageValue(form1_value19);
-//                detectPageValue(form1_value20);
                 result['mood_measure_value'] = [form1_value15, form1_value16, form1_value17, form1_value18, form1_value19, form1_value20].join("-");
                 break;
 
@@ -1323,13 +1317,6 @@
                 var form1_value25 = $('#question25').find(':radio:checked').val();
                 var form1_value26 = $('#question26').find(':radio:checked').val();
                 detectPageArrValue([form1_value21, form1_value22, form1_value23, form1_value24, form1_value25, form1_value26]);
-
-//                detectPageValue(form1_value21);
-//                detectPageValue(form1_value22);
-//                detectPageValue(form1_value23);
-//                detectPageValue(form1_value24);
-//                detectPageValue(form1_value25);
-//                detectPageValue(form1_value26);
 
                 result['price_sensitivity_value'] = [form1_value21, form1_value22, form1_value23, form1_value24, form1_value25, form1_value26].join("-");
                 break;
@@ -1360,14 +1347,15 @@
                     swiper.lockSwipes();
                 }else {
                     result["basic_info"] = [form1_value35, form1_value36, form1_value37].join("-");
+                    console.log(page_index);
+                    console.log("result：");
+                    console.log(result);
                     swiper.unlockSwipes();
                     sendResult(result);
                     swiper.slideNext();
                 }
 
-                console.log(page_index);
-                console.log("result：");
-                console.log(result);
+
                 break;
 
 
@@ -1375,10 +1363,10 @@
 
     }
 
-    // 发送结果
+    // 发送结果 research_slide_drag_five
     function  sendResult(result) {
         $.ajax({
-            url:"research_slide_drag_five/resources/jsp/datastore_drag_five.jsp",
+            url:"/resources/jsp/datastore_drag_five.jsp",
             type:"post",
             data: result,
             dataType: 'json',
