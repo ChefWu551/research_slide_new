@@ -1231,7 +1231,6 @@
                 var form1_value1 = $('.question1').find(':radio:checked').val();
                 detectPageValue(form1_value1);
                 prefer_result.push(form1_value1);
-
                 break;
 
             case 3:
@@ -1294,10 +1293,6 @@
                 var form1_value13 = $('#question13').find(':radio:checked').val();
                 var form1_value14 = $('#question14').find(':radio:checked').val();
                 detectPageArrValue([form1_value11, form1_value12, form1_value13, form1_value14]);
-//                detectPageValue(form1_value11);
-//                detectPageValue(form1_value12);
-//                detectPageValue(form1_value13);
-//                detectPageValue(form1_value14);
 
                 result['involvement_measure'] = [form1_value11, form1_value12, form1_value13, form1_value14].join("-");
                 break;
@@ -1350,14 +1345,6 @@
                 var form1_value34 = $('#question34').find(':radio:checked').val();
                 detectPageArrValue([form1_value27, form1_value28, form1_value29, form1_value30,
                     form1_value31, form1_value32, form1_value33, form1_value34]);
-//                detectPageValue(form1_value27);
-//                detectPageValue(form1_value28);
-//                detectPageValue(form1_value29);
-//                detectPageValue(form1_value30);
-//                detectPageValue(form1_value31);
-//                detectPageValue(form1_value32);
-//                detectPageValue(form1_value33);
-//                detectPageValue(form1_value34);
                 result['self_confidence'] = [form1_value27, form1_value28, form1_value29, form1_value30,
                                             form1_value31, form1_value32, form1_value33, form1_value34].join("-");
 
@@ -1366,18 +1353,21 @@
                 var form1_value35 = $('#question35').find(':radio:checked').val();
                 var form1_value36 = document.getElementById("question36").value;
                 var form1_value37 = $('#question37').find(':radio:checked').val();
-//                var form1_value38 = $('#question38').find(':radio:checked').val();
-                detectPageArrValue([form1_value35, form1_value37]);
-                detectQuestion36(form1_value36);
-//                detectPageValue(form1_value35);
-//                detectPageValue(form1_value36);
-//                detectPageValue(form1_value37);
-//                detectPageValue(form1_value38);
-                result["basic_info"] = [form1_value35, form1_value36, form1_value37].join("-");
+
+
+                if(form1_value35 == undefined || form1_value37==undefined ||form1_value36==""){
+                    alert("您有选项未答或者年龄未填写");
+                    swiper.lockSwipes();
+                }else {
+                    result["basic_info"] = [form1_value35, form1_value36, form1_value37].join("-");
+                    swiper.unlockSwipes();
+                    sendResult(result);
+                    swiper.slideNext();
+                }
+
                 console.log(page_index);
                 console.log("result：");
                 console.log(result);
-                sendResult(result);
                 break;
 
 
@@ -1404,8 +1394,8 @@
     // 检测值是否为空，若空则不滑动提示
     function detectPageValue(page_value) {
         if(page_value == undefined){
-            swiper.lockSwipes();
-            alert("必须有选择项");
+//            swiper.lockSwipes();
+//            alert("必须有选择项");
         }else {
             swiper.unlockSwipes();
         }
@@ -1414,12 +1404,25 @@
     function detectPageArrValue(page_value_arr) {
         for(var i=0; i < page_value_arr.length; i++){
             if(page_value_arr[i] == undefined){
-                swiper.lockSwipes();
-                alert("您有遗漏的选择项");
+//                swiper.lockSwipes();
+//                alert("您有遗漏的题目未回答");
                 break;
             }else {
                 swiper.unlockSwipes();
             }
+        }
+    }
+
+    function detectPageArrValueLastPage(last_arr) {
+        if(last_arr[1] == ""){
+            swiper.lockSwipes();
+            alert("请填写年龄");
+        }else if (last_arr[0] == undefined || last_arr[2] == undefined){
+            swiper.lockSwipes();
+            alert("您有遗漏的题目未回答");
+        }else {
+            swiper.slideNext();
+
         }
     }
 
@@ -1429,6 +1432,7 @@
             alert("请填写您的年龄");
         }else {
             swiper.unlockSwipes();
+
         }
     }
 
