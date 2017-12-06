@@ -28,14 +28,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.54787236">
+    <splitter split-orientation="horizontal" split-proportion="0.49709147">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="index_drag_five.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="742">
-                  <caret line="1393" column="22" lean-forward="false" selection-start-line="1393" selection-start-column="22" selection-end-line="1393" selection-end-column="22" />
+                <state relative-caret-position="44520">
+                  <caret line="1556" column="5" lean-forward="true" selection-start-line="1556" selection-start-column="5" selection-end-line="1556" selection-end-column="5" />
                   <folding>
                     <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -72,8 +72,8 @@
                     <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#21;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#p#4;n#div#0;n#div#0;n#div#21;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <marker date="1512528647513" expanded="true" signature="68596:68606" ph="..." />
-                    <marker date="1512528647513" expanded="true" signature="68635:68645" ph="..." />
+                    <marker date="1512529349031" expanded="true" signature="68596:68606" ph="..." />
+                    <marker date="1512529349031" expanded="true" signature="68635:68645" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -177,13 +177,14 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index_drag_five_copy.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five_copy.html">
+          <file leaf-file-name="index_drag_five_bug.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five_bug.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="581">
-                  <caret line="1449" column="22" lean-forward="true" selection-start-line="1364" selection-start-column="12" selection-end-line="1449" selection-end-column="22" />
+                <state relative-caret-position="44557">
+                  <caret line="1621" column="0" lean-forward="false" selection-start-line="1621" selection-start-column="0" selection-end-line="1621" selection-end-column="0" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#17;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <marker date="1512527420783" expanded="true" signature="70059:70069" ph="..." />
                     <marker date="1512527420783" expanded="true" signature="70098:70108" ph="..." />
@@ -208,7 +209,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>2.j</find>
       <find>stop-swiping</find>
       <find>src</find>
       <find>valueDetect</find>
@@ -238,6 +238,7 @@
       <find>点击</find>
       <find>以下是一些陈述，请根据自身情况客观评价</find>
       <find>sort_price</find>
+      <find>form</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1054,11 +1055,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153845000" />
+    <option name="totallyTimeSpent" value="154616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1081,7 +1082,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.025246982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.421875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1417,12 +1418,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five_copy.html">
+    <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five_bug.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="1449" column="22" lean-forward="true" selection-start-line="1364" selection-start-column="12" selection-end-line="1449" selection-end-column="22" />
+        <state relative-caret-position="44557">
+          <caret line="1621" column="0" lean-forward="false" selection-start-line="1621" selection-start-column="0" selection-end-line="1621" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#17;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1512527420783" expanded="true" signature="70059:70069" ph="..." />
             <marker date="1512527420783" expanded="true" signature="70098:70108" ph="..." />
@@ -1432,8 +1434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="1393" column="22" lean-forward="false" selection-start-line="1393" selection-start-column="22" selection-end-line="1393" selection-end-column="22" />
+        <state relative-caret-position="44520">
+          <caret line="1556" column="5" lean-forward="true" selection-start-line="1556" selection-start-column="5" selection-end-line="1556" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1470,8 +1472,8 @@
             <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#21;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#4;n#div#0;n#div#0;n#div#21;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1512528647513" expanded="true" signature="68596:68606" ph="..." />
-            <marker date="1512528647513" expanded="true" signature="68635:68645" ph="..." />
+            <marker date="1512529349031" expanded="true" signature="68596:68606" ph="..." />
+            <marker date="1512529349031" expanded="true" signature="68635:68645" ph="..." />
           </folding>
         </state>
       </provider>

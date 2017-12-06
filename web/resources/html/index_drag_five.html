@@ -1436,28 +1436,7 @@
         }
     }
 
-    function detectPageArrValueLastPage(last_arr) {
-        if(last_arr[1] == ""){
-            swiper.lockSwipes();
-            alert("请填写年龄");
-        }else if (last_arr[0] == undefined || last_arr[2] == undefined){
-            swiper.lockSwipes();
-            alert("您有遗漏的题目未回答");
-        }else {
-            swiper.slideNext();
 
-        }
-    }
-
-    function detectQuestion36(value) {
-        if(value == ""){
-            swiper.lockSwipes();
-            alert("请填写您的年龄");
-        }else {
-            swiper.unlockSwipes();
-
-        }
-    }
 
     // 动态增加页面值
     function   dynamicAddPageValue(sort_value) {
@@ -1475,9 +1454,6 @@
                                 randomSortArr([  [sort_value[0], sort_price[0]], [sort_value[4], sort_price[1]], 4  ])
                             ];
         sort_value_distri = shuffleOrder(sort_value_distri);
-//        sort_value_distri.sort(function() {
-//            return (0.5-Math.random());
-//        });
 
         var sort_value_interval = [
             sort_value_distri[0][2], sort_value_distri[1][2], sort_value_distri[2][2]
