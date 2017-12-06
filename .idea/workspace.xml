@@ -34,8 +34,8 @@
           <file leaf-file-name="index_drag_five.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="282">
-                  <caret line="64" column="10" lean-forward="false" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+                <state relative-caret-position="742">
+                  <caret line="1162" column="10" lean-forward="false" selection-start-line="1162" selection-start-column="10" selection-end-line="1162" selection-end-column="10" />
                   <folding>
                     <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -144,12 +144,12 @@
           <file leaf-file-name="index_drag_five_copy.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five_copy.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="127" column="32" lean-forward="true" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+                <state relative-caret-position="627">
+                  <caret line="1220" column="10" lean-forward="true" selection-start-line="158" selection-start-column="4" selection-end-line="1220" selection-end-column="10" />
                   <folding>
                     <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <marker date="1512523816687" expanded="true" signature="70136:70146" ph="..." />
-                    <marker date="1512523816687" expanded="true" signature="70175:70185" ph="..." />
+                    <marker date="1512527420783" expanded="true" signature="70059:70069" ph="..." />
+                    <marker date="1512527420783" expanded="true" signature="70098:70108" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -242,6 +242,7 @@
         <option value="$PROJECT_DIR$/web/resources/html/index_teset.html" />
         <option value="$PROJECT_DIR$/web/resources/html/index_up_shake.html" />
         <option value="$PROJECT_DIR$/web/resources/example/example.css" />
+        <option value="$PROJECT_DIR$/web/resources/html/index_drag_five_copy.html" />
         <option value="$PROJECT_DIR$/web/resources/html/index_drag_five.html" />
       </list>
     </option>
@@ -1016,7 +1017,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152359000" />
+    <option name="totallyTimeSpent" value="152621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1288,7 +1289,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,20 +1382,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five_copy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="127" column="32" lean-forward="true" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+        <state relative-caret-position="627">
+          <caret line="1220" column="10" lean-forward="true" selection-start-line="158" selection-start-column="4" selection-end-line="1220" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1512523816687" expanded="true" signature="70136:70146" ph="..." />
-            <marker date="1512523816687" expanded="true" signature="70175:70185" ph="..." />
+            <marker date="1512527420783" expanded="true" signature="70059:70069" ph="..." />
+            <marker date="1512527420783" expanded="true" signature="70098:70108" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="64" column="10" lean-forward="false" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+        <state relative-caret-position="742">
+          <caret line="1162" column="10" lean-forward="false" selection-start-line="1162" selection-start-column="10" selection-end-line="1162" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
