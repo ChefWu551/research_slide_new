@@ -1009,7 +1009,7 @@
 
                         </tr>
 
-               
+
 
                     </table>
                     <!--</form>-->
@@ -1186,7 +1186,7 @@
     var sort_value = [];
     var sort_value_name = [];
     var sort_value_class = [];
-    var sort_price = ["价格：￥ 39.9", "价格：￥ 36.9"];
+    var sort_price = ["价格：<b style='color:#F00'>￥ 39.9</b>", "价格：<b style='color:#F00'>￥ 36.9</b>"];
 
     var prefer_result = [];
     var result = {};
@@ -1320,46 +1320,63 @@
                 var form1_value15 = $('#question15').find(':radio:checked').val();
                 var form1_value16 = $('#question16').find(':radio:checked').val();
                 var form1_value17 = $('#question17').find(':radio:checked').val();
-                var form1_value18 = $('#question18').find(':radio:checked').val();
-                var form1_value19 = $('#question19').find(':radio:checked').val();
-                var form1_value20 = $('#question20').find(':radio:checked').val();
-                detectPageArrValue([form1_value15, form1_value16, form1_value17, form1_value18, form1_value19, form1_value20]);
-
-                result['mood_measure_value'] = [form1_value15, form1_value16, form1_value17, form1_value18, form1_value19, form1_value20].join("-");
+                detectPageArrValue([form1_value15, form1_value16, form1_value17]);
+                result['mood_measure_value'] = [form1_value15, form1_value16, form1_value17];
                 break;
 
             case 14:
-                var form1_value21 = $('#question21').find(':radio:checked').val();
-                var form1_value22 = $('#question22').find(':radio:checked').val();
-                var form1_value23 = $('#question23').find(':radio:checked').val();
-                var form1_value24 = $('#question24').find(':radio:checked').val();
-                var form1_value25 = $('#question25').find(':radio:checked').val();
-                var form1_value26 = $('#question26').find(':radio:checked').val();
-                detectPageArrValue([form1_value21, form1_value22, form1_value23, form1_value24, form1_value25, form1_value26]);
-
-                result['price_sensitivity_value'] = [form1_value21, form1_value22, form1_value23, form1_value24, form1_value25, form1_value26].join("-");
+                console.log(page_index);
+                var form1_value18 = $('#question18').find(':radio:checked').val();
+                var form1_value19 = $('#question19').find(':radio:checked').val();
+                var form1_value20 = $('#question20').find(':radio:checked').val();
+                detectPageArrValue([form1_value18, form1_value19, form1_value20]);
+                result['mood_measure_value'].push(form1_value18, form1_value19, form1_value20);
+                result['mood_measure_value'] = result['mood_measure_value'].join("-");
                 break;
 
             case 15:
+                console.log(page_index);
+                var form1_value21 = $('#question21').find(':radio:checked').val();
+                var form1_value22 = $('#question22').find(':radio:checked').val();
+                var form1_value23 = $('#question23').find(':radio:checked').val();
+
+                detectPageArrValue([form1_value21, form1_value22, form1_value23]);
+                result['price_sensitivity_value'] = [form1_value21, form1_value22, form1_value23];
+                break;
+            case 16:
+                console.log(page_index);
+
+                var form1_value24 = $('#question24').find(':radio:checked').val();
+                var form1_value25 = $('#question25').find(':radio:checked').val();
+                var form1_value26 = $('#question26').find(':radio:checked').val();
+                detectPageArrValue([form1_value24, form1_value25, form1_value26]);
+                result['price_sensitivity_value'].push(form1_value24, form1_value25, form1_value26);
+                result['price_sensitivity_value'] = result['price_sensitivity_value'].join("-");
+                break;
+
+            case 17:
                 var form1_value27 = $('#question27').find(':radio:checked').val();
                 var form1_value28 = $('#question28').find(':radio:checked').val();
                 var form1_value29 = $('#question29').find(':radio:checked').val();
                 var form1_value30 = $('#question30').find(':radio:checked').val();
+                detectPageArrValue([form1_value27, form1_value28, form1_value29, form1_value30]);
+                result['self_confidence'] = [form1_value27, form1_value28, form1_value29, form1_value30];
+                break;
+
+            case 18:
                 var form1_value31 = $('#question31').find(':radio:checked').val();
                 var form1_value32 = $('#question32').find(':radio:checked').val();
                 var form1_value33 = $('#question33').find(':radio:checked').val();
                 var form1_value34 = $('#question34').find(':radio:checked').val();
-                detectPageArrValue([form1_value27, form1_value28, form1_value29, form1_value30,
-                    form1_value31, form1_value32, form1_value33, form1_value34]);
-                result['self_confidence'] = [form1_value27, form1_value28, form1_value29, form1_value30,
-                                            form1_value31, form1_value32, form1_value33, form1_value34].join("-");
-
+                detectPageArrValue([form1_value31, form1_value32, form1_value33, form1_value34]);
+                result['self_confidence'].push(form1_value31, form1_value32, form1_value33, form1_value34);
+                result['self_confidence'] = result['self_confidence'].join("-");
                 break;
-            case 16:
+
+            case 19:
                 var form1_value35 = $('#question35').find(':radio:checked').val();
                 var form1_value36 = document.getElementById("question36").value;
                 var form1_value37 = $('#question37').find(':radio:checked').val();
-
 
                 if(form1_value35 == undefined || form1_value37==undefined ||form1_value36==""){
                     alert("您有选项未答或者年龄未填写");
@@ -1373,7 +1390,6 @@
                     sendResult(result);
                     swiper.slideNext();
                 }
-
 
                 break;
 

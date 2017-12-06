@@ -34,8 +34,8 @@
           <file leaf-file-name="index_drag_five.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-488">
-                  <caret line="1011" column="15" lean-forward="false" selection-start-line="1011" selection-start-column="15" selection-end-line="1011" selection-end-column="15" />
+                <state relative-caret-position="742">
+                  <caret line="1393" column="22" lean-forward="false" selection-start-line="1393" selection-start-column="22" selection-end-line="1393" selection-end-column="22" />
                   <folding>
                     <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -72,6 +72,8 @@
                     <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#21;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#p#4;n#div#0;n#div#0;n#div#21;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <marker date="1512528647513" expanded="true" signature="68596:68606" ph="..." />
+                    <marker date="1512528647513" expanded="true" signature="68635:68645" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -178,8 +180,8 @@
           <file leaf-file-name="index_drag_five_copy.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five_copy.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-79">
-                  <caret line="882" column="20" lean-forward="false" selection-start-line="882" selection-start-column="20" selection-end-line="882" selection-end-column="20" />
+                <state relative-caret-position="581">
+                  <caret line="1449" column="22" lean-forward="true" selection-start-line="1364" selection-start-column="12" selection-end-line="1449" selection-end-column="22" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#17;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -206,7 +208,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>question1</find>
       <find>2.j</find>
       <find>stop-swiping</find>
       <find>src</find>
@@ -236,6 +237,7 @@
       <find>swiper-bo</find>
       <find>点击</find>
       <find>以下是一些陈述，请根据自身情况客观评价</find>
+      <find>sort_price</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1052,7 +1054,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153653000" />
+    <option name="totallyTimeSpent" value="153845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1417,8 +1419,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five_copy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="882" column="20" lean-forward="false" selection-start-line="882" selection-start-column="20" selection-end-line="882" selection-end-column="20" />
+        <state relative-caret-position="581">
+          <caret line="1449" column="22" lean-forward="true" selection-start-line="1364" selection-start-column="12" selection-end-line="1449" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#17;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1430,8 +1432,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag_five.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-488">
-          <caret line="1011" column="15" lean-forward="false" selection-start-line="1011" selection-start-column="15" selection-end-line="1011" selection-end-column="15" />
+        <state relative-caret-position="742">
+          <caret line="1393" column="22" lean-forward="false" selection-start-line="1393" selection-start-column="22" selection-end-line="1393" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1468,6 +1470,8 @@
             <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#21;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#4;n#div#0;n#div#0;n#div#21;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1512528647513" expanded="true" signature="68596:68606" ph="..." />
+            <marker date="1512528647513" expanded="true" signature="68635:68645" ph="..." />
           </folding>
         </state>
       </provider>
