@@ -81,7 +81,7 @@
             padding-right: 5%;
             padding-left: 7%;
 
-            
+
         }
 
         td {
@@ -1188,6 +1188,18 @@
     var sort_value_name = [];
     var sort_value_class = [];
     var sort_price = ["价格：<b style='color:#F00'>￥ 39.9</b>", "价格：<b style='color:#F00'>￥ 36.9</b>"];
+    var sort_price_1 = ["价格：<b style='color:#F00'>￥ 39.9</b>", "价格：<b style='color:#F00'>￥ 36.9</b>"];
+    var sort_price_2 = ["价格：<b style='color:#F00'>￥ 38.8</b>", "价格：<b style='color:#F00'>￥ 35.8</b>"];
+    var sort_price_3 = ["价格：<b style='color:#F00'>￥ 37.3</b>", "价格：<b style='color:#F00'>￥ 34.3</b>"];
+    var sort_price_4 = ["价格：<b style='color:#F00'>￥ 36.7</b>", "价格：<b style='color:#F00'>￥ 33.7</b>"];
+    var sort_price_5 = ["价格：<b style='color:#F00'>￥ 34.6</b>", "价格：<b style='color:#F00'>￥ 31.6</b>"];
+    var sort_price_6 = ["价格：<b style='color:#F00'>￥ 38.2</b>", "价格：<b style='color:#F00'>￥ 35.2</b>"];
+    var sort_price_7 = ["价格：<b style='color:#F00'>￥ 35.6</b>", "价格：<b style='color:#F00'>￥ 32.6</b>"];
+    var sort_price_8 = ["价格：<b style='color:#F00'>￥ 37.5</b>", "价格：<b style='color:#F00'>￥ 34.5</b>"];
+    var sort_price_9 = ["价格：<b style='color:#F00'>￥ 38.7</b>", "价格：<b style='color:#F00'>￥ 35.7</b>"];
+    var sort_price_10 = ["价格：<b style='color:#F00'>￥ 36.6</b>", "价格：<b style='color:#F00'>￥ 33.6</b>"];
+
+
 
     var prefer_result = [];
     var result = {};
@@ -1443,16 +1455,16 @@
     function   dynamicAddPageValue(sort_value) {
 
         var sort_value_distri = [
-                                randomSortArr([  [sort_value[0], sort_price[0]], [sort_value[1], sort_price[1]], 1  ]),
-                                randomSortArr([  [sort_value[1], sort_price[0]], [sort_value[2], sort_price[1]], 1  ]),
-                                randomSortArr([  [sort_value[2], sort_price[0]], [sort_value[3], sort_price[1]], 1  ]),
-                                randomSortArr([  [sort_value[3], sort_price[0]], [sort_value[4], sort_price[1]], 1  ]),
-                                randomSortArr([  [sort_value[0], sort_price[0]], [sort_value[2], sort_price[1]], 2  ]),
-                                randomSortArr([  [sort_value[1], sort_price[0]], [sort_value[3], sort_price[1]], 2  ]),
-                                randomSortArr([  [sort_value[2], sort_price[0]], [sort_value[4], sort_price[1]], 2  ]),
-                                randomSortArr([  [sort_value[0], sort_price[0]], [sort_value[3], sort_price[1]], 3  ]),
-                                randomSortArr([  [sort_value[1], sort_price[0]], [sort_value[4], sort_price[1]], 3  ]),
-                                randomSortArr([  [sort_value[0], sort_price[0]], [sort_value[4], sort_price[1]], 4  ])
+                                randomSortArr([  [sort_value[0], sort_price_1[0]], [sort_value[1], sort_price_1[1]], 1  ]),
+                                randomSortArr([  [sort_value[1], sort_price_2[0]], [sort_value[2], sort_price_2[1]], 1  ]),
+                                randomSortArr([  [sort_value[2], sort_price_3[0]], [sort_value[3], sort_price_3[1]], 1  ]),
+                                randomSortArr([  [sort_value[3], sort_price_4[0]], [sort_value[4], sort_price_4[1]], 1  ]),
+                                randomSortArr([  [sort_value[0], sort_price_5[0]], [sort_value[2], sort_price_5[1]], 2  ]),
+                                randomSortArr([  [sort_value[1], sort_price_6[0]], [sort_value[3], sort_price_6[1]], 2  ]),
+                                randomSortArr([  [sort_value[2], sort_price_7[0]], [sort_value[4], sort_price_7[1]], 2  ]),
+                                randomSortArr([  [sort_value[0], sort_price_8[0]], [sort_value[3], sort_price_8[1]], 3  ]),
+                                randomSortArr([  [sort_value[1], sort_price_9[0]], [sort_value[4], sort_price_9[1]], 3  ]),
+                                randomSortArr([  [sort_value[0], sort_price_10[0]], [sort_value[4], sort_price_10[1]], 4  ])
                             ];
         sort_value_distri = shuffleOrder(sort_value_distri);
 
