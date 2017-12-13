@@ -136,11 +136,11 @@
 
                         <div id='left-defaults' class='container' style="width: 50%; height: 25%;">
 
-                            <div class="kkk"><img class="image0" src='http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img0.PNG'  width="80%" height="80%"></div>
-                            <div class="kkk"><img class="image1" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img1.PNG" width="80%" height="80%"></div>
-                            <div class="kkk"><img class="image2" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img2.PNG"  width="80%" height="80%"></div>
-                            <div class="kkk"><img class="image3" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img3.PNG"   width="80%" height="80%"></div>
-                            <div class="kkk"><img class="image4" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img4.PNG"   width="80%" height="80%"></div>
+                            <div class="kkk"><img class="img0" src='http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img0.PNG'  width="80%" height="80%"></div>
+                            <div class="kkk"><img class="img1" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img1.PNG" width="80%" height="80%"></div>
+                            <div class="kkk"><img class="img2" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img2.PNG"  width="80%" height="80%"></div>
+                            <div class="kkk"><img class="img3" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img3.PNG"   width="80%" height="80%"></div>
+                            <div class="kkk"><img class="img4" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img4.PNG"   width="80%" height="80%"></div>
                         </div>
                         <div id='right-defaults' class='container'  style="width: 50%; height: 25%;">
                         </div>
@@ -1070,6 +1070,7 @@
     var sort_value = [];
     var sort_value_name = [];
     var sort_value_class = [];
+    var high_or_low = [];
     var sort_price_1 = ["价格：<b style='color:#F00'>￥ 39.9</b>", "价格：<b style='color:#F00'>￥ 36.9</b>"];
     var sort_price_2 = ["价格：<b style='color:#F00'>￥ 38.8</b>", "价格：<b style='color:#F00'>￥ 35.8</b>"];
     var sort_price_3 = ["价格：<b style='color:#F00'>￥ 37.3</b>", "价格：<b style='color:#F00'>￥ 34.3</b>"];
@@ -1081,8 +1082,6 @@
     var sort_price_9 = ["价格：<b style='color:#F00'>￥ 38.7</b>", "价格：<b style='color:#F00'>￥ 35.7</b>"];
     var sort_price_10 = ["价格：<b style='color:#F00'>￥ 36.6</b>", "价格：<b style='color:#F00'>￥ 33.6</b>"];
 
-
-
     var prefer_result = [];
     var result = {};
     var swiper = new Swiper('.swiper-container', {
@@ -1093,7 +1092,6 @@
         allowSwipeToPrev: false,
         onlyExternal:true,
         nextButton:'.swiper-button-next',
-
 
         // 拖拽触发函数
         onSlideChangeStart: function (swiper) {
@@ -1144,61 +1142,128 @@
             case 2:
                 var form1_value1 = $('.question1').find(':radio:checked').val();
                 detectPageValue(form1_value1);
-                prefer_result.push(form1_value1);
+                if(form1_value1 != undefined){
+                    prefer_result.push(form1_value1);
+                }
                 break;
 
             case 3:
                 var form1_value2 = $('.question2').find(':radio:checked').val();
                 detectPageValue(form1_value2);
-                prefer_result.push(form1_value2);
+                if(form1_value2 != undefined){
+                    prefer_result.push(form1_value2);
+                }
                 break;
 
             case 4:
                 var form1_value3 = $('.question3').find(':radio:checked').val();
                 detectPageValue(form1_value3);
-                prefer_result.push(form1_value3);
+                if(form1_value3 != undefined){
+                    prefer_result.push(form1_value3);
+                }
                 break;
 
             case 5:
                 var form1_value4 = $('.question4').find(':radio:checked').val();
                 detectPageValue(form1_value4);
-                prefer_result.push(form1_value4);
+                if(form1_value4 != undefined){
+                    prefer_result.push(form1_value4);
+                }
                 break;
 
             case 6:
                 var form1_value5 = $('.question5').find(':radio:checked').val();
                 detectPageValue(form1_value5);
-                prefer_result.push(form1_value5);
+                if(form1_value5 != undefined){
+                    prefer_result.push(form1_value5);
+                }
                 break;
 
             case 7:
                 var form1_value6 = $('.question6').find(':radio:checked').val();
                 detectPageValue(form1_value6);
-                prefer_result.push(form1_value6);
+                if(form1_value6 != undefined){
+                    prefer_result.push(form1_value6);
+                }
                 break;
 
             case 8:
                 var form1_value7 = $('.question7').find(':radio:checked').val();
                 detectPageValue(form1_value7);
-                prefer_result.push(form1_value7);
+                if(form1_value7 != undefined){
+                    prefer_result.push(form1_value7);
+                }
                 break;
             case 9:
                 var form1_value8 = $('.question8').find(':radio:checked').val();
                 detectPageValue(form1_value8);
-                prefer_result.push(form1_value8);
+                if(form1_value8 != undefined){
+                    prefer_result.push(form1_value8);
+                }
                 break;
 
             case 10:
                 var form1_value9 = $('.question9').find(':radio:checked').val();
                 detectPageValue(form1_value9);
-                prefer_result.push(form1_value9);
+                if(form1_value9 != undefined){
+                    prefer_result.push(form1_value9);
+                }
                 break;
 
             case 11:
                 var form1_value10 = $('.question10').find(':radio:checked').val();
                 detectPageValue(form1_value10);
-                prefer_result.push(form1_value10);
-                result['prefer_result'] = prefer_result.join("-");
+                if(form1_value10 != undefined){
+                    prefer_result.push(form1_value10);
+                    // sort_value_class 五个排序顺序
+                    // sort_value_name 十个前后排序
+                    console.log("sort_value_name");
+                    console.log(sort_value_name);
+                    console.log("prefer_result");
+                    console.log(prefer_result);
+                    for(var i=0; i < prefer_result.length; i++){
+                        var temp_sort_value_name = sort_value_name[i].split("-");
+                        console.log("temp_sort_value_name");
+                        console.log(temp_sort_value_name);
+
+                        var temp_sort_value_name_1 = getArrIndex(sort_value_class, temp_sort_value_name[0]);
+                        var temp_sort_value_name_2 = getArrIndex(sort_value_class, temp_sort_value_name[1]);
+                        if(prefer_result[i] == 0){
+                            //选择了前者
+                            if(temp_sort_value_name_1 > temp_sort_value_name_2){
+                                // 前者价格更高
+                                high_or_low.push("0");
+                                console.log("选择了前者 前者价格更低");
+                                console.log(temp_sort_value_name_1 + "===" + temp_sort_value_name_2);
+                            }else {
+                                high_or_low.push("1");
+                                console.log("选择了前者 前者价格更高");
+                                console.log(temp_sort_value_name_1 + "===" + temp_sort_value_name_2);
+                            }
+
+                        }else if(prefer_result[i] == 1){
+                            // 选择了后者
+                            if(temp_sort_value_name_1 > temp_sort_value_name_2){
+                                //前者价格更高
+                                high_or_low.push("1");
+                                console.log("选择了后者 后者价格更高");
+                                console.log(temp_sort_value_name_1 + "===" + temp_sort_value_name_2);
+                            }else {
+                                high_or_low.push("0");
+                                console.log("选择了后者 后者价格更低");
+                                console.log(temp_sort_value_name_1 + "===" + temp_sort_value_name_2);
+                            }
+                        }else {
+                            console.log("arr bound is out");
+                            console.log(prefer_result[i]);
+                        }
+                    }
+                    console.log("high_or_low");
+                    console.log(high_or_low);
+                    // result['high_or_low'] = high_or_low.join("-");
+                    result['prefer_result'] = high_or_low.join("-");
+                }
+
                 break;
 
             case 12:
@@ -1252,6 +1317,7 @@
                     swiper.lockSwipes();
                 }else {
                     result["basic_info"] = [form1_value35, form1_value36, form1_value37].join("-");
+                    result["type"] = "price different pc";
                     console.log(page_index);
                     console.log("result：");
                     console.log(result);
@@ -1265,6 +1331,16 @@
 
         }
 
+    }
+    // 获取数组的索引
+    function getArrIndex(arr, word) {
+        for(var i=0; i<arr.length; i++){
+            if(arr[i] == word){
+                console.log("index is : " + i);
+                return i;
+
+            }
+        }
     }
 
     // 发送结果 research_slide_drag_five
@@ -1330,6 +1406,7 @@
             , sort_value_distri[6][2], sort_value_distri[7][2], sort_value_distri[8][2], sort_value_distri[9][2]
         ];
         result["sort_value_interval"] = sort_value_interval.join("-");
+
 
         // 提取图片排序的顺序
         for(var i =0; i<sort_value_distri.length; i++){
