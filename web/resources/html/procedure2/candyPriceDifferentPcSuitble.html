@@ -50,13 +50,17 @@
             -webkit-align-items: center;
             align-items: center;
         }
+        .page_content{
+            width: 80%;
+            height: 80%;
+        }
 
 
         .question{
             /*width: 90%;*/
 
             height: 100%;
-            font-size: 20px;
+            font-size: 15px;
             margin: auto;
             border-spacing:0;
             border-left:1px solid #888;
@@ -66,11 +70,11 @@
             /*rules:all;*/
         }
 
-        /*.question img{*/
-            /*width: 100%;*/
-            /*!*height: 60%;*!*/
-            /*padding: 0;*/
-        /*}*/
+        .question img{
+            width: 100%;
+            /*height: 60%;*/
+            padding: 0;
+        }
 
         p{
             font-size: 20px;
@@ -83,8 +87,8 @@
             vertical-align:middle;
         }
 
-        input{
-            transform: scale(2,2);
+        table{
+            width: 90%;
         }
 
 
@@ -132,11 +136,11 @@
 
                         <div id='left-defaults' class='container' style="width: 50%; height: 25%;">
 
-                            <div class="kkk"><img class="img0" src='http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img0.PNG'  width="80%" height="80%"></div>
-                            <div class="kkk"><img class="img1" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img1.PNG" width="80%" height="80%"></div>
-                            <div class="kkk"><img class="img2" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img2.PNG"  width="80%" height="80%"></div>
-                            <div class="kkk"><img class="img3" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img3.PNG"   width="80%" height="80%"></div>
-                            <div class="kkk"><img class="img4" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img4.PNG"   width="80%" height="80%"></div>
+                            <div class="kkk"><img class="img0" src='http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img0.PNG'  width="50%" height="80%"></div>
+                            <div class="kkk"><img class="img1" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img1.PNG" width="50%" height="80%"></div>
+                            <div class="kkk"><img class="img2" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img2.PNG"  width="50%" height="80%"></div>
+                            <div class="kkk"><img class="img3" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img3.PNG"   width="50%" height="80%"></div>
+                            <div class="kkk"><img class="img4" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/img4.PNG"   width="50%" height="80%"></div>
                         </div>
                         <div id='right-defaults' class='container'  style="width: 50%; height: 25%;">
                         </div>
@@ -151,7 +155,7 @@
 
                 <form class="question1" >
                     <p>请阅读以下提供的两种糖果的信息，你会购买哪一款，请选择。<p>
-                    <table class="question" border="1px">
+                    <table class="question" border="1px" >
                         <tr>
                             <td id="first_page_content1"></td>
                             <td id="first_page_content2"></td>
@@ -626,7 +630,7 @@
         <div class="swiper-slide">
             <div>
                 <p>以下是一些陈述，请根据自身情况客观评价</p>
-                <table class="question"  border="1px">
+                <table class="question"  border="1px" style="width: 600px">
                     <tr>
                         <td>序号</td>
                         <td>描述</td>
@@ -640,7 +644,7 @@
                     </tr>
                     <tr id="question11">
                         <td>1</td>
-                        <td style="text-align:left">在完成实验任务中，我的专注度非常高</td>
+                        <td>在完成实验任务中，我的专注度非常高</td>
                         <td><label for="question11_value1"></label><input type="radio" name="question11" value="1"  id="question11_value1"></td>
                         <td><label for="question11_value2"></label><input type="radio" name="question11" value="2"  id="question11_value2"></td>
                         <td><label for="question11_value3"></label><input type="radio" name="question11" value="3"  id="question11_value3"></td>
@@ -653,7 +657,7 @@
 
                     <tr  id="question12">
                         <td>2</td>
-                        <td style="text-align:left">完成这个研究，我花费了很多努力。</td>
+                        <td>完成这个研究，我花费了很多努力。</td>
                         <td><label for="question12_value1"></label><input type="radio" name="question12" value="1"  id="question12_value1"></td>
                         <td><label for="question12_value2"></label><input type="radio" name="question12" value="2"  id="question12_value2"></td>
                         <td><label for="question12_value3"></label><input type="radio" name="question12" value="3"  id="question12_value3"></td>
@@ -665,7 +669,7 @@
 
                     <tr id="question13">
                         <td>3</td>
-                        <td style="text-align:left">完成这个研究，我的参与度很高。</td>
+                        <td>完成这个研究，我的参与度很高。</td>
                         <td><label for="question13_value1"></label><input type="radio" name="question13" value="1"  id="question13_value1"></td>
                         <td><label for="question13_value2"></label><input type="radio" name="question13" value="2"  id="question13_value2"></td>
                         <td><label for="question13_value3"></label><input type="radio" name="question13" value="3"  id="question13_value3"></td>
@@ -677,7 +681,7 @@
 
                     <tr id="question14">
                         <td>4</td>
-                        <td style="text-align:left">我认为这个研究有趣。</td>
+                        <td>我认为这个研究有趣。</td>
                         <td><label for="question14_value1"></label><input type="radio" name="question14" value="1"  id="question14_value1"></td>
                         <td><label for="question14_value2"></label><input type="radio" name="question14" value="2"  id="question14_value2"></td>
                         <td><label for="question14_value3"></label><input type="radio" name="question14" value="3"  id="question14_value3"></td>
@@ -776,7 +780,7 @@
             <div  style="margin-top: 10px" >
                 <p>以下是一些陈述，请根据自身情况进行评价<p>
                 <!--<form class="question11">-->
-                <table class="question"  border="1px">
+                <table class="question"  border="1px" style="width: 0%">
                     <tr>
                         <td>序号</td>
                         <td>陈述内容</td>
@@ -977,12 +981,12 @@
                 <p id="question35"> 性别：<input type="radio" name="question35" value="0"  id="question35_value1"/><label for="question35_value1">女</label>
                     &nbsp;&nbsp;
                     <input type="radio" name="question35" value="1"  id="question35_value2"/><label for="question35_value2">男</label></p>
-                <p><label>年龄：<input type="text"  id="question36" style="width: 150px;height: 15px;border-color: #878787;
+                <p><label>年龄：</label><input type="text"  id="question36" style="width: 150px;height: 15px;border-color: #878787;
                                                 border-style: solid;
                                                 border-top-width: 0px;
                                                  border-right-width: 0px;
                                                 border-bottom-width: 1px;
-                                                 border-left-width: 0px;background: white;"></label></p>
+                                                 border-left-width: 0px;background: white;"></p>
                 <p>学历：</p>
                 <div style="margin-left: 8%;"  class="question_last_page" id="question37">
                     <p style="font-size: 13px;margin-top:10px">
@@ -1001,30 +1005,6 @@
                         <input type="radio" name="question37" value="4"  id="question37_value5"><label for="question37_value5">其他</label>
                     </p>
                 </div>
-
-                <!--<p>月均消费：</p>-->
-                <!--<div style="margin-left: 8%;" class="question_last_page"  id="question38">-->
-                <!--<p style="font-size: 13px" >-->
-                <!--<input type="radio" name="question38" value="1"  id="question38_value1"><label for="question38_value1">1000元及以下</label>-->
-                <!--</p>-->
-                <!--<p style="font-size: 13px">-->
-                <!--<input type="radio" name="question38" value="2"  id="question38_value2"><label for="question38_value2">1001-2000元</label>-->
-                <!--</p>-->
-                <!--<p style="font-size: 13px">-->
-                <!--<input type="radio" name="question38" value="3"  id="question38_value3"><label for="question38_value3">2001-3000元</label>-->
-                <!--</p>-->
-                <!--<p style="font-size: 13px">-->
-                <!--<input type="radio" name="question38" value="4"  id="question38_value4"><label for="question38_value4">3001-4000元</label>-->
-                <!--</p>-->
-                <!--<p style="font-size: 13px">-->
-                <!--<input type="radio" name="question38" value="5"  id="question38_value5"><label for="question38_value5">4001-5000元</label>-->
-                <!--</p>-->
-                <!--<p style="font-size: 13px">-->
-                <!--<input type="radio" name="question38" value="6"  id="question38_value6"><label for="question38_value6">5000元以上</label>-->
-                <!--</p>-->
-                <!--</div>-->
-
-
             </div>
         </div>
 
@@ -1309,8 +1289,8 @@
                 var form1_value37 = $('#question37').find(':radio:checked').val();
 
                 if(form1_value35 == undefined || form1_value37==undefined ||form1_value36==""){
-                    alert("您有选项未答或者年龄未填写");
-                    swiper.lockSwipes();
+//                    alert("您有选项未答或者年龄未填写");
+//                    swiper.lockSwipes();
                 }else {
                     result["basic_info"] = [form1_value35, form1_value36, form1_value37].join("-");
                     result["type"] = "price different pc";
