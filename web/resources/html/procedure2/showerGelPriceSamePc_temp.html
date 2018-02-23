@@ -1,0 +1,1470 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>消费者产品选择行为研究</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>-->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../../js/swiper.min_up.css">
+    <link href='../../dist/dragula.css' rel='stylesheet' type='text/css' />
+    <link href='../../example/example_shower_gel.css' rel='stylesheet' type='text/css' />
+
+    <!-- Demo styles -->
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: 宋体;
+            font-size: 20px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .swiper-slide {
+            text-align: left;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .page_content{
+            width: 80%;
+            height: 80%;
+        }
+
+
+        .question{
+            /*width: 90%;*/
+
+            height: 100%;
+            font-size: 17px;
+            margin: auto;
+            border-spacing:0;
+            border-left:1px solid #888;
+            border-top:1px solid #888;
+            /*text-decoration: none;*/
+
+            /*rules:all;*/
+        }
+
+        .question img{
+            width: 20%;
+            /*height: 60%;*/
+            padding: 0;
+        }
+
+        p{
+            font-size: 17px;
+            /*padding-right: 5%;*/
+            /*padding-left: 7%;*/
+        }
+
+        td {
+            text-align:center; /*设置水平居中*/
+            vertical-align:middle;
+        }
+
+        table{
+            width: 90%;
+        }
+
+        .kkk{
+            display:block;
+            float: left;
+            width: 100px;
+            height: 180px;
+            /*margin:auto;*/
+            padding-left:20px;
+            /*padding-right: 20px;*/
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="examples">
+                <div class="parent">
+                    <label>&nbsp;&nbsp;您好！我们正在进行一次调查，了解消费者的购物行为。请仔细阅读内容，根据第一反应进行回答。您的回答无对错之分，数据仅供学术研究之用，不会单独披露，也不会用做商业用途，请放心填答。衷心感谢您的参与和支持！</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="examples">
+                <div class="parent">
+                    <label>&nbsp;&nbsp;接下来将进入正式实验，请您全身心认真阅读所有材料，避免周围环境的干扰。如果中断请重新打开链接填写问卷。</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div style="padding-right: 8%;padding-left: 5%;">
+                <!--<div class="parent">-->
+                <label style="font-size: 20px">&nbsp;&nbsp;请想象下，近期你的沐浴露用完了，你打算重新购买一瓶。刚好，近期一家大型日化用品公司推出了一款新的沐浴露，你被它的广告吸引了。该沐浴露共有5种香味。请你根据自己的偏好对这5款沐浴露进行1到5的排序。请直接将左边的图片拖拽到右边的方框中并进行排序。排序越靠近上面，表示越喜欢该款沐浴露，排序越靠近下面，表示越不喜欢该款沐浴露。（即排序第一表示“最喜欢”，排序第五表示“最不喜欢”）</label>
+                <br>
+                <br>
+                <label>五种气味：甘甜杏仁味、自然椰香味，清新茉莉味，蜜香柑橘味，果萃西柚味</label>
+
+            </div>
+            <!--</div>-->
+        </div>
+
+        <div class="swiper-slide">
+            <div >
+                <div class="parent" style="margin-top: 10px" >
+                    <p >请将左边的图片拖拽到右边的方框中，并根据偏好排序。排序越靠近上面表示越喜欢，越靠近下面表示越不喜欢。</p>
+
+                    <div class='wrapper'>
+
+                        <div id='left-defaults' class='container1' style="width: 100%; height: 180px;">
+
+                            <div class="kkk"><img class="img0" src='http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/showerGel_1.PNG'  width="60%"></div>
+                            <div class="kkk"><img class="img1" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/showerGel_2.PNG" width="55%"></div>
+                            <div class="kkk"><img class="img2" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/showerGel_3.PNG"  width="53%"></div>
+                            <div class="kkk"><img class="img3" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/showerGel_4.PNG"   width="50%"></div>
+                            <div class="kkk"><img class="img4" src="http://research-image.oss-cn-shanghai.aliyuncs.com/researchDrag/showerGel_5.PNG"   width="50%"></div>
+                        </div>
+
+                        <div id='right-defaults' class='container2'  style="width: 100%; height: 180px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="swiper-slide">
+            <div >
+
+                <form class="question1" >
+                    <p>请阅读以下提供的两种糖果的信息，你会购买哪一款，请选择。<p>
+                    <table class="question" border="1px" >
+                        <tr>
+                            <td id="first_page_content1"></td>
+                            <td id="first_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="first_page_value1"></td>
+                            <td id="first_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_name">名称：FClea</td>
+                            <td class="first_page_name">名称：FClea</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_location">产地：德国</td>
+                            <td class="first_page_location">产地：德国</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_weight">规格：250ml</td>
+                            <td class="first_page_weight">规格：250ml</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                        </tr>
+
+                        <tr>
+                            <td id="first_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="first_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div>
+                <p >请阅读以下提供的两种糖果的信息，你会购买哪一款，请选择。<p>
+                <form class="question2">
+                    <table class="question"  border="1px">
+                        <tr>
+                            <td id="second_page_content1"></td>
+                            <td id="second_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="second_page_value1"></td>
+                            <td id="second_page_value2"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_name">名称：FClea</td>
+                            <td class="first_page_name">名称：FClea</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_location">产地：德国</td>
+                            <td class="first_page_location">产地：德国</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_weight">规格：250ml</td>
+                            <td class="first_page_weight">规格：250ml</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                        </tr>
+
+                        <tr>
+                            <td id="second_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="second_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div>
+                <p >请阅读以下提供的两种糖果的信息，你会购买哪一款，请选择。<p>
+                <form class="question3">
+                    <table class="question"  border="1px">
+                        <tr>
+                            <td id="third_page_content1"></td>
+                            <td id="third_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="third_page_value1"></td>
+                            <td id="third_page_value2"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_name">名称：FClea</td>
+                            <td class="first_page_name">名称：FClea</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_location">产地：德国</td>
+                            <td class="first_page_location">产地：德国</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_weight">规格：250ml</td>
+                            <td class="first_page_weight">规格：250ml</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                        </tr>
+                        <tr>
+                            <td id="third_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="third_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div>
+                <p>请阅读以下提供的两种糖果的信息，你会购买哪一款，请选择。<p>
+                <form class="question4">
+                    <table  class="question"  border="1px">
+                        <tr>
+                            <td id="fourth_page_content1"></td>
+                            <td id="fourth_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="fourth_page_value1"></td>
+                            <td id="fourth_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_name">名称：FClea</td>
+                            <td class="first_page_name">名称：FClea</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_location">产地：德国</td>
+                            <td class="first_page_location">产地：德国</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_weight">规格：250ml</td>
+                            <td class="first_page_weight">规格：250ml</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                        </tr>
+                        <tr>
+                            <td id="fourth_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="fourth_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="swiper-slide">
+            <div>
+                <p>请阅读以下提供的两种糖果的信息，你会购买哪一款，请选择。<p>
+                <form class="question5">
+                    <table  class="question"  border="1px">
+                        <tr>
+                            <td id="fifth_page_content1"></td>
+                            <td id="fifth_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="fifth_page_value1"></td>
+                            <td id="fifth_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_name">名称：FClea</td>
+                            <td class="first_page_name">名称：FClea</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_location">产地：德国</td>
+                            <td class="first_page_location">产地：德国</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_weight">规格：250ml</td>
+                            <td class="first_page_weight">规格：250ml</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                        </tr>
+                        <tr>
+                            <td id="fifth_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="fifth_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div>
+                <p>请阅读以下提供的两种糖果的信息，你会购买哪一款，请选择。<p>
+                <form class="question6">
+                    <table  class="question"  border="1px">
+                        <tr>
+                            <td id="sixth_page_content1"></td>
+                            <td id="sixth_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="sixth_page_value1"></td>
+                            <td id="sixth_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_name">名称：FClea</td>
+                            <td class="first_page_name">名称：FClea</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_location">产地：德国</td>
+                            <td class="first_page_location">产地：德国</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_weight">规格：250ml</td>
+                            <td class="first_page_weight">规格：250ml</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                        </tr>
+                        <tr>
+                            <td id="sixth_page_label1"><label><input type="radio" name="gender" value="0" ></label></td>
+                            <td id="sixth_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div>
+                <p>请阅读以下提供的两种糖果的信息，你会购买哪一款，请选择。<p>
+                <form class="question7">
+                    <table border="1px"  class="question" >
+                        <tr>
+                            <td id="seven_page_content1"></td>
+                            <td id="seven_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="seven_page_value1"></td>
+                            <td id="seven_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_name">名称：FClea</td>
+                            <td class="first_page_name">名称：FClea</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_location">产地：德国</td>
+                            <td class="first_page_location">产地：德国</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_weight">规格：250ml</td>
+                            <td class="first_page_weight">规格：250ml</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                        </tr>
+                        <tr>
+                            <td id="seven_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="seven_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div>
+                <p>请阅读以下提供的两种糖果的信息，你会购买哪一款，请选择。<p>
+                <form class="question8">
+                    <table border="1px"  class="question" >
+                        <tr>
+                            <td id="eight_page_content1"></td>
+                            <td id="eight_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="eight_page_value1"></td>
+                            <td id="eight_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_name">名称：FClea</td>
+                            <td class="first_page_name">名称：FClea</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_location">产地：德国</td>
+                            <td class="first_page_location">产地：德国</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_weight">规格：250ml</td>
+                            <td class="first_page_weight">规格：250ml</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                        </tr>
+                        <tr>
+                            <td id="eight_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="eight_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div>
+                <p>请阅读以下提供的两种糖果的信息，你会购买哪一款，请选择。<p>
+                <form class="question9">
+                    <table border="solid 1px"  class="question" >
+                        <tr>
+                            <td id="nine_page_content1"></td>
+                            <td id="nine_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="nine_page_value1"></td>
+                            <td id="nine_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_name">名称：FClea</td>
+                            <td class="first_page_name">名称：FClea</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_location">产地：德国</td>
+                            <td class="first_page_location">产地：德国</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_weight">规格：250ml</td>
+                            <td class="first_page_weight">规格：250ml</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                        </tr>
+                        <tr>
+                            <td id="nine_page_label1"><label><input type="radio" name="gender" value="0" ></label></td>
+                            <td id="nine_page_label2"><label><input type="radio" name="gender" value="1" ></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide" id="dynamic_generate">
+            <div>
+                <p>请阅读以下提供的两种糖果的信息，你会购买哪一款，请选择。<p>
+                <form class="question10">
+                    <table class="question"  border="1px">
+                        <tr>
+                            <td id="ten_page_content1"></td>
+                            <td id="ten_page_content2"></td>
+                        </tr>
+                        <tr>
+                            <td id="ten_page_value1"></td>
+                            <td id="ten_page_value2"></td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_name">名称：FClea</td>
+                            <td class="first_page_name">名称：FClea</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_location">产地：德国</td>
+                            <td class="first_page_location">产地：德国</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_weight">规格：250ml</td>
+                            <td class="first_page_weight">规格：250ml</td>
+                        </tr>
+                        <tr>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                            <td class="first_page_number">功能：滋润、补水、保湿</td>
+                        </tr>
+
+                        <tr>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                            <td class="first_page_date">生产日期：具体见包装</td>
+                        </tr>
+                        <tr>
+                            <td id="ten_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="ten_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div>
+                <p>以下是一些陈述，请根据自身情况客观评价</p>
+                <table class="question"  border="1px" style="width: 600px">
+                    <tr>
+                        <td>序号</td>
+                        <td>描述</td>
+                        <td>非<br>常<br>不<br>同<br>意</td>
+                        <td>基<br>本<br>不<br>同<br>意</td>
+                        <td>有<br>点<br>不<br>同<br>意</td>
+                        <td>中<br>立</td>
+                        <td> 有<br>点<br>同<br>意 </td>
+                        <td> 基<br>本<br>同<br>意 </td>
+                        <td> 非<br>常<br>同<br>意 </td>
+                    </tr>
+                    <tr id="question11">
+                        <td>1</td>
+                        <td>在完成实验任务中，我的专注度非常高</td>
+                        <td><label for="question11_value1"></label><input type="radio" name="question11" value="1"  id="question11_value1"></td>
+                        <td><label for="question11_value2"></label><input type="radio" name="question11" value="2"  id="question11_value2"></td>
+                        <td><label for="question11_value3"></label><input type="radio" name="question11" value="3"  id="question11_value3"></td>
+                        <td><label for="question11_value4"></label><input type="radio" name="question11" value="4"  id="question11_value4"></td>
+                        <td><label for="question11_value5"></label><input type="radio" name="question11" value="5"  id="question11_value5"></td>
+                        <td><label for="question11_value6"></label><input type="radio" name="question11" value="6"  id="question11_value6"></td>
+                        <td><label for="question11_value7"></label><input type="radio" name="question11" value="7"  id="question11_value7"></td>
+
+                    </tr>
+
+                    <tr  id="question12">
+                        <td>2</td>
+                        <td>完成这个研究，我花费了很多努力。</td>
+                        <td><label for="question12_value1"></label><input type="radio" name="question12" value="1"  id="question12_value1"></td>
+                        <td><label for="question12_value2"></label><input type="radio" name="question12" value="2"  id="question12_value2"></td>
+                        <td><label for="question12_value3"></label><input type="radio" name="question12" value="3"  id="question12_value3"></td>
+                        <td><label for="question12_value4"></label><input type="radio" name="question12" value="4"  id="question12_value4"></td>
+                        <td><label for="question12_value5"></label><input type="radio" name="question12" value="5"  id="question12_value5"></td>
+                        <td><label for="question12_value6"></label><input type="radio" name="question12" value="6"  id="question12_value6"></td>
+                        <td><label for="question12_value7"></label><input type="radio" name="question12" value="7"  id="question12_value7"></td>
+                    </tr>
+
+                    <tr id="question13">
+                        <td>3</td>
+                        <td>完成这个研究，我的参与度很高。</td>
+                        <td><label for="question13_value1"></label><input type="radio" name="question13" value="1"  id="question13_value1"></td>
+                        <td><label for="question13_value2"></label><input type="radio" name="question13" value="2"  id="question13_value2"></td>
+                        <td><label for="question13_value3"></label><input type="radio" name="question13" value="3"  id="question13_value3"></td>
+                        <td><label for="question13_value4"></label><input type="radio" name="question13" value="4"  id="question13_value4"></td>
+                        <td><label for="question13_value5"></label><input type="radio" name="question13" value="5"  id="question13_value5"></td>
+                        <td><label for="question13_value6"></label><input type="radio" name="question13" value="6"  id="question13_value6"></td>
+                        <td><label for="question13_value7"></label><input type="radio" name="question13" value="7"  id="question13_value7"></td>
+                    </tr>
+
+                    <tr id="question14">
+                        <td>4</td>
+                        <td>我认为这个研究有趣。</td>
+                        <td><label for="question14_value1"></label><input type="radio" name="question14" value="1"  id="question14_value1"></td>
+                        <td><label for="question14_value2"></label><input type="radio" name="question14" value="2"  id="question14_value2"></td>
+                        <td><label for="question14_value3"></label><input type="radio" name="question14" value="3"  id="question14_value3"></td>
+                        <td><label for="question14_value4"></label><input type="radio" name="question14" value="4"  id="question14_value4"></td>
+                        <td><label for="question14_value5"></label><input type="radio" name="question14" value="5"  id="question14_value5"></td>
+                        <td><label for="question14_value6"></label><input type="radio" name="question14" value="6"  id="question14_value6"></td>
+                        <td><label for="question14_value7"></label><input type="radio" name="question14" value="7"  id="question14_value7"></td>
+                    </tr>
+
+                    <tr id="question15">
+                        <td>5</td>
+                        <td>我现在是开心的。</td>
+                        <td><label for="question15_value1"></label><input type="radio" name="question15" value="1"  id="question15_value1"></td>
+                        <td><label for="question15_value2"></label><input type="radio" name="question15" value="2"  id="question15_value2"></td>
+                        <td><label for="question15_value3"></label><input type="radio" name="question15" value="3"  id="question15_value3"></td>
+                        <td><label for="question15_value4"></label><input type="radio" name="question15" value="4"  id="question15_value4"></td>
+                        <td><label for="question15_value5"></label><input type="radio" name="question15" value="5"  id="question15_value5"></td>
+                        <td><label for="question15_value6"></label><input type="radio" name="question15" value="6"  id="question15_value6"></td>
+                        <td><label for="question15_value7"></label><input type="radio" name="question15" value="7"  id="question15_value7"></td>
+
+                    </tr>
+
+                    <tr id="question16">
+                        <td>6</td>
+                        <td>我现在是兴奋的。</td>
+                        <td><label for="question16_value1"></label><input type="radio" name="question16" value="1"  id="question16_value1"></td>
+                        <td><label for="question16_value2"></label><input type="radio" name="question16" value="2"  id="question16_value2"></td>
+                        <td><label for="question16_value3"></label><input type="radio" name="question16" value="3"  id="question16_value3"></td>
+                        <td><label for="question16_value4"></label><input type="radio" name="question16" value="4"  id="question16_value4"></td>
+                        <td><label for="question16_value5"></label><input type="radio" name="question16" value="5"  id="question16_value5"></td>
+                        <td><label for="question16_value6"></label><input type="radio" name="question16" value="6"  id="question16_value6"></td>
+                        <td><label for="question16_value7"></label><input type="radio" name="question16" value="7"  id="question16_value7"></td>
+
+                    </tr>
+
+                    <tr id="question17">
+                        <td>7</td>
+                        <td>我现在是愉快的。</td>
+                        <td><label for="question17_value1"></label><input type="radio" name="question17" value="1"  id="question17_value1"></td>
+                        <td><label for="question17_value2"></label><input type="radio" name="question17" value="2"  id="question17_value2"></td>
+                        <td><label for="question17_value3"></label><input type="radio" name="question17" value="3"  id="question17_value3"></td>
+                        <td><label for="question17_value4"></label><input type="radio" name="question17" value="4"  id="question17_value4"></td>
+                        <td><label for="question17_value5"></label><input type="radio" name="question17" value="5"  id="question17_value5"></td>
+                        <td><label for="question17_value6"></label><input type="radio" name="question17" value="6"  id="question17_value6"></td>
+                        <td><label for="question17_value7"></label><input type="radio" name="question17" value="7"  id="question17_value7"></td>
+                    </tr>
+
+                    <tr id="question18">
+                        <td>8</td>
+                        <td>我现在是悲伤的。</td>
+                        <td><label for="question18_value1"></label><input type="radio" name="question18" value="1"  id="question18_value1"></td>
+                        <td><label for="question18_value2"></label><input type="radio" name="question18" value="2"  id="question18_value2"></td>
+                        <td><label for="question18_value3"></label><input type="radio" name="question18" value="3"  id="question18_value3"></td>
+                        <td><label for="question18_value4"></label><input type="radio" name="question18" value="4"  id="question18_value4"></td>
+                        <td><label for="question18_value5"></label><input type="radio" name="question18" value="5"  id="question18_value5"></td>
+                        <td><label for="question18_value6"></label><input type="radio" name="question18" value="6"  id="question18_value6"></td>
+                        <td><label for="question18_value7"></label><input type="radio" name="question18" value="7"  id="question18_value7"></td>
+
+
+                    </tr>
+
+                    <tr id="question19">
+                        <td>9</td>
+                        <td>我现在是心烦的。</td>
+                        <td><label for="question19_value1"></label><input type="radio" name="question19" value="1"  id="question19_value1"></td>
+                        <td><label for="question19_value2"></label><input type="radio" name="question19" value="2"  id="question19_value2"></td>
+                        <td><label for="question19_value3"></label><input type="radio" name="question19" value="3"  id="question19_value3"></td>
+                        <td><label for="question19_value4"></label><input type="radio" name="question19" value="4"  id="question19_value4"></td>
+                        <td><label for="question19_value5"></label><input type="radio" name="question19" value="5"  id="question19_value5"></td>
+                        <td><label for="question19_value6"></label><input type="radio" name="question19" value="6"  id="question19_value6"></td>
+                        <td><label for="question19_value7"></label><input type="radio" name="question19" value="7"  id="question19_value7"></td>
+
+                    </tr>
+
+                    <tr id="question20">
+                        <td>10</td>
+                        <td>我现在是沮丧的。</td>
+                        <td><label for="question20_value1"></label><input type="radio" name="question20" value="1"  id="question20_value1"></td>
+                        <td><label for="question20_value2"></label><input type="radio" name="question20" value="2"  id="question20_value2"></td>
+                        <td><label for="question20_value3"></label><input type="radio" name="question20" value="3"  id="question20_value3"></td>
+                        <td><label for="question20_value4"></label><input type="radio" name="question20" value="4"  id="question20_value4"></td>
+                        <td><label for="question20_value5"></label><input type="radio" name="question20" value="5"  id="question20_value5"></td>
+                        <td><label for="question20_value6"></label><input type="radio" name="question20" value="6"  id="question20_value6"></td>
+                        <td><label for="question20_value7"></label><input type="radio" name="question20" value="7"  id="question20_value7"></td>
+
+                    </tr>
+
+                </table>
+                <!--</form>-->
+            </div>
+        </div>
+
+
+
+        <div class="swiper-slide">
+            <div  style="margin-top: 10px" >
+                <p>以下是一些陈述，请根据自身情况进行评价<p>
+                <!--<form class="question11">-->
+                <table class="question"  border="1px" style="width: 0%">
+                    <tr>
+                        <td>序号</td>
+                        <td>陈述内容</td>
+                        <td>完全不同意</td>
+                        <td>不同意</td>
+                        <td>有点不同意</td>
+                        <td>中立</td>
+                        <td> 有点同意 </td>
+                        <td> 同意 </td>
+                        <td> 完全同意 </td>
+                    </tr>
+                    <tr id="question21">
+                        <td>1</td>
+                        <td  style="text-align:left">通常我会付出很多时间和精力去对比产品价格，之后再决定购买。 </td>
+
+                        <td><label for="question21_value1"></label><input type="radio" name="question21" value="1"  id="question21_value1"></td>
+                        <td><label for="question21_value2"></label><input type="radio" name="question21" value="2"  id="question21_value2"></td>
+                        <td><label for="question21_value3"></label><input type="radio" name="question21" value="3"  id="question21_value3"></td>
+                        <td><label for="question21_value4"></label><input type="radio" name="question21" value="4"  id="question21_value4"></td>
+                        <td><label for="question21_value5"></label><input type="radio" name="question21" value="5"  id="question21_value5"></td>
+                        <td><label for="question21_value6"></label><input type="radio" name="question21" value="6"  id="question21_value6"></td>
+                        <td><label for="question21_value7"></label><input type="radio" name="question21" value="7"  id="question21_value7"></td>
+
+                    </tr>
+
+                    <tr id="question22">
+                        <td>2</td>
+                        <td style="text-align:left">价格是我选择糖果口味的主要影响因素。</td>
+                        <td><label for="question22_value1"></label><input type="radio" name="question22" value="1"  id="question22_value1"></td>
+                        <td><label for="question22_value2"></label><input type="radio" name="question22" value="2"  id="question22_value2"></td>
+                        <td><label for="question22_value3"></label><input type="radio" name="question22" value="3"  id="question22_value3"></td>
+                        <td><label for="question22_value4"></label><input type="radio" name="question22" value="4"  id="question22_value4"></td>
+                        <td><label for="question22_value5"></label><input type="radio" name="question22" value="5"  id="question22_value5"></td>
+                        <td><label for="question22_value6"></label><input type="radio" name="question22" value="6"  id="question22_value6"></td>
+                        <td><label for="question22_value7"></label><input type="radio" name="question22" value="7"  id="question22_value7"></td>
+
+                    </tr>
+
+                    <tr id="question23">
+                        <td>3</td>
+                        <td style="text-align:left">我愿意支付更高的价格去选择更喜欢的口味。</td>
+                        <td><label for="question23_value1"></label><input type="radio" name="question23" value="1"  id="question23_value1"></td>
+                        <td><label for="question23_value2"></label><input type="radio" name="question23" value="2"  id="question23_value2"></td>
+                        <td><label for="question23_value3"></label><input type="radio" name="question23" value="3"  id="question23_value3"></td>
+                        <td><label for="question23_value4"></label><input type="radio" name="question23" value="4"  id="question23_value4"></td>
+                        <td><label for="question23_value5"></label><input type="radio" name="question23" value="5"  id="question23_value5"></td>
+                        <td><label for="question23_value6"></label><input type="radio" name="question23" value="6"  id="question23_value6"></td>
+                        <td><label for="question23_value7"></label><input type="radio" name="question23" value="7"  id="question23_value7"></td>
+                    </tr>
+
+                    <tr id="question24">
+                        <td>4</td>
+                        <td style="text-align:left">如果我喜欢的糖果口味比其他口味更贵，我会很在意。</td>
+                        <td><label for="question24_value1"></label><input type="radio" name="question24" value="1"  id="question24_value1"></td>
+                        <td><label for="question24_value2"></label><input type="radio" name="question24" value="2"  id="question24_value2"></td>
+                        <td><label for="question24_value3"></label><input type="radio" name="question24" value="3"  id="question24_value3"></td>
+                        <td><label for="question24_value4"></label><input type="radio" name="question24" value="4"  id="question24_value4"></td>
+                        <td><label for="question24_value5"></label><input type="radio" name="question24" value="5"  id="question24_value5"></td>
+                        <td><label for="question24_value6"></label><input type="radio" name="question24" value="6"  id="question24_value6"></td>
+                        <td><label for="question24_value7"></label><input type="radio" name="question24" value="7"  id="question24_value7"></td>
+
+                    </tr>
+
+                    <tr id="question25">
+                        <td>5</td>
+                        <td style="text-align:left">我愿意为自己喜欢的糖果口味支付更高的价格。</td>
+                        <td><label for="question25_value1"></label><input type="radio" name="question25" value="1"  id="question25_value1"></td>
+                        <td><label for="question25_value2"></label><input type="radio" name="question25" value="2"  id="question25_value2"></td>
+                        <td><label for="question25_value3"></label><input type="radio" name="question25" value="3"  id="question25_value3"></td>
+                        <td><label for="question25_value4"></label><input type="radio" name="question25" value="4"  id="question25_value4"></td>
+                        <td><label for="question25_value5"></label><input type="radio" name="question25" value="5"  id="question25_value5"></td>
+                        <td><label for="question25_value6"></label><input type="radio" name="question25" value="6"  id="question25_value6"></td>
+                        <td><label for="question25_value7"></label><input type="radio" name="question25" value="7"  id="question25_value7"></td>
+
+                    </tr>
+
+                    <tr id="question26">
+                        <td>6</td>
+                        <td style="text-align:left">我会付出很多时间和精力来对比不同口味糖果的价格。</td>
+                        <td><label for="question26_value1"></label><input type="radio" name="question26" value="1"  id="question26_value1"></td>
+                        <td><label for="question26_value2"></label><input type="radio" name="question26" value="2"  id="question26_value2"></td>
+                        <td><label for="question26_value3"></label><input type="radio" name="question26" value="3"  id="question26_value3"></td>
+                        <td><label for="question26_value4"></label><input type="radio" name="question26" value="4"  id="question26_value4"></td>
+                        <td><label for="question26_value5"></label><input type="radio" name="question26" value="5"  id="question26_value5"></td>
+                        <td><label for="question26_value6"></label><input type="radio" name="question26" value="6"  id="question26_value6"></td>
+                        <td><label for="question26_value7"></label><input type="radio" name="question26" value="7"  id="question26_value7"></td>
+                    </tr>
+
+                    <tr id="question27">
+                        <td>7</td>
+                        <td style="text-align:left">我了解糖果的相关信息。</td>
+                        <td><label for="question27_value1"></label><input type="radio" name="question27" value="1"  id="question27_value1"></td>
+                        <td><label for="question27_value2"></label><input type="radio" name="question27" value="2"  id="question27_value2"></td>
+                        <td><label for="question27_value3"></label><input type="radio" name="question27" value="3"  id="question27_value3"></td>
+                        <td><label for="question27_value4"></label><input type="radio" name="question27" value="4"  id="question27_value4"></td>
+                        <td><label for="question27_value5"></label><input type="radio" name="question27" value="5"  id="question27_value5"></td>
+                        <td><label for="question27_value6"></label><input type="radio" name="question27" value="6"  id="question27_value6"></td>
+                        <td><label for="question27_value7"></label><input type="radio" name="question27" value="7"  id="question27_value7"></td>
+
+                    </tr>
+
+                    <tr id="question28">
+                        <td>8</td>
+                        <td style="text-align:left">我了解有关糖果口味情况。</td>
+                        <td><label for="question28_value1"></label><input type="radio" name="question28" value="1"  id="question28_value1"></td>
+                        <td><label for="question28_value2"></label><input type="radio" name="question28" value="2"  id="question28_value2"></td>
+                        <td><label for="question28_value3"></label><input type="radio" name="question28" value="3"  id="question28_value3"></td>
+                        <td><label for="question28_value4"></label><input type="radio" name="question28" value="4"  id="question28_value4"></td>
+                        <td><label for="question28_value5"></label><input type="radio" name="question28" value="5"  id="question28_value5"></td>
+                        <td><label for="question28_value6"></label><input type="radio" name="question28" value="6"  id="question28_value6"></td>
+                        <td><label for="question28_value7"></label><input type="radio" name="question28" value="7"  id="question28_value7"></td>
+                    </tr>
+
+                    <tr id="question29">
+                        <td>9</td>
+                        <td style="text-align:left">我了解糖果相关知识。</td>
+                        <td><label for="question29_value1"></label><input type="radio" name="question29" value="1"  id="question29_value1"></td>
+                        <td><label for="question29_value2"></label><input type="radio" name="question29" value="2"  id="question29_value2"></td>
+                        <td><label for="question29_value3"></label><input type="radio" name="question29" value="3"  id="question29_value3"></td>
+                        <td><label for="question29_value4"></label><input type="radio" name="question29" value="4"  id="question29_value4"></td>
+                        <td><label for="question29_value5"></label><input type="radio" name="question29" value="5"  id="question29_value5"></td>
+                        <td><label for="question29_value6"></label><input type="radio" name="question29" value="6"  id="question29_value6"></td>
+                        <td><label for="question29_value7"></label><input type="radio" name="question29" value="7"  id="question29_value7"></td>
+                    </tr>
+
+                    <tr id="question30">
+                        <td>10</td>
+                        <td style="text-align:left">请选择“中立”。</td>
+                        <td><label for="question30_value1"></label><input type="radio" name="question30" value="1"  id="question30_value1"></td>
+                        <td><label for="question30_value2"></label><input type="radio" name="question30" value="2"  id="question30_value2"></td>
+                        <td><label for="question30_value3"></label><input type="radio" name="question30" value="3"  id="question30_value3"></td>
+                        <td><label for="question30_value4"></label><input type="radio" name="question30" value="4"  id="question30_value4"></td>
+                        <td><label for="question30_value5"></label><input type="radio" name="question30" value="5"  id="question30_value5"></td>
+                        <td><label for="question30_value6"></label><input type="radio" name="question30" value="6"  id="question30_value6"></td>
+                        <td><label for="question30_value7"></label><input type="radio" name="question30" value="7"  id="question30_value7"></td>
+
+                    </tr>
+
+                    <tr id="question31">
+                        <td>11</td>
+                        <td style="text-align:left">我经常购买糖果。</td>
+                        <td><label for="question31_value1"></label><input type="radio" name="question31" value="1"  id="question31_value1"></td>
+                        <td><label for="question31_value2"></label><input type="radio" name="question31" value="2"  id="question31_value2"></td>
+                        <td><label for="question31_value3"></label><input type="radio" name="question31" value="3"  id="question31_value3"></td>
+                        <td><label for="question31_value4"></label><input type="radio" name="question31" value="4"  id="question31_value4"></td>
+                        <td><label for="question31_value5"></label><input type="radio" name="question31" value="5"  id="question31_value5"></td>
+                        <td><label for="question31_value6"></label><input type="radio" name="question31" value="6"  id="question31_value6"></td>
+                        <td><label for="question31_value7"></label><input type="radio" name="question31" value="7"  id="question31_value7"></td>
+                    </tr>
+
+
+
+                    <tr id="question32">
+                        <td>12</td>
+                        <td style="text-align:left">我经常吃糖果。</td>
+                        <td><label for="question32_value1"></label><input type="radio" name="question32" value="1"  id="question32_value1"></td>
+                        <td><label for="question32_value2"></label><input type="radio" name="question32" value="2"  id="question32_value2"></td>
+                        <td><label for="question32_value3"></label><input type="radio" name="question32" value="3"  id="question32_value3"></td>
+                        <td><label for="question32_value4"></label><input type="radio" name="question32" value="4"  id="question32_value4"></td>
+                        <td><label for="question32_value5"></label><input type="radio" name="question32" value="5"  id="question32_value5"></td>
+                        <td><label for="question32_value6"></label><input type="radio" name="question32" value="6"  id="question32_value6"></td>
+                        <td><label for="question32_value7"></label><input type="radio" name="question32" value="7"  id="question32_value7"></td>
+                    </tr>
+
+                    <tr id="question33">
+                        <td>13</td>
+                        <td style="text-align:left">糖果属性中口味是重要的。</td>
+                        <td><label for="question33_value1"></label><input type="radio" name="question33" value="1"  id="question33_value1"></td>
+                        <td><label for="question33_value2"></label><input type="radio" name="question33" value="2"  id="question33_value2"></td>
+                        <td><label for="question33_value3"></label><input type="radio" name="question33" value="3"  id="question33_value3"></td>
+                        <td><label for="question33_value4"></label><input type="radio" name="question33" value="4"  id="question33_value4"></td>
+                        <td><label for="question33_value5"></label><input type="radio" name="question33" value="5"  id="question33_value5"></td>
+                        <td><label for="question33_value6"></label><input type="radio" name="question33" value="6"  id="question33_value6"></td>
+                        <td><label for="question33_value7"></label><input type="radio" name="question33" value="7"  id="question33_value7"></td>
+                    </tr>
+
+                    <tr id="question34">
+                        <td>14</td>
+                        <td style="text-align:left">糖果属性中口味不太重要。</td>
+                        <td><label for="question34_value1"></label><input type="radio" name="question34" value="1"  id="question34_value1"></td>
+                        <td><label for="question34_value2"></label><input type="radio" name="question34" value="2"  id="question34_value2"></td>
+                        <td><label for="question34_value3"></label><input type="radio" name="question34" value="3"  id="question34_value3"></td>
+                        <td><label for="question34_value4"></label><input type="radio" name="question34" value="4"  id="question34_value4"></td>
+                        <td><label for="question34_value5"></label><input type="radio" name="question34" value="5"  id="question34_value5"></td>
+                        <td><label for="question34_value6"></label><input type="radio" name="question34" value="6"  id="question34_value6"></td>
+                        <td><label for="question34_value7"></label><input type="radio" name="question34" value="7"  id="question34_value7"></td>
+                    </tr>
+
+                </table>
+                <!--</form>-->
+            </div>
+        </div>
+
+
+        <div class="swiper-slide">
+            <div class = "label_horizen">
+                <p>以下的问题有关您个人的基本资料，您所提供的资料仅供本研究分析之用，绝不对外公开，请您放心填写！<p>
+                <p id="question35"> 性别：<input type="radio" name="question35" value="0"  id="question35_value1"/><label for="question35_value1">女</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" name="question35" value="1"  id="question35_value2"/><label for="question35_value2">男</label></p>
+                <p><label>年龄：</label><input type="text"  id="question36" style="width: 150px;height: 15px;border-color: #878787;
+                                                border-style: solid;
+                                                border-top-width: 0px;
+                                                 border-right-width: 0px;
+                                                border-bottom-width: 1px;
+                                                 border-left-width: 0px;background: white;"></p>
+                <p>学历：</p>
+                <div style="margin-left: 8%;"  class="question_last_page" id="question37">
+                    <p style="font-size: 13px;margin-top:10px">
+                        <input type="radio" name="question37" value="0"  id="question37_value1"><label for="question37_value1">高中或中专及以下</label>
+                    </p>
+                    <p style="font-size: 13px;margin-top:10px">
+                        <input type="radio" name="question37" value="1"  id="question37_value2"><label for="question37_value2">大专或本科</label>
+                    </p>
+                    <p style="font-size: 13px">
+                        <input type="radio" name="question37" value="2"  id="question37_value3"><label for="question37_value3">硕士</label>
+                    </p>
+                    <p style="font-size: 13px">
+                        <input type="radio" name="question37" value="3"  id="question37_value4"><label for="question37_value4">博士</label>
+                    </p>
+                    <p style="font-size: 13px">
+                        <input type="radio" name="question37" value="4"  id="question37_value5"><label for="question37_value5">其他</label>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div>
+                <p><b>
+                    感谢您的参与！</b>
+                </p>
+                <p> 注：为确保研究数据的客观性，请勿告知他人本研究内容，谢谢您的配合！ </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="swiper-button-next" onclick="valueDetectStore()">
+        <div style="position: relative;bottom: 10px;height: 50px;right: 55px;">
+            <p style="transform: rotate(270deg); font-size: 10px; width: 100px;">点击翻到下一页</p>
+        </div>
+    </div>
+</div>
+
+
+<!--</div>-->
+<!--&lt;!&ndash; Add Pagination &ndash;&gt;-->
+
+
+<!--</div>-->
+
+<!-- Swiper JS -->
+<script src="../../js/swiper.min.js"></script>
+<script src="../../js/jquery-3.2.1.min.js"></script>
+<script src='../../dist/dragula.js'></script>
+<script src='../../example/example.min.js'></script>
+
+<!-- Initialize Swiper -->
+<script>
+    // 这里因为设计问题开始页位-1
+    var page_index = -2;
+    var valueReg = "";
+    var sort_value = [];
+    var sort_value_name = [];
+    var sort_value_class = [];
+    var high_or_low = [];
+    var sort_price_1 = ["价格：<b style='color:#F00'>￥ 29.9</b>", "价格：<b style='color:#F00'>￥ 29.9</b>"];
+    var sort_price_2 = ["价格：<b style='color:#F00'>￥ 28.7</b>", "价格：<b style='color:#F00'>￥ 28.7</b>"];
+    var sort_price_3 = ["价格：<b style='color:#F00'>￥ 32.9</b>", "价格：<b style='color:#F00'>￥ 32.9</b>"];
+    var sort_price_4 = ["价格：<b style='color:#F00'>￥ 35.3</b>", "价格：<b style='color:#F00'>￥ 35.3</b>"];
+    var sort_price_5 = ["价格：<b style='color:#F00'>￥ 27.9</b>", "价格：<b style='color:#F00'>￥ 27.9</b>"];
+    var sort_price_6 = ["价格：<b style='color:#F00'>￥ 28.6</b>", "价格：<b style='color:#F00'>￥ 28.6</b>"];
+    var sort_price_7 = ["价格：<b style='color:#F00'>￥ 30.6</b>", "价格：<b style='color:#F00'>￥ 30.6</b>"];
+    var sort_price_8 = ["价格：<b style='color:#F00'>￥ 29.3</b>", "价格：<b style='color:#F00'>￥ 29.3</b>"];
+    var sort_price_9 = ["价格：<b style='color:#F00'>￥ 31.8</b>", "价格：<b style='color:#F00'>￥ 31.8</b>"];
+    var sort_price_10 = ["价格：<b style='color:#F00'>￥ 28.9</b>", "价格：<b style='color:#F00'>￥ 28.9</b>"];
+
+    var prefer_result = [];
+    var result = {};
+    var swiper = new Swiper('.swiper-container', {
+        //pagination: '.swiper-pagination',
+        // 设置方向 up
+        paginationClickable: true,
+        direction: 'vertical',
+        allowSwipeToPrev: false,
+        onlyExternal:true,
+        nextButton:'.swiper-button-next',
+
+        // 拖拽触发函数
+        onSlideChangeStart: function (swiper) {
+
+            try{
+                if(page_index == 1) {
+                    console.log("###" + page_index);
+
+                    var first_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[0].getElementsByTagName("img")[0].src;
+                    var seconde_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[1].getElementsByTagName("img")[0].src;
+                    var third_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[2].getElementsByTagName("img")[0].src;
+                    var fourth_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[3].getElementsByTagName("img")[0].src;
+                    var fifth_value = document.getElementById("right-defaults").getElementsByClassName("kkk")[4].getElementsByTagName("img")[0].src;
+
+                    var first_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[0].getElementsByTagName("img")[0].className;
+                    var seconde_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[1].getElementsByTagName("img")[0].className;
+                    var third_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[2].getElementsByTagName("img")[0].className;
+                    var fourth_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[3].getElementsByTagName("img")[0].className;
+                    var fifth_value_class = document.getElementById("right-defaults").getElementsByClassName("kkk")[4].getElementsByTagName("img")[0].className;
+
+                    if(document.getElementById("first_page_value1").innerText == ''){
+                        // 动态分配值到页面
+                        sort_value.push(first_value, seconde_value, third_value, fourth_value, fifth_value);
+                        sort_value_class.push(first_value_class, seconde_value_class, third_value_class, fourth_value_class, fifth_value_class);
+                        result["sort_value_class"] = sort_value_class.join("-");
+                        dynamicAddPageValue(sort_value);
+                    }else {
+                        console.log("不用分配了");
+                    }
+
+                }
+            }catch (err){
+                alert("五个都选择才可以往下拉。");
+                location.reload();
+            }
+
+
+            // 页面第一页索引为0
+            page_index = page_index + 1;
+
+        }
+
+    });
+
+    // 每一页值检测
+    function valueDetectStore() {
+        switch (page_index){
+            case 2:
+                var form1_value1 = $('.question1').find(':radio:checked').val();
+                detectPageValue(form1_value1);
+                if(form1_value1 != undefined){
+                    prefer_result.push(form1_value1);
+                }
+                break;
+
+            case 3:
+                var form1_value2 = $('.question2').find(':radio:checked').val();
+                detectPageValue(form1_value2);
+                if(form1_value2 != undefined){
+                    prefer_result.push(form1_value2);
+                }
+                break;
+
+            case 4:
+                var form1_value3 = $('.question3').find(':radio:checked').val();
+                detectPageValue(form1_value3);
+                if(form1_value3 != undefined){
+                    prefer_result.push(form1_value3);
+                }
+                break;
+
+            case 5:
+                var form1_value4 = $('.question4').find(':radio:checked').val();
+                detectPageValue(form1_value4);
+                if(form1_value4 != undefined){
+                    prefer_result.push(form1_value4);
+                }
+                break;
+
+            case 6:
+                var form1_value5 = $('.question5').find(':radio:checked').val();
+                detectPageValue(form1_value5);
+                if(form1_value5 != undefined){
+                    prefer_result.push(form1_value5);
+                }
+                break;
+
+            case 7:
+                var form1_value6 = $('.question6').find(':radio:checked').val();
+                detectPageValue(form1_value6);
+                if(form1_value6 != undefined){
+                    prefer_result.push(form1_value6);
+                }
+                break;
+
+            case 8:
+                var form1_value7 = $('.question7').find(':radio:checked').val();
+                detectPageValue(form1_value7);
+                if(form1_value7 != undefined){
+                    prefer_result.push(form1_value7);
+                }
+                break;
+            case 9:
+                var form1_value8 = $('.question8').find(':radio:checked').val();
+                detectPageValue(form1_value8);
+                if(form1_value8 != undefined){
+                    prefer_result.push(form1_value8);
+                }
+                break;
+
+            case 10:
+                var form1_value9 = $('.question9').find(':radio:checked').val();
+                detectPageValue(form1_value9);
+                if(form1_value9 != undefined){
+                    prefer_result.push(form1_value9);
+                }
+                break;
+
+            case 11:
+                var form1_value10 = $('.question10').find(':radio:checked').val();
+                detectPageValue(form1_value10);
+                if(form1_value10 != undefined){
+                    prefer_result.push(form1_value10);
+                    // sort_value_class 五个排序顺序
+                    // sort_value_name 十个前后排序
+                    console.log("sort_value_name");
+                    console.log(sort_value_name);
+                    console.log("prefer_result");
+                    console.log(prefer_result);
+                    for(var i=0; i < prefer_result.length; i++){
+                        var temp_sort_value_name = sort_value_name[i].split("-");
+                        console.log("temp_sort_value_name");
+                        console.log(temp_sort_value_name);
+
+                        var temp_sort_value_name_1 = getArrIndex(sort_value_class, temp_sort_value_name[0]);
+                        var temp_sort_value_name_2 = getArrIndex(sort_value_class, temp_sort_value_name[1]);
+                        if(prefer_result[i] == 0){
+                            //选择了前者
+                            if(temp_sort_value_name_1 > temp_sort_value_name_2){
+                                // 前者价格更高
+                                high_or_low.push("0");
+                                console.log("选择了前者 前者价格更低");
+                                console.log(temp_sort_value_name_1 + "===" + temp_sort_value_name_2);
+                            }else {
+                                high_or_low.push("1");
+                                console.log("选择了前者 前者价格更高");
+                                console.log(temp_sort_value_name_1 + "===" + temp_sort_value_name_2);
+                            }
+
+                        }else if(prefer_result[i] == 1){
+                            // 选择了后者
+                            if(temp_sort_value_name_1 > temp_sort_value_name_2){
+                                //前者价格更高
+                                high_or_low.push("1");
+                                console.log("选择了后者 后者价格更高");
+                                console.log(temp_sort_value_name_1 + "===" + temp_sort_value_name_2);
+                            }else {
+                                high_or_low.push("0");
+                                console.log("选择了后者 后者价格更低");
+                                console.log(temp_sort_value_name_1 + "===" + temp_sort_value_name_2);
+                            }
+                        }else {
+                            console.log("arr bound is out");
+                            console.log(prefer_result[i]);
+                        }
+                    }
+                    console.log("high_or_low");
+                    console.log(high_or_low);
+                    // result['high_or_low'] = high_or_low.join("-");
+                    result['prefer_result'] = high_or_low.join("-");
+                }
+
+                break;
+
+            case 12:
+                var form1_value11 = $('#question11').find(':radio:checked').val();
+                var form1_value12 = $('#question12').find(':radio:checked').val();
+                var form1_value13 = $('#question13').find(':radio:checked').val();
+                var form1_value14 = $('#question14').find(':radio:checked').val();
+                var form1_value15 = $('#question15').find(':radio:checked').val();
+                var form1_value16 = $('#question16').find(':radio:checked').val();
+                var form1_value17 = $('#question17').find(':radio:checked').val();
+                var form1_value18 = $('#question18').find(':radio:checked').val();
+                var form1_value19 = $('#question19').find(':radio:checked').val();
+                var form1_value20 = $('#question20').find(':radio:checked').val();
+                detectPageArrValue([form1_value11, form1_value12, form1_value13, form1_value14, form1_value15, form1_value16, form1_value17, form1_value18, form1_value19, form1_value20]);
+
+                result['involvement_measure'] = [form1_value11, form1_value12, form1_value13, form1_value14].join("-");
+                result['mood_measure_value'] = [form1_value15, form1_value16, form1_value17, form1_value18, form1_value19, form1_value20].join("-");
+                break;
+
+            case 13:
+                console.log(page_index);
+                var form1_value21 = $('#question21').find(':radio:checked').val();
+                var form1_value22 = $('#question22').find(':radio:checked').val();
+                var form1_value23 = $('#question23').find(':radio:checked').val();
+                var form1_value24 = $('#question24').find(':radio:checked').val();
+                var form1_value25 = $('#question25').find(':radio:checked').val();
+                var form1_value26 = $('#question26').find(':radio:checked').val();
+                var form1_value27 = $('#question27').find(':radio:checked').val();
+                var form1_value28 = $('#question28').find(':radio:checked').val();
+                var form1_value29 = $('#question29').find(':radio:checked').val();
+                var form1_value30 = $('#question30').find(':radio:checked').val();
+                var form1_value31 = $('#question31').find(':radio:checked').val();
+                var form1_value32 = $('#question32').find(':radio:checked').val();
+                var form1_value33 = $('#question33').find(':radio:checked').val();
+                var form1_value34 = $('#question34').find(':radio:checked').val();
+                detectPageArrValue([form1_value21, form1_value22, form1_value23, form1_value24, form1_value25,
+                    form1_value26, form1_value27, form1_value28, form1_value29, form1_value30,
+                    form1_value31, form1_value32, form1_value33, form1_value34]);
+                result['price_sensitivity_value'] = [form1_value21, form1_value22, form1_value23, form1_value24, form1_value25, form1_value26].join("-");
+                result['self_confidence'] = [form1_value27, form1_value28, form1_value29, form1_value30,
+                    form1_value31, form1_value32, form1_value33, form1_value34].join("-");
+                break;
+
+            case 14:
+                var form1_value35 = $('#question35').find(':radio:checked').val();
+                var form1_value36 = document.getElementById("question36").value;
+                var form1_value37 = $('#question37').find(':radio:checked').val();
+
+                if(form1_value35 == undefined || form1_value37==undefined ||form1_value36==""){
+//                    alert("您有选项未答或者年龄未填写");
+//                    swiper.lockSwipes();
+                }else {
+                    result["basic_info"] = [form1_value35, form1_value36, form1_value37].join("-");
+                    result["type"] = "price same pc";
+                    console.log(page_index);
+                    console.log("result：");
+                    console.log(result);
+                    swiper.unlockSwipes();
+                    sendResult(result);
+                    swiper.slideNext();
+                }
+
+                break;
+
+
+        }
+
+    }
+    // 获取数组的索引
+    function getArrIndex(arr, word) {
+        for(var i=0; i<arr.length; i++){
+            if(arr[i] == word){
+                console.log("index is : " + i);
+                return i;
+
+            }
+        }
+    }
+
+    // 发送结果 research_slide_drag_five
+    function  sendResult(result) {
+        $.ajax({
+            url:"/researchProcedure2/resources/jsp/datastore_drag_five.jsp",
+            type:"post",
+            data: result,
+            dataType: 'json',
+            success:function(data){
+                console.log("over..");
+            },
+            error:function(e){
+                console.log("err..");
+            }
+        });
+    }
+
+    // 检测值是否为空，若空则不滑动提示
+    function detectPageValue(page_value) {
+        if(page_value == undefined){
+            swiper.lockSwipes();
+            alert("必须有选择项");
+        }else {
+            swiper.unlockSwipes();
+        }
+    }
+
+    function detectPageArrValue(page_value_arr) {
+        for(var i=0; i < page_value_arr.length; i++){
+            if(page_value_arr[i] == undefined){
+                swiper.lockSwipes();
+                alert("您有遗漏的题目未回答");
+                break;
+            }else {
+                swiper.unlockSwipes();
+            }
+        }
+    }
+
+
+
+    // 动态增加页面值
+    function   dynamicAddPageValue(sort_value) {
+
+        var sort_value_distri = [
+            randomSortArr([  [sort_value[0], sort_price_1[0]], [sort_value[1], sort_price_1[1]], 1  ]),
+            randomSortArr([  [sort_value[1], sort_price_2[0]], [sort_value[2], sort_price_2[1]], 1  ]),
+            randomSortArr([  [sort_value[2], sort_price_3[0]], [sort_value[3], sort_price_3[1]], 1  ]),
+            randomSortArr([  [sort_value[3], sort_price_4[0]], [sort_value[4], sort_price_4[1]], 1  ]),
+            randomSortArr([  [sort_value[0], sort_price_5[0]], [sort_value[2], sort_price_5[1]], 2  ]),
+            randomSortArr([  [sort_value[1], sort_price_6[0]], [sort_value[3], sort_price_6[1]], 2  ]),
+            randomSortArr([  [sort_value[2], sort_price_7[0]], [sort_value[4], sort_price_7[1]], 2  ]),
+            randomSortArr([  [sort_value[0], sort_price_8[0]], [sort_value[3], sort_price_8[1]], 3  ]),
+            randomSortArr([  [sort_value[1], sort_price_9[0]], [sort_value[4], sort_price_9[1]], 3  ]),
+            randomSortArr([  [sort_value[0], sort_price_10[0]], [sort_value[4], sort_price_10[1]], 4  ])
+        ];
+        sort_value_distri = shuffleOrder(sort_value_distri);
+
+        var sort_value_interval = [
+            sort_value_distri[0][2], sort_value_distri[1][2], sort_value_distri[2][2]
+            , sort_value_distri[3][2], sort_value_distri[4][2], sort_value_distri[5][2]
+            , sort_value_distri[6][2], sort_value_distri[7][2], sort_value_distri[8][2], sort_value_distri[9][2]
+        ];
+        result["sort_value_interval"] = sort_value_interval.join("-");
+
+
+        // 提取图片排序的顺序
+        for(var i =0; i<sort_value_distri.length; i++){
+            var sort_value_name_0 = getSrcValue(sort_value_distri[i][0][0]);
+            var sort_value_name_1 = getSrcValue(sort_value_distri[i][1][0]);
+            var sort_value_temp = [sort_value_name_0, sort_value_name_1];
+            sort_value_name.push(sort_value_temp.join("-"));
+        }
+
+        result["sort_value_name"] = sort_value_name.join("***");
+
+        // 获取分配的数组
+        // page1
+        $("#first_page_content1").append($("<img src=" + sort_value_distri[0][0][0] +">"));
+        $("#first_page_value1").append(sort_value_distri[0][0][1]);
+        $("#first_page_content2").append($("<img src=" + sort_value_distri[0][1][0]+">"));
+        $("#first_page_value2").append(sort_value_distri[0][1][1]);
+
+        // page2
+        $("#second_page_content1").append($("<img src=" + sort_value_distri[1][0][0] +">"));
+        $("#second_page_value1").append(sort_value_distri[1][0][1]);
+        $("#second_page_content2").append($("<img src=" + sort_value_distri[1][1][0] +">"));
+        $("#second_page_value2").append(sort_value_distri[1][1][1]);
+
+        // page3
+        $("#third_page_content1").append($("<img src=" + sort_value_distri[2][0][0] +">"));
+        $("#third_page_value1").append(sort_value_distri[2][0][1]);
+        $("#third_page_content2").append($("<img src=" + sort_value_distri[2][1][0] +">"));
+        $("#third_page_value2").append(sort_value_distri[2][1][1]);
+
+        // page4
+        $("#fourth_page_content1").append($("<img src=" + sort_value_distri[3][0][0] +">"));
+        $("#fourth_page_value1").append(sort_value_distri[3][0][1]);
+        $("#fourth_page_content2").append($("<img src=" + sort_value_distri[3][1][0] +">"));
+        $("#fourth_page_value2").append(sort_value_distri[3][1][1]);
+
+        // page5
+        $("#fifth_page_content1").append($("<img src=" + sort_value_distri[4][0][0] +">"));
+        $("#fifth_page_value1").append(sort_value_distri[4][0][1]);
+        $("#fifth_page_content2").append($("<img src=" + sort_value_distri[4][1][0] +">"));
+        $("#fifth_page_value2").append(sort_value_distri[4][1][1]);
+
+        // page6
+        $("#sixth_page_content1").append($("<img src=" + sort_value_distri[5][0][0] +">"));
+        $("#sixth_page_value1").append(sort_value_distri[5][0][1]);
+        $("#sixth_page_content2").append($("<img src=" + sort_value_distri[5][1][0] +">"));
+        $("#sixth_page_value2").append(sort_value_distri[5][1][1]);
+
+        // page7
+        $("#seven_page_content1").append($("<img src=" + sort_value_distri[6][0][0] +">"));
+        $("#seven_page_value1").append(sort_value_distri[6][0][1]);
+        $("#seven_page_content2").append($("<img src=" + sort_value_distri[6][1][0] +">"));
+        $("#seven_page_value2").append(sort_value_distri[6][1][1]);
+
+        // page8
+        $("#eight_page_content1").append($("<img src=" + sort_value_distri[7][0][0] +">"));
+        $("#eight_page_value1").append(sort_value_distri[7][0][1]);
+        $("#eight_page_content2").append($("<img src=" + sort_value_distri[7][1][0] +">"));
+        $("#eight_page_value2").append(sort_value_distri[7][1][1]);
+
+        // page9
+        $("#nine_page_content1").append($("<img src=" + sort_value_distri[8][0][0] +">"));
+        $("#nine_page_value1").append(sort_value_distri[8][0][1]);
+        $("#nine_page_content2").append($("<img src=" + sort_value_distri[8][1][0] +">"));
+        $("#nine_page_value2").append(sort_value_distri[8][1][1]);
+
+        // page10
+        $("#ten_page_content1").append($("<img src=" + sort_value_distri[9][0][0] +">"));
+        $("#ten_page_value1").append(sort_value_distri[9][0][1]);
+        $("#ten_page_content2").append($("<img src=" + sort_value_distri[9][1][0] +">"));
+        $("#ten_page_value2").append(sort_value_distri[9][1][1]);
+
+    }
+
+    // 随意排序两个数值位置
+    function randomSortArr(arr) {
+        if(Math.random() > 0.5){
+            var temp_value = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp_value;
+        }
+        return arr;
+
+    }
+
+    // 获取src图片编号
+    function getSrcValue(src) {
+        var reg = /researchDrag.(.+?).PNG/;
+        src.replace(reg, function (s, value) {
+            valueReg = value
+        });
+        return valueReg;
+
+    }
+
+    // 打乱数组排序
+    function shuffleOrder(array) {
+        var tmp, current, top = array.length;
+        if (top) while (--top) {
+            current = Math.floor(Math.random() * (top + 1));
+            tmp = array[current];
+            array[current] = array[top];
+            array[top] = tmp;
+        }
+        return array;
+    }
+
+</script>
+
+</body>
+</html>

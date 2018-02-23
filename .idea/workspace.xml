@@ -29,21 +29,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index_down.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/html/index_down.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="candyPriceDifferentPc.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/candyPriceDifferentPc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="25" />
+            <state relative-caret-position="4170">
+              <caret line="139" column="22" lean-forward="false" selection-start-line="134" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
               <folding>
                 <marker date="1513865139045" expanded="true" signature="61508:61518" ph="..." />
                 <marker date="1513865139045" expanded="true" signature="61547:61557" ph="..." />
@@ -70,17 +60,153 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candyPriceDifferentPcSuitble.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/candyPriceDifferentPcSuitble.html">
+      <file leaf-file-name="showerGelPriceDifferentPc.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/showerGelPriceDifferentPc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="145" column="30" lean-forward="true" selection-start-line="144" selection-start-column="53" selection-end-line="145" selection-end-column="30" />
+            <state relative-caret-position="3960">
+              <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#div#0;n#div#14;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#div#0;n#div#15;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1518487186182" expanded="false" signature="52777:52792" ph="..." />
+                <marker date="1518487186182" expanded="false" signature="54043:54058" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="58589:58599" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="58628:58638" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="58692:58702" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="58731:58741" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="58795:58805" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="58834:58844" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="58898:58908" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="58937:58947" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59001:59011" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59040:59050" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59104:59114" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59143:59153" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59207:59217" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59246:59256" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59310:59320" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59349:59359" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59413:59423" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59452:59462" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59517:59527" ph="..." />
+                <marker date="1518487186182" expanded="true" signature="59556:59566" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showerGelPriceDifferentPhone.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/showerGelPriceDifferentPhone.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="128" column="33" lean-forward="false" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1519381665605" expanded="true" signature="59908:59918" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="59947:59957" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60011:60021" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60050:60060" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60114:60124" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60153:60163" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60217:60227" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60256:60266" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60320:60330" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60359:60369" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60423:60433" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60462:60472" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60526:60536" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60565:60575" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60629:60639" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60668:60678" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60732:60742" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60771:60781" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60836:60846" ph="..." />
+                <marker date="1519381665605" expanded="true" signature="60875:60885" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showerGelPriceSamePhone.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/showerGelPriceSamePhone.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="514">
+              <caret line="1368" column="57" lean-forward="true" selection-start-line="1368" selection-start-column="57" selection-end-line="1368" selection-end-column="57" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#8;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1519387237927" expanded="true" signature="62821:62831" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="62860:62870" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="62924:62934" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="62963:62973" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63027:63037" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63066:63076" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63130:63140" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63169:63179" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63233:63243" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63272:63282" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63336:63346" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63375:63385" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63439:63449" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63478:63488" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63542:63552" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63581:63591" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63645:63655" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63684:63694" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63749:63759" ph="..." />
+                <marker date="1519387237927" expanded="true" signature="63788:63798" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="candyPriceDifferentPhone.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/candyPriceDifferentPhone.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4050">
+              <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+              <folding>
+                <marker date="1513151416582" expanded="true" signature="68636:68646" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="68675:68685" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="68739:68749" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="68778:68788" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="68842:68852" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="68881:68891" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="68945:68955" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="68984:68994" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69048:69058" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69087:69097" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69151:69161" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69190:69200" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69254:69264" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69293:69303" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69357:69367" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69396:69406" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69460:69470" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69499:69509" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69564:69574" ph="..." />
+                <marker date="1513151416582" expanded="true" signature="69603:69613" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="candyPriceDifferentPcSuitble.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/candyPriceDifferentPcSuitble.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4320">
+              <caret line="144" column="60" lean-forward="false" selection-start-line="144" selection-start-column="60" selection-end-line="144" selection-end-column="60" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <marker date="1513867450462" expanded="true" signature="59996:60006" ph="..." />
                 <marker date="1513867450462" expanded="true" signature="60035:60045" ph="..." />
                 <marker date="1513867450462" expanded="true" signature="60099:60109" ph="..." />
@@ -106,82 +232,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swiper.min_up.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/js/swiper.min_up.css">
+      <file leaf-file-name="example.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/example/example.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="14" column="1382" lean-forward="false" selection-start-line="14" selection-start-column="1382" selection-end-line="14" selection-end-column="1382" />
-              <folding>
-                <element signature="e#2987#3245#2" expanded="true" />
-                <element signature="e#3386#3644#2" expanded="true" />
-                <element signature="e#3764#4022#2" expanded="true" />
-                <element signature="e#4102#4360#2" expanded="true" />
-                <element signature="e#4492#4750#2" expanded="true" />
-                <element signature="e#4870#5128#2" expanded="true" />
-                <element signature="e#14595#16042#2" expanded="true" />
-                <element signature="e#16197#17641#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_left_shake.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/html/index_left_shake.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2910">
-              <caret line="97" column="6" lean-forward="false" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
+            <state relative-caret-position="5220">
+              <caret line="174" column="1" lean-forward="false" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_right_shake.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/html/index_right_shake.html">
+      <file leaf-file-name="example_shower_gel.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/example/example_shower_gel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7680">
-              <caret line="256" column="84" lean-forward="false" selection-start-line="256" selection-start-column="84" selection-end-line="256" selection-end-column="84" />
+            <state relative-caret-position="4590">
+              <caret line="153" column="1" lean-forward="false" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_up_shake.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/html/index_up_shake.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8700">
-              <caret line="290" column="0" lean-forward="false" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
-              <folding />
-            </state>
+      <file leaf-file-name="slide_down1.PNG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/images/researchSlide/slide_down1.PNG">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_up.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/html/index_up.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3480">
-              <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_right.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/html/index_right.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8940">
-              <caret line="298" column="43" lean-forward="false" selection-start-line="298" selection-start-column="37" selection-end-line="298" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_left.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/html/index_left.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8250">
-              <caret line="275" column="25" lean-forward="false" selection-start-line="275" selection-start-column="25" selection-end-line="275" selection-end-column="57" />
-              <folding />
-            </state>
+      <file leaf-file-name="slide_up4.PNG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/images/researchSlide/slide_up4.PNG">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -199,36 +280,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>swiper-button-prev</find>
-      <find>五个</find>
-      <find>input</find>
-      <find>parent</find>
-      <find>left-defaults</find>
-      <find>local</find>
-      <find>detectPageArrValue</find>
-      <find>slideP</find>
-      <find>valueDetectStore</find>
-      <find>sort</find>
-      <find>push</find>
-      <find>我了解糖果的相关</find>
-      <find>swiper-bo</find>
       <find>点击</find>
       <find>以下是一些陈述，请根据自身情况客观评价</find>
       <find>form</find>
       <find>sort_price</find>
       <find>prefer_result</find>
       <find>result[&quot;sort_value_name&quot;]</find>
-      <find>result</find>
       <find>high_or_low</find>
-      <find>sort_value_name</find>
       <find>aler</find>
-      <find>sort_value_class</find>
       <find>ajax</find>
       <find>aja</find>
       <find>年龄</find>
       <find>table</find>
       <find>alert</find>
       <find>text-align:left</find>
+      <find>kkk</find>
+      <find>body</find>
+      <find>container</find>
+      <find>question</find>
+      <find>请根据自身</find>
+      <find>29.9</find>
+      <find>result</find>
+      <find>index</find>
+      <find>question2</find>
+      <find>right-defaults</find>
+      <find>container1</find>
+      <find>margin</find>
+      <find>五个都</find>
+      <find>sort_value_class</find>
+      <find>sort_value_name</find>
+      <find>sort_value</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -266,7 +347,6 @@
         <option value="$PROJECT_DIR$/web/resources/html/index_up.html" />
         <option value="$PROJECT_DIR$/web/resources/js/swiper.min_up.css" />
         <option value="$PROJECT_DIR$/web/resources/html/index_up_shake.html" />
-        <option value="$PROJECT_DIR$/web/resources/example/example.css" />
         <option value="$PROJECT_DIR$/web/resources/html/index_drag_five_copy.html" />
         <option value="$PROJECT_DIR$/web/resources/html/index_drag_five.html" />
         <option value="$PROJECT_DIR$/web/resources/html/index_drag_five_pc.html" />
@@ -285,6 +365,12 @@
         <option value="$PROJECT_DIR$/web/resources/html/index_down_auto_play.html" />
         <option value="$PROJECT_DIR$/web/resources/html/procedure2/candyPriceDifferentPc.html" />
         <option value="$PROJECT_DIR$/web/resources/html/procedure2/candyPriceDifferentPcSuitble.html" />
+        <option value="$PROJECT_DIR$/web/resources/example/example.css" />
+        <option value="$PROJECT_DIR$/web/resources/example/example_shower_gel.css" />
+        <option value="$PROJECT_DIR$/web/resources/html/procedure2/showerGelPriceSamePc.html" />
+        <option value="$PROJECT_DIR$/web/resources/html/procedure2/showerGelPriceDifferentPc.html" />
+        <option value="$PROJECT_DIR$/web/resources/html/procedure2/showerGelPriceDifferentPhone.html" />
+        <option value="$PROJECT_DIR$/web/resources/html/procedure2/showerGelPriceSamePhone.html" />
       </list>
     </option>
   </component>
@@ -368,6 +454,54 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="research_slide_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="research_slide_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="research_slide_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="research_slide_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="researchSlide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -417,11 +551,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="research_slide_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="research_slide_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,10 +598,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Tomcat\webapps\research_slide_new\web\resources\html\procedure2" />
+      <recent name="F:\Tomcat\webapps\research_slide_new\web\resources\example" />
       <recent name="F:\Tomcat\webapps\research_slide_new\web\resources\html" />
       <recent name="F:\Tomcat\webapps\research_slide_new\web\resources\images" />
       <recent name="H:\Tomcat\webapps\research_slide_new\web\resources\js" />
-      <recent name="H:\Tomcat\webapps\research_slide_new\web\resources\html" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Tomcat\webapps\research_slide_new\web\resources\html\procedure2" />
@@ -1002,15 +1158,22 @@
       <workItem from="1513319859912" duration="2078000" />
       <workItem from="1513576267894" duration="4533000" />
       <workItem from="1513647153404" duration="1093000" />
-      <workItem from="1513862836384" duration="4883000" />
+      <workItem from="1513862836384" duration="5482000" />
+      <workItem from="1513933318364" duration="170000" />
+      <workItem from="1514097206183" duration="10553000" />
+      <workItem from="1516189109618" duration="2149000" />
+      <workItem from="1518483494197" duration="7014000" />
+      <workItem from="1518917428383" duration="1623000" />
+      <workItem from="1519273930833" duration="7629000" />
+      <workItem from="1519381495143" duration="5201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194534000" />
+    <option name="totallyTimeSpent" value="229472000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1031,10 +1194,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.024915062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.024915062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27145922" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29935622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1065,56 +1228,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index_up_test.html" />
-    <entry file="file://$PROJECT_DIR$/web/index_up_test.html" />
-    <entry file="jar://G:/research_slide/mysql-connector-java-5.1.44-bin.jar!/com/mysql/jdbc/Driver.class" />
-    <entry file="jar://E:/jdk1.8/src.zip!/java/sql/Connection.java" />
-    <entry file="file://$PROJECT_DIR$/research_slide_new.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/sql/ResultSet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/com/research/model/ResearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/MysqlUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="54">
-            <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/html/index_up_test.html" />
     <entry file="file://$PROJECT_DIR$/web/resources/dist/dragula.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1169,13 +1282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/example/example.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4440">
-          <caret line="148" column="11" lean-forward="false" selection-start-line="148" selection-start-column="11" selection-end-line="148" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/html/index_drag.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7950">
@@ -1212,13 +1318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/jsp/datastore.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="37" column="50" lean-forward="false" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/research/util/MysqlUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -1230,13 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/candyPriceDifferentPhone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44670">
-          <caret line="1494" column="36" lean-forward="false" selection-start-line="1494" selection-start-column="36" selection-end-line="1494" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1287,10 +1379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4920">
           <caret line="164" column="25" lean-forward="false" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#center#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#0;n#center#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1298,10 +1386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4830">
           <caret line="161" column="46" lean-forward="false" selection-start-line="161" selection-start-column="46" selection-end-line="161" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#center#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#0;n#center#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,7 +1393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1317,7 +1400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2910">
           <caret line="97" column="6" lean-forward="false" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1325,7 +1407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7680">
           <caret line="256" column="84" lean-forward="false" selection-start-line="256" selection-start-column="84" selection-end-line="256" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,7 +1414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8700">
           <caret line="290" column="0" lean-forward="false" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1341,7 +1421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3480">
           <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,7 +1428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8940">
           <caret line="298" column="43" lean-forward="false" selection-start-line="298" selection-start-column="37" selection-end-line="298" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1357,39 +1435,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8250">
           <caret line="275" column="25" lean-forward="false" selection-start-line="275" selection-start-column="25" selection-end-line="275" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/swiper.min_up.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="1382" lean-forward="false" selection-start-line="14" selection-start-column="1382" selection-end-line="14" selection-end-column="1382" />
+          <folding>
+            <element signature="e#2987#3245#2" expanded="false" />
+            <element signature="e#3386#3644#2" expanded="false" />
+            <element signature="e#3764#4022#2" expanded="false" />
+            <element signature="e#4102#4360#2" expanded="false" />
+            <element signature="e#4492#4750#2" expanded="false" />
+            <element signature="e#4870#5128#2" expanded="false" />
+            <element signature="e#14595#16042#2" expanded="false" />
+            <element signature="e#16197#17641#2" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/example/example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/meta.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/showerGelPriceSamePc_temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37860">
+          <caret line="1267" column="23" lean-forward="false" selection-start-line="1267" selection-start-column="23" selection-end-line="1267" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/jsp/datastore.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/html/index_down.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="8010">
+          <caret line="267" column="39" lean-forward="false" selection-start-line="267" selection-start-column="39" selection-end-line="267" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/js/swiper.min_up.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="14" column="1382" lean-forward="false" selection-start-line="14" selection-start-column="1382" selection-end-line="14" selection-end-column="1382" />
-          <folding>
-            <element signature="e#2987#3245#2" expanded="true" />
-            <element signature="e#3386#3644#2" expanded="true" />
-            <element signature="e#3764#4022#2" expanded="true" />
-            <element signature="e#4102#4360#2" expanded="true" />
-            <element signature="e#4492#4750#2" expanded="true" />
-            <element signature="e#4870#5128#2" expanded="true" />
-            <element signature="e#14595#16042#2" expanded="true" />
-            <element signature="e#16197#17641#2" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/resources/images/researchSlide/direction_right.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/images/researchSlide/slide_right5.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/images/researchSlide/slide_up4.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/candyPriceDifferentPc.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="25" />
+        <state relative-caret-position="4170">
+          <caret line="139" column="22" lean-forward="false" selection-start-line="134" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
           <folding>
             <marker date="1513865139045" expanded="true" signature="61508:61518" ph="..." />
             <marker date="1513865139045" expanded="true" signature="61547:61557" ph="..." />
@@ -1415,16 +1536,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/candyPriceDifferentPcSuitble.html">
+    <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/showerGelPriceDifferentPc.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="145" column="30" lean-forward="true" selection-start-line="144" selection-start-column="53" selection-end-line="145" selection-end-column="30" />
+        <state relative-caret-position="3960">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#14;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#15;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1518487186182" expanded="false" signature="52777:52792" ph="..." />
+            <marker date="1518487186182" expanded="false" signature="54043:54058" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="58589:58599" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="58628:58638" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="58692:58702" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="58731:58741" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="58795:58805" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="58834:58844" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="58898:58908" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="58937:58947" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59001:59011" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59040:59050" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59104:59114" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59143:59153" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59207:59217" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59246:59256" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59310:59320" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59349:59359" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59413:59423" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59452:59462" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59517:59527" ph="..." />
+            <marker date="1518487186182" expanded="true" signature="59556:59566" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/images/researchSlide/slide_down1.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/candyPriceDifferentPcSuitble.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4320">
+          <caret line="144" column="60" lean-forward="false" selection-start-line="144" selection-start-column="60" selection-end-line="144" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1513867450462" expanded="true" signature="59996:60006" ph="..." />
             <marker date="1513867450462" expanded="true" signature="60035:60045" ph="..." />
             <marker date="1513867450462" expanded="true" signature="60099:60109" ph="..." />
@@ -1445,6 +1604,117 @@
             <marker date="1513867450462" expanded="true" signature="60859:60869" ph="..." />
             <marker date="1513867450462" expanded="true" signature="60924:60934" ph="..." />
             <marker date="1513867450462" expanded="true" signature="60963:60973" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/example/example.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5220">
+          <caret line="174" column="1" lean-forward="false" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/example/example_shower_gel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="153" column="1" lean-forward="false" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/candyPriceDifferentPhone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4050">
+          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding>
+            <marker date="1513151416582" expanded="true" signature="68636:68646" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="68675:68685" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="68739:68749" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="68778:68788" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="68842:68852" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="68881:68891" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="68945:68955" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="68984:68994" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69048:69058" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69087:69097" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69151:69161" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69190:69200" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69254:69264" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69293:69303" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69357:69367" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69396:69406" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69460:69470" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69499:69509" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69564:69574" ph="..." />
+            <marker date="1513151416582" expanded="true" signature="69603:69613" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/showerGelPriceDifferentPhone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="128" column="33" lean-forward="false" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1519381665605" expanded="true" signature="59908:59918" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="59947:59957" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60011:60021" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60050:60060" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60114:60124" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60153:60163" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60217:60227" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60256:60266" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60320:60330" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60359:60369" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60423:60433" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60462:60472" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60526:60536" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60565:60575" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60629:60639" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60668:60678" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60732:60742" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60771:60781" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60836:60846" ph="..." />
+            <marker date="1519381665605" expanded="true" signature="60875:60885" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/html/procedure2/showerGelPriceSamePhone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="1368" column="57" lean-forward="true" selection-start-line="1368" selection-start-column="57" selection-end-line="1368" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#8;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1519387237927" expanded="true" signature="62821:62831" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="62860:62870" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="62924:62934" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="62963:62973" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63027:63037" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63066:63076" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63130:63140" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63169:63179" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63233:63243" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63272:63282" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63336:63346" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63375:63385" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63439:63449" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63478:63488" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63542:63552" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63581:63591" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63645:63655" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63684:63694" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63749:63759" ph="..." />
+            <marker date="1519387237927" expanded="true" signature="63788:63798" ph="..." />
           </folding>
         </state>
       </provider>
