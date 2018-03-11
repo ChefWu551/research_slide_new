@@ -20,7 +20,7 @@ public class MysqlUtil {
     private final static String dbName="research_slide";
     //表名
     private final static String tableName="rs_questionnaire";
-    private final static String tableNameDrag="df_questionnaire";
+    private final static String tableNameDrag="df_questionnaire_new";
 
     public static Connection getMysqlConnectiong(){
         String url="jdbc:mysql://"+hostUrl+"/"+dbName+"?user="+userName+"&password="+password;
@@ -52,14 +52,34 @@ public class MysqlUtil {
         return 0;
     }
 
-    public static int insertDragData2Mysql(Connection conn, String type, String sort_value_class, String sort_value_name,String sort_value_interval,
-                                           String prefer_result, String involvement_measure, String mood_measure_value,
+
+    public static int insertDragData2Mysql(Connection conn, String type, String sort_value_class, String sort_value_name,
+                                           String sort_value_interval,
+                                           String prefer_result,
+                                           String one_interval_choice,
+                                           String two_interval_choice,
+                                           String three_interval_choice,
+                                           String four_interval_choice,
+                                           String product_feeling,
+                                           String now_status,
+                                           String involvement_measure, String mood_measure_value,
                                        String price_sensitivity_value, String self_confidence, String basic_info){
         Statement stmt = null;
         try {
             stmt = conn.createStatement();
-            String sql=String.format("insert into "+tableNameDrag+" (`type`, `sort_value_class`,`sort_value_name`, `sort_value_interval`, `prefer_result`, `involvement_measure`, `mood_measure_value`, `price_sensitivity_value`, `self_confidence`, `basic_info`)" +
-                    " values ('%s','%s','%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')", type, sort_value_class, sort_value_name, sort_value_interval, prefer_result, involvement_measure, mood_measure_value, price_sensitivity_value, self_confidence, basic_info);
+            String sql=String.format("insert into "+tableNameDrag+" (`type`, `sort_value_class`,`sort_value_name`, " +
+                    "`sort_value_interval`, `prefer_result`, `one_interval_choice`, " +
+                    "`two_interval_choice`, `three_interval_choice`, `four_interval_choice`, " +
+                    "`product_feeling`, `now_status`, `involvement_measure`, " +
+                    "`mood_measure`, `price_sensitivity`, `self_confidence`, " +
+                    "`basic_info`)" +
+                    " values ('%s','%s','%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
+                    type, sort_value_class, sort_value_name,
+                    sort_value_interval, prefer_result, one_interval_choice,
+                    two_interval_choice, three_interval_choice, four_interval_choice,
+                    product_feeling, now_status, involvement_measure,
+                    mood_measure_value, price_sensitivity_value, self_confidence,
+                    basic_info);
             int rs;
             rs = stmt.executeUpdate(sql);
             return rs;

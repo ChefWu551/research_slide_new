@@ -17,7 +17,7 @@ html, body {
 }
 
 body, input, button {
-  font-family: Georgia, Helvetica;
+  font-family: "Times New Roman",Georgia,Serif;
   font-size: 17px;
   color: #ecf0f1;
 }
@@ -111,9 +111,9 @@ ul {
 input {
   border: none;
   outline: none;
-  background-color: #ecf0f1;
-  padding: 10px;
-  color: #942A57;
+  /*background-color: black;*/
+  /*padding: 10px;*/
+  color: black;
   border: 0;
   /*margin: 5px 0;*/
   /*display: block;*/
