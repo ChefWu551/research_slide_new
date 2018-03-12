@@ -37,10 +37,11 @@
             font-size: 18px;
             background: #fff;
             /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
+            /* 修改时间 : 20180311*/
+            /*display: -webkit-box;*/
+            /*display: -ms-flexbox;*/
+            /*display: -webkit-flex;*/
+            /*display: flex;*/
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             -webkit-justify-content: center;
@@ -49,6 +50,7 @@
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
+            overflow: auto;
         }
         .page_content{
             width: 80%;
@@ -57,14 +59,14 @@
 
 
         .question{
-            /*width: 90%;*/
+            /*width: 80%;*/
 
             height: 100%;
             font-size: 15px;
             margin: auto;
             border-spacing:0;
-            border-left:1px solid #888;
-            border-top:1px solid #888;
+            /*border-left:1px solid #888;*/
+            /*border-top:1px solid #888;*/
             /*text-decoration: none;*/
 
             /*rules:all;*/
@@ -78,14 +80,20 @@
 
         p{
             font-size: 14px;
+            /*margin:0 auto;*/
             /*padding-right: 5%;*/
             /*padding-left: 7%;*/
         }
 
+        tr{
+            /*line-height: 2em;*/
+        }
+
         td {
-            text-align:center; /*设置水平居中*/
+            text-align:left; /*设置水平居中*/
             vertical-align:middle;
             font-size: 13px;
+
         }
 
         table{
@@ -98,8 +106,12 @@
             width: 20%;
             height: 100px;
             /*margin:auto;*/
-            /*padding-left:20px;*/
+            padding: auto;
             /*padding-right: 20px;*/
+        }
+
+        .questionHead{
+            font-weight: bold;
         }
 
 
@@ -119,26 +131,32 @@
                     <label>&nbsp;&nbsp;您好！我们正在进行一次调查，了解消费者的购物行为。请仔细阅读内容，根据第一反应进行回答。您的回答无对错之分，数据仅供学术研究之用，不会单独披露，也不会用做商业用途，请放心填答。衷心感谢您的参与和支持！</label>
                 </div>
             </div>
+            <div>
+                <p  style="text-align:center;font-size: 12px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;"></p>
+            </div>
         </div>
 
         <div class="swiper-slide">
-            <div style="padding-right: 8%;padding-left: 5%;">
-                <!--<div class="parent">-->
-                <label style="font-size: 16px">&nbsp;&nbsp;请想象下，近期你的沐浴露用完了，你打算重新购买一瓶。刚好，近期一家大型日化用品公司推出了一款新的沐浴露，你被它的广告吸引了。该沐浴露共有5种香味。请你根据自己的偏好对这5款沐浴露进行1到5的排序。请直接将左边的图片拖拽到右边的方框中并进行排序。排序越靠近上面，表示越喜欢该款沐浴露，排序越靠近下面，表示越不喜欢该款沐浴露。（即排序第一表示“最喜欢”，排序第五表示“最不喜欢”）</label>
-                <br>
-                <br>
-                <!--<label>五种气味：甘甜杏仁味、自然椰香味，清新茉莉味，蜜香柑橘味，果萃西柚味</label>-->
+            <div class="examples">
+                <div class="parent">
+                    <label style="font-size: 16px">&nbsp;&nbsp;请想象下，近期你的沐浴露用完了，你打算重新购买一瓶。刚好，近期一家大型日化用品公司推出了一款新的沐浴露，你被它的广告吸引了。该沐浴露共有5种香味。请你对5款沐浴露香味进行偏好进行排序。</label>
 
+                </div>
             </div>
-            <!--</div>-->
+            <div>
+                <p  style="text-align:center;font-size: 12px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;"></p>
+            </div>
         </div>
 
         <div class="swiper-slide">
             <div style="height: 100%;">
                 <div class="parent" style="margin-top: 10px; height: 100%;" >
-                    <p >请将上边的图片拖拽到下边的方框中，并根据偏好排序。排序越靠近前面表示越喜欢，越靠近后面表示越不喜欢。</p>
-
-                    <div class='wrapper' style="height: 55%;">
+                    <p style="font-size: 13px;">&nbsp;请直接将上面的图片拖拽到下面的方框中，并根据偏好进行排序。</p>
+                    <p style="color: red;font-size: 13px;">&nbsp;从“左—>右”，表示“最喜欢—>最不喜欢”</p>
+                    <p style="font-size: 12px">&nbsp;&nbsp;甘甜杏仁味、自然椰香味，清新茉莉味，蜜香柑橘味，果萃西柚味</p>
+                    <div class='wrapper' style="height: 70%;">
 
                         <div id='left-defaults' class='container1' style="width: 100%; height: 50%;">
 
@@ -150,21 +168,29 @@
                         </div>
 
                         <div id='right-defaults' class='container2'  style="width: 100%; height: 50%;">
+
                         </div>
                     </div>
                 </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;"></p>
             </div>
         </div>
 
 
         <div class="swiper-slide">
-            <div style="height: 100%;">
+            <div style="height: 85%;">
                 <form class="question1" >
-                    <p>请认真阅读以下提供的每一组沐浴露的信息，从每一组中选择你倾向购买的产品，并作出选择。<p>
+                    <p>商家只提供以下两款沐浴露，你会购买：<p>
                     <table class="question" border="1px" >
                         <tr>
-                            <td id="first_page_content1"></td>
-                            <td id="first_page_content2"></td>
+                            <td id="first_page_content1" style = "text-align: center;"></td>
+                            <td id="first_page_content2" style = "text-align: center;"></td>
                         </tr>
                         <tr>
                             <td id="first_page_value1"></td>
@@ -193,22 +219,30 @@
                         </tr>
 
                         <tr>
-                            <td id="first_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
-                            <td id="first_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                            <td id="first_page_label1" style = "text-align: center;"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="first_page_label2" style = "text-align: center;"><label><input type="radio" name="gender" value="1"></label></td>
                         </tr>
                     </table>
+
                 </form>
             </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
+            </div>
+
+
         </div>
 
         <div class="swiper-slide">
-            <div style="height: 100%;">
-                <p >请认真阅读以下提供的每一组沐浴露的信息，从每一组中选择你倾向购买的产品，并作出选择。<p>
+            <div style="height: 85%;">
+                <p >商家只提供以下两款沐浴露，你会购买：<p>
                 <form class="question2">
                     <table class="question"  border="1px">
                         <tr>
-                            <td id="second_page_content1"></td>
-                            <td id="second_page_content2"></td>
+                            <td id="second_page_content1" style = "text-align: center;"></td>
+                            <td id="second_page_content2" style = "text-align: center;"></td>
                         </tr>
                         <tr>
                             <td id="second_page_value1"></td>
@@ -238,22 +272,28 @@
                         </tr>
 
                         <tr>
-                            <td id="second_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
-                            <td id="second_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                            <td id="second_page_label1" style = "text-align: center;"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="second_page_label2" style = "text-align: center;"><label><input type="radio" name="gender" value="1"></label></td>
                         </tr>
                     </table>
+
                 </form>
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
         <div class="swiper-slide">
-            <div style="height: 100%;">
-                <p >请认真阅读以下提供的每一组沐浴露的信息，从每一组中选择你倾向购买的产品，并作出选择。<p>
+            <div style="height: 85%;">
+                <p >商家只提供以下两款沐浴露，你会购买：<p>
                 <form class="question3">
                     <table class="question"  border="1px">
                         <tr>
-                            <td id="third_page_content1"></td>
-                            <td id="third_page_content2"></td>
+                            <td id="third_page_content1" style = "text-align: center;"></td>
+                            <td id="third_page_content2" style = "text-align: center;"></td>
                         </tr>
                         <tr>
                             <td id="third_page_value1"></td>
@@ -282,22 +322,28 @@
                             <td class="first_page_date">生产日期：具体见包装</td>
                         </tr>
                         <tr>
-                            <td id="third_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
-                            <td id="third_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                            <td id="third_page_label1" style = "text-align: center;"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="third_page_label2" style = "text-align: center;"><label><input type="radio" name="gender" value="1"></label></td>
                         </tr>
                     </table>
+
                 </form>
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
         <div class="swiper-slide">
-            <div style="height: 100%;">
-                <p >请认真阅读以下提供的每一组沐浴露的信息，从每一组中选择你倾向购买的产品，并作出选择。<p>
+            <div style="height: 85%;">
+                <p >商家只提供以下两款沐浴露，你会购买：<p>
                 <form class="question4">
                     <table  class="question"  border="1px">
                         <tr>
-                            <td id="fourth_page_content1"></td>
-                            <td id="fourth_page_content2"></td>
+                            <td id="fourth_page_content1" style = "text-align: center;"></td>
+                            <td id="fourth_page_content2" style = "text-align: center;"></td>
                         </tr>
                         <tr>
                             <td id="fourth_page_value1"></td>
@@ -325,24 +371,30 @@
                             <td class="first_page_date">生产日期：具体见包装</td>
                         </tr>
                         <tr>
-                            <td id="fourth_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
-                            <td id="fourth_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                            <td id="fourth_page_label1" style = "text-align: center;"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="fourth_page_label2" style = "text-align: center;"><label><input type="radio" name="gender" value="1"></label></td>
                         </tr>
                     </table>
+
                 </form>
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
 
 
         <div class="swiper-slide">
-            <div style="height: 100%;">
-                <p >请认真阅读以下提供的每一组沐浴露的信息，从每一组中选择你倾向购买的产品，并作出选择。<p>
+            <div style="height: 85%;">
+                <p >商家只提供以下两款沐浴露，你会购买：<p>
                 <form class="question5">
                     <table  class="question"  border="1px">
                         <tr>
-                            <td id="fifth_page_content1"></td>
-                            <td id="fifth_page_content2"></td>
+                            <td id="fifth_page_content1" style = "text-align: center;"></td>
+                            <td id="fifth_page_content2" style = "text-align: center;"></td>
                         </tr>
                         <tr>
                             <td id="fifth_page_value1"></td>
@@ -370,22 +422,28 @@
                             <td class="first_page_date">生产日期：具体见包装</td>
                         </tr>
                         <tr>
-                            <td id="fifth_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
-                            <td id="fifth_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                            <td id="fifth_page_label1" style = "text-align: center;"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="fifth_page_label2" style = "text-align: center;"><label><input type="radio" name="gender" value="1"></label></td>
                         </tr>
                     </table>
+
                 </form>
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
         <div class="swiper-slide">
-            <div style="height: 100%;">
-                <p >请认真阅读以下提供的每一组沐浴露的信息，从每一组中选择你倾向购买的产品，并作出选择。<p>
+            <div style="height: 85%;">
+                <p >商家只提供以下两款沐浴露，你会购买：<p>
                 <form class="question6">
                     <table  class="question"  border="1px">
                         <tr>
-                            <td id="sixth_page_content1"></td>
-                            <td id="sixth_page_content2"></td>
+                            <td id="sixth_page_content1" style = "text-align: center;"></td>
+                            <td id="sixth_page_content2" style = "text-align: center;"></td>
                         </tr>
                         <tr>
                             <td id="sixth_page_value1"></td>
@@ -413,22 +471,28 @@
                             <td class="first_page_date">生产日期：具体见包装</td>
                         </tr>
                         <tr>
-                            <td id="sixth_page_label1"><label><input type="radio" name="gender" value="0" ></label></td>
-                            <td id="sixth_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                            <td id="sixth_page_label1" style = "text-align: center;"><label><input type="radio" name="gender" value="0" ></label></td>
+                            <td id="sixth_page_label2" style = "text-align: center;"><label><input type="radio" name="gender" value="1"></label></td>
                         </tr>
                     </table>
+
                 </form>
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
         <div class="swiper-slide">
-            <div style="height: 100%;">
-                <p >请认真阅读以下提供的每一组沐浴露的信息，从每一组中选择你倾向购买的产品，并作出选择。<p>
+            <div style="height: 85%;">
+                <p >商家只提供以下两款沐浴露，你会购买：<p>
                 <form class="question7">
                     <table border="1px"  class="question" >
                         <tr>
-                            <td id="seven_page_content1"></td>
-                            <td id="seven_page_content2"></td>
+                            <td id="seven_page_content1" style = "text-align: center;"></td>
+                            <td id="seven_page_content2" style = "text-align: center;"></td>
                         </tr>
                         <tr>
                             <td id="seven_page_value1"></td>
@@ -456,22 +520,28 @@
                             <td class="first_page_date">生产日期：具体见包装</td>
                         </tr>
                         <tr>
-                            <td id="seven_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
-                            <td id="seven_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                            <td id="seven_page_label1" style = "text-align: center;"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="seven_page_label2" style = "text-align: center;"><label><input type="radio" name="gender" value="1"></label></td>
                         </tr>
                     </table>
+
                 </form>
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
         <div class="swiper-slide">
-            <div style="height: 100%;">
-                <p >请认真阅读以下提供的每一组沐浴露的信息，从每一组中选择你倾向购买的产品，并作出选择。<p>
+            <div style="height: 85%;">
+                <p >商家只提供以下两款沐浴露，你会购买：<p>
                 <form class="question8">
                     <table border="1px"  class="question" >
                         <tr>
-                            <td id="eight_page_content1"></td>
-                            <td id="eight_page_content2"></td>
+                            <td id="eight_page_content1" style = "text-align: center;"></td>
+                            <td id="eight_page_content2" style = "text-align: center;"></td>
                         </tr>
                         <tr>
                             <td id="eight_page_value1"></td>
@@ -499,22 +569,28 @@
                             <td class="first_page_date">生产日期：具体见包装</td>
                         </tr>
                         <tr>
-                            <td id="eight_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
-                            <td id="eight_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                            <td id="eight_page_label1" style = "text-align: center;"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="eight_page_label2" style = "text-align: center;"><label><input type="radio" name="gender" value="1"></label></td>
                         </tr>
                     </table>
+
                 </form>
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
         <div class="swiper-slide">
-            <div style="height: 100%;">
-                <p >请认真阅读以下提供的每一组沐浴露的信息，从每一组中选择你倾向购买的产品，并作出选择。<p>
+            <div style="height: 85%;">
+                <p >商家只提供以下两款沐浴露，你会购买：<p>
                 <form class="question9">
                     <table border="solid 1px"  class="question" >
                         <tr>
-                            <td id="nine_page_content1"></td>
-                            <td id="nine_page_content2"></td>
+                            <td id="nine_page_content1" style = "text-align: center;"></td>
+                            <td id="nine_page_content2" style = "text-align: center;"></td>
                         </tr>
                         <tr>
                             <td id="nine_page_value1"></td>
@@ -542,22 +618,28 @@
                             <td class="first_page_date">生产日期：具体见包装</td>
                         </tr>
                         <tr>
-                            <td id="nine_page_label1"><label><input type="radio" name="gender" value="0" ></label></td>
-                            <td id="nine_page_label2"><label><input type="radio" name="gender" value="1" ></label></td>
+                            <td id="nine_page_label1" style = "text-align: center;"><label><input type="radio" name="gender" value="0" ></label></td>
+                            <td id="nine_page_label2" style = "text-align: center;"><label><input type="radio" name="gender" value="1" ></label></td>
                         </tr>
                     </table>
+
                 </form>
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
         <div class="swiper-slide" id="dynamic_generate">
-            <div style="height: 100%;">
-                <p >请认真阅读以下提供的每一组沐浴露的信息，从每一组中选择你倾向购买的产品，并作出选择。<p>
+            <div style="height: 85%;">
+                <p >商家只提供以下两款沐浴露，你会购买：<p>
                 <form class="question10">
                     <table class="question"  border="1px">
                         <tr>
-                            <td id="ten_page_content1"></td>
-                            <td id="ten_page_content2"></td>
+                            <td id="ten_page_content1" style = "text-align: center;"></td>
+                            <td id="ten_page_content2" style = "text-align: center;"></td>
                         </tr>
                         <tr>
                             <td id="ten_page_value1"></td>
@@ -585,32 +667,40 @@
                             <td class="first_page_date">生产日期：具体见包装</td>
                         </tr>
                         <tr>
-                            <td id="ten_page_label1"><label><input type="radio" name="gender" value="0"></label></td>
-                            <td id="ten_page_label2"><label><input type="radio" name="gender" value="1"></label></td>
+                            <td id="ten_page_label1" style = "text-align: center;"><label><input type="radio" name="gender" value="0"></label></td>
+                            <td id="ten_page_label2" style = "text-align: center;"><label><input type="radio" name="gender" value="1"></label></td>
                         </tr>
                     </table>
+
                 </form>
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
         <div class="swiper-slide">
             <div>
-                <p>以下是一些陈述，请根据自身情况客观评价</p>
+
+                <p>请对你选择购买的产品进行感知评价<br>(说明：选择越靠近1说明越靠近左边的陈述，选择越靠近7说明越靠近右边的陈述)</p>
+                <p class="questionHead">1.总体而言，对于我所选择的产品，我觉得商家提供的产品数量：</p>
                 <table class="question"  border="1px">
                     <tr>
-                        <td>序号</td>
-                        <td>描述</td>
-                        <td>非常不同意</td>
-                        <td>基本不同意</td>
-                        <td>有点不同意</td>
-                        <td>中立</td>
-                        <td> 有点同意 </td>
-                        <td> 基本同意 </td>
-                        <td> 非常同意 </td>
-                    </tr>
-                    <tr id="question11">
+                        <td></td>
                         <td>1</td>
-                        <td>在完成实验任务中，我的专注度非常高</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td> 5 </td>
+                        <td> 6 </td>
+                        <td> 7 </td>
+                        <td></td>
+                    </tr>
+
+                    <tr id="question11">
+                        <td>数量有限</td>
                         <td><label for="question11_value1"></label><input type="radio" name="question11" value="1"  id="question11_value1"></td>
                         <td><label for="question11_value2"></label><input type="radio" name="question11" value="2"  id="question11_value2"></td>
                         <td><label for="question11_value3"></label><input type="radio" name="question11" value="3"  id="question11_value3"></td>
@@ -618,12 +708,26 @@
                         <td><label for="question11_value5"></label><input type="radio" name="question11" value="5"  id="question11_value5"></td>
                         <td><label for="question11_value6"></label><input type="radio" name="question11" value="6"  id="question11_value6"></td>
                         <td><label for="question11_value7"></label><input type="radio" name="question11" value="7"  id="question11_value7"></td>
+                        <td>数量很多</td>
+                    </tr>
+                </table>
 
+                <p class="questionHead">2.总体而言，我觉得我所选择的产品是：</p>
+                <table class="question"  border="1px">
+                    <tr>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td> 5 </td>
+                        <td> 6 </td>
+                        <td> 7 </td>
+                        <td></td>
                     </tr>
 
                     <tr  id="question12">
-                        <td>2</td>
-                        <td>完成这个研究，我花费了很多努力。</td>
+                        <td>不受欢迎的</td>
                         <td><label for="question12_value1"></label><input type="radio" name="question12" value="1"  id="question12_value1"></td>
                         <td><label for="question12_value2"></label><input type="radio" name="question12" value="2"  id="question12_value2"></td>
                         <td><label for="question12_value3"></label><input type="radio" name="question12" value="3"  id="question12_value3"></td>
@@ -631,11 +735,28 @@
                         <td><label for="question12_value5"></label><input type="radio" name="question12" value="5"  id="question12_value5"></td>
                         <td><label for="question12_value6"></label><input type="radio" name="question12" value="6"  id="question12_value6"></td>
                         <td><label for="question12_value7"></label><input type="radio" name="question12" value="7"  id="question12_value7"></td>
+                        <td>受欢迎的</td>
+                    </tr>
+
+                </table>
+
+
+                <p class="questionHead">3.总体而言，我认为我选择的产品：</p>
+                <table class="question"  border="1px">
+                    <tr>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td></td>
                     </tr>
 
                     <tr id="question13">
-                        <td>3</td>
-                        <td>完成这个研究，我的参与度很高。</td>
+                        <td>质量不好</td>
                         <td><label for="question13_value1"></label><input type="radio" name="question13" value="1"  id="question13_value1"></td>
                         <td><label for="question13_value2"></label><input type="radio" name="question13" value="2"  id="question13_value2"></td>
                         <td><label for="question13_value3"></label><input type="radio" name="question13" value="3"  id="question13_value3"></td>
@@ -643,33 +764,39 @@
                         <td><label for="question13_value5"></label><input type="radio" name="question13" value="5"  id="question13_value5"></td>
                         <td><label for="question13_value6"></label><input type="radio" name="question13" value="6"  id="question13_value6"></td>
                         <td><label for="question13_value7"></label><input type="radio" name="question13" value="7"  id="question13_value7"></td>
+                        <td>质量好</td>
+
                     </tr>
 
 
                 </table>
-                <!--</form>-->
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;"></p>
             </div>
         </div>
 
         <div class="swiper-slide">
             <div>
+                <p class="questionHead">4.你现在的状态是：（说明：选择越靠近1说明越符合左边的陈述，选择越靠近7说明越靠近右边的陈述）:</p>
                 <table class="question"  border="1px">
                     <tr>
-                        <td>序号</td>
-                        <td>描述</td>
-                        <td>非常不同意</td>
-                        <td>基本不同意</td>
-                        <td>有点不同意</td>
-                        <td>中立</td>
-                        <td>有点同意</td>
-                        <td>基本同意 </td>
-                        <td>非常同意 </td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td></td>
                     </tr>
 
 
                     <tr id="question14">
-                        <td>4</td>
-                        <td>我认为这个研究有趣。</td>
+                        <td>昏昏欲睡</td>
                         <td><label for="question14_value1"></label><input type="radio" name="question14" value="1"  id="question14_value1"></td>
                         <td><label for="question14_value2"></label><input type="radio" name="question14" value="2"  id="question14_value2"></td>
                         <td><label for="question14_value3"></label><input type="radio" name="question14" value="3"  id="question14_value3"></td>
@@ -677,11 +804,12 @@
                         <td><label for="question14_value5"></label><input type="radio" name="question14" value="5"  id="question14_value5"></td>
                         <td><label for="question14_value6"></label><input type="radio" name="question14" value="6"  id="question14_value6"></td>
                         <td><label for="question14_value7"></label><input type="radio" name="question14" value="7"  id="question14_value7"></td>
+                        <td>情绪激昂</td>
                     </tr>
 
                     <tr id="question15">
-                        <td>5</td>
-                        <td>我现在是开心的。</td>
+                        <td>冷静</td>
+
                         <td><label for="question15_value1"></label><input type="radio" name="question15" value="1"  id="question15_value1"></td>
                         <td><label for="question15_value2"></label><input type="radio" name="question15" value="2"  id="question15_value2"></td>
                         <td><label for="question15_value3"></label><input type="radio" name="question15" value="3"  id="question15_value3"></td>
@@ -689,12 +817,12 @@
                         <td><label for="question15_value5"></label><input type="radio" name="question15" value="5"  id="question15_value5"></td>
                         <td><label for="question15_value6"></label><input type="radio" name="question15" value="6"  id="question15_value6"></td>
                         <td><label for="question15_value7"></label><input type="radio" name="question15" value="7"  id="question15_value7"></td>
-
+                        <td>兴奋</td>
                     </tr>
 
                     <tr id="question16">
-                        <td>6</td>
-                        <td>我现在是兴奋的。</td>
+                        <td>悲伤</td>
+
                         <td><label for="question16_value1"></label><input type="radio" name="question16" value="1"  id="question16_value1"></td>
                         <td><label for="question16_value2"></label><input type="radio" name="question16" value="2"  id="question16_value2"></td>
                         <td><label for="question16_value3"></label><input type="radio" name="question16" value="3"  id="question16_value3"></td>
@@ -702,37 +830,12 @@
                         <td><label for="question16_value5"></label><input type="radio" name="question16" value="5"  id="question16_value5"></td>
                         <td><label for="question16_value6"></label><input type="radio" name="question16" value="6"  id="question16_value6"></td>
                         <td><label for="question16_value7"></label><input type="radio" name="question16" value="7"  id="question16_value7"></td>
-
+                        <td>开心</td>
                     </tr>
-
-
-
-                </table>
-                <!--</form>-->
-            </div>
-        </div>
-
-        <div class="swiper-slide">
-            <div>
-                <table class="question"  border="1px">
-                    <tr>
-                        <td>序号</td>
-                        <td>描述</td>
-                        <td>非常不同意</td>
-                        <td>基本不同意</td>
-                        <td>有点不同意</td>
-                        <td>中立</td>
-                        <td> 有点同意 </td>
-                        <td> 基本同意 </td>
-                        <td> 非常同意 </td>
-                    </tr>
-
-
-
 
                     <tr id="question17">
-                        <td>7</td>
-                        <td>我现在是愉快的。</td>
+                        <td>坏心情</td>
+
                         <td><label for="question17_value1"></label><input type="radio" name="question17" value="1"  id="question17_value1"></td>
                         <td><label for="question17_value2"></label><input type="radio" name="question17" value="2"  id="question17_value2"></td>
                         <td><label for="question17_value3"></label><input type="radio" name="question17" value="3"  id="question17_value3"></td>
@@ -740,11 +843,12 @@
                         <td><label for="question17_value5"></label><input type="radio" name="question17" value="5"  id="question17_value5"></td>
                         <td><label for="question17_value6"></label><input type="radio" name="question17" value="6"  id="question17_value6"></td>
                         <td><label for="question17_value7"></label><input type="radio" name="question17" value="7"  id="question17_value7"></td>
+                        <td>好心情</td>
                     </tr>
 
                     <tr id="question18">
-                        <td>8</td>
-                        <td>我现在是悲伤的。</td>
+                        <td>烦躁</td>
+
                         <td><label for="question18_value1"></label><input type="radio" name="question18" value="1"  id="question18_value1"></td>
                         <td><label for="question18_value2"></label><input type="radio" name="question18" value="2"  id="question18_value2"></td>
                         <td><label for="question18_value3"></label><input type="radio" name="question18" value="3"  id="question18_value3"></td>
@@ -752,13 +856,12 @@
                         <td><label for="question18_value5"></label><input type="radio" name="question18" value="5"  id="question18_value5"></td>
                         <td><label for="question18_value6"></label><input type="radio" name="question18" value="6"  id="question18_value6"></td>
                         <td><label for="question18_value7"></label><input type="radio" name="question18" value="7"  id="question18_value7"></td>
-
+                        <td>高兴</td>
 
                     </tr>
 
                     <tr id="question19">
-                        <td>9</td>
-                        <td>我现在是心烦的。</td>
+                        <td>郁闷</td>
                         <td><label for="question19_value1"></label><input type="radio" name="question19" value="1"  id="question19_value1"></td>
                         <td><label for="question19_value2"></label><input type="radio" name="question19" value="2"  id="question19_value2"></td>
                         <td><label for="question19_value3"></label><input type="radio" name="question19" value="3"  id="question19_value3"></td>
@@ -766,12 +869,37 @@
                         <td><label for="question19_value5"></label><input type="radio" name="question19" value="5"  id="question19_value5"></td>
                         <td><label for="question19_value6"></label><input type="radio" name="question19" value="6"  id="question19_value6"></td>
                         <td><label for="question19_value7"></label><input type="radio" name="question19" value="7"  id="question19_value7"></td>
-
+                        <td>愉快</td>
                     </tr>
 
+
+                </table>
+                <!--</form>-->
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div>
+                <p class="questionHead">5.以下是一些陈述，请根据自身情况客观评价</p>
+                <table class="question" style="border-collapse:separate; border-spacing:0px 10px; padding: 0 5px;">
+                    <tr>
+                        <td>描<br>述</td>
+                        <td>非<br>常<br>不<br>同<br>意</td>
+                        <td>基<br>本<br>不<br>同<br>意</td>
+                        <td>有<br>点<br>不<br>同<br>意</td>
+                        <td>中<br>立</td>
+                        <td> 有<br>点<br>同<br>意 </td>
+                        <td> 基<br>本<br>同<br>意 </td>
+                        <td> 非<br>常<br>同<br>意 </td>
+                    </tr>
                     <tr id="question20">
-                        <td>10</td>
-                        <td>我现在是沮丧的。</td>
+
+                        <td>在完成实验任务中，我的专注度非常高</td>
                         <td><label for="question20_value1"></label><input type="radio" name="question20" value="1"  id="question20_value1"></td>
                         <td><label for="question20_value2"></label><input type="radio" name="question20" value="2"  id="question20_value2"></td>
                         <td><label for="question20_value3"></label><input type="radio" name="question20" value="3"  id="question20_value3"></td>
@@ -780,32 +908,12 @@
                         <td><label for="question20_value6"></label><input type="radio" name="question20" value="6"  id="question20_value6"></td>
                         <td><label for="question20_value7"></label><input type="radio" name="question20" value="7"  id="question20_value7"></td>
 
+
                     </tr>
 
-                </table>
-            </div>
-        </div>
+                    <tr  id="question21">
 
-        <div class="swiper-slide">
-            <div  style="margin-top: 10px" >
-                <p>以下是一些陈述，请根据自身情况进行评价<p>
-                <!--<form class="question11">-->
-                <table class="question"  border="1px">
-                    <tr>
-                        <td>序号</td>
-                        <td>陈述内容</td>
-                        <td>完全不同意</td>
-                        <td>不同意</td>
-                        <td>有点不同意</td>
-                        <td>中立</td>
-                        <td> 有点同意 </td>
-                        <td> 同意 </td>
-                        <td> 完全同意 </td>
-                    </tr>
-                    <tr id="question21">
-                        <td>1</td>
-                        <td  style="text-align:left">通常我会付出很多时间和精力去对比产品价格，之后再决定购买。 </td>
-
+                        <td>完成这个研究，我花费了很多努力。</td>
                         <td><label for="question21_value1"></label><input type="radio" name="question21" value="1"  id="question21_value1"></td>
                         <td><label for="question21_value2"></label><input type="radio" name="question21" value="2"  id="question21_value2"></td>
                         <td><label for="question21_value3"></label><input type="radio" name="question21" value="3"  id="question21_value3"></td>
@@ -813,12 +921,11 @@
                         <td><label for="question21_value5"></label><input type="radio" name="question21" value="5"  id="question21_value5"></td>
                         <td><label for="question21_value6"></label><input type="radio" name="question21" value="6"  id="question21_value6"></td>
                         <td><label for="question21_value7"></label><input type="radio" name="question21" value="7"  id="question21_value7"></td>
-
                     </tr>
 
                     <tr id="question22">
-                        <td>2</td>
-                        <td style="text-align:left">价格是我选择沐浴露的主要影响因素。</td>
+
+                        <td>完成这个研究，我的参与度很高。</td>
                         <td><label for="question22_value1"></label><input type="radio" name="question22" value="1"  id="question22_value1"></td>
                         <td><label for="question22_value2"></label><input type="radio" name="question22" value="2"  id="question22_value2"></td>
                         <td><label for="question22_value3"></label><input type="radio" name="question22" value="3"  id="question22_value3"></td>
@@ -826,36 +933,11 @@
                         <td><label for="question22_value5"></label><input type="radio" name="question22" value="5"  id="question22_value5"></td>
                         <td><label for="question22_value6"></label><input type="radio" name="question22" value="6"  id="question22_value6"></td>
                         <td><label for="question22_value7"></label><input type="radio" name="question22" value="7"  id="question22_value7"></td>
-
                     </tr>
-
-
-                </table>
-                <!--</form>-->
-            </div>
-        </div>
-
-        <div class="swiper-slide">
-            <div  style="margin-top: 10px" >
-                <p>以下是一些陈述，请根据自身情况进行评价<p>
-                <!--<form class="question11">-->
-                <table class="question"  border="1px">
-                    <tr>
-                        <td>序号</td>
-                        <td>陈述内容</td>
-                        <td>完全不同意</td>
-                        <td>不同意</td>
-                        <td>有点不同意</td>
-                        <td>中立</td>
-                        <td> 有点同意 </td>
-                        <td> 同意 </td>
-                        <td> 完全同意 </td>
-                    </tr>
-
 
                     <tr id="question23">
-                        <td>3</td>
-                        <td style="text-align:left">我愿意支付更高的价格去选择我喜欢的味道的沐浴露。</td>
+
+                        <td>我认为这个研究有趣。</td>
                         <td><label for="question23_value1"></label><input type="radio" name="question23" value="1"  id="question23_value1"></td>
                         <td><label for="question23_value2"></label><input type="radio" name="question23" value="2"  id="question23_value2"></td>
                         <td><label for="question23_value3"></label><input type="radio" name="question23" value="3"  id="question23_value3"></td>
@@ -866,8 +948,7 @@
                     </tr>
 
                     <tr id="question24">
-                        <td>4</td>
-                        <td style="text-align:left">如果我喜欢的那款香味的沐浴露比其他香味更贵，我会很在意。</td>
+                        <td>我现在是开心的。</td>
                         <td><label for="question24_value1"></label><input type="radio" name="question24" value="1"  id="question24_value1"></td>
                         <td><label for="question24_value2"></label><input type="radio" name="question24" value="2"  id="question24_value2"></td>
                         <td><label for="question24_value3"></label><input type="radio" name="question24" value="3"  id="question24_value3"></td>
@@ -876,37 +957,11 @@
                         <td><label for="question24_value6"></label><input type="radio" name="question24" value="6"  id="question24_value6"></td>
                         <td><label for="question24_value7"></label><input type="radio" name="question24" value="7"  id="question24_value7"></td>
 
+
                     </tr>
-
-                </table>
-                <!--</form>-->
-            </div>
-        </div>
-
-
-        <div class="swiper-slide">
-            <div  style="margin-top: 10px" >
-                <p>以下是一些陈述，请根据自身情况进行评价<p>
-                <!--<form class="question11">-->
-                <table class="question"  border="1px">
-                    <tr>
-                        <td>序号</td>
-                        <td>陈述内容</td>
-                        <td>完全不同意</td>
-                        <td>不同意</td>
-                        <td>有点不同意</td>
-                        <td>中立</td>
-                        <td> 有点同意 </td>
-                        <td> 同意 </td>
-                        <td> 完全同意 </td>
-                    </tr>
-
-
-
 
                     <tr id="question25">
-                        <td>5</td>
-                        <td style="text-align:left">我愿意为自己喜欢的香味的沐浴露支付更高的价格。</td>
+                        <td>我现在是兴奋的。</td>
                         <td><label for="question25_value1"></label><input type="radio" name="question25" value="1"  id="question25_value1"></td>
                         <td><label for="question25_value2"></label><input type="radio" name="question25" value="2"  id="question25_value2"></td>
                         <td><label for="question25_value3"></label><input type="radio" name="question25" value="3"  id="question25_value3"></td>
@@ -918,8 +973,7 @@
                     </tr>
 
                     <tr id="question26">
-                        <td>6</td>
-                        <td style="text-align:left">我会付出很多时间和精力来对比不同香味沐浴露的价格。</td>
+                        <td>我现在是愉快的。</td>
                         <td><label for="question26_value1"></label><input type="radio" name="question26" value="1"  id="question26_value1"></td>
                         <td><label for="question26_value2"></label><input type="radio" name="question26" value="2"  id="question26_value2"></td>
                         <td><label for="question26_value3"></label><input type="radio" name="question26" value="3"  id="question26_value3"></td>
@@ -929,36 +983,8 @@
                         <td><label for="question26_value7"></label><input type="radio" name="question26" value="7"  id="question26_value7"></td>
                     </tr>
 
-
-
-                </table>
-                <!--</form>-->
-            </div>
-        </div>
-
-        <div class="swiper-slide">
-            <div  style="margin-top: 10px" >
-                <p>以下是一些陈述，请根据自身情况进行评价<p>
-                <!--<form class="question11">-->
-                <table class="question"  border="1px">
-                    <tr>
-                        <td>序号</td>
-                        <td>陈述内容</td>
-                        <td>完全不同意</td>
-                        <td>不同意</td>
-                        <td>有点不同意</td>
-                        <td>中立</td>
-                        <td> 有点同意 </td>
-                        <td> 同意 </td>
-                        <td> 完全同意 </td>
-                    </tr>
-
-
-
-
                     <tr id="question27">
-                        <td>7</td>
-                        <td style="text-align:left">请选择“中立”。</td>
+                        <td>我现在是悲伤的。</td>
                         <td><label for="question27_value1"></label><input type="radio" name="question27" value="1"  id="question27_value1"></td>
                         <td><label for="question27_value2"></label><input type="radio" name="question27" value="2"  id="question27_value2"></td>
                         <td><label for="question27_value3"></label><input type="radio" name="question27" value="3"  id="question27_value3"></td>
@@ -967,11 +993,12 @@
                         <td><label for="question27_value6"></label><input type="radio" name="question27" value="6"  id="question27_value6"></td>
                         <td><label for="question27_value7"></label><input type="radio" name="question27" value="7"  id="question27_value7"></td>
 
+
+
                     </tr>
 
                     <tr id="question28">
-                        <td>8</td>
-                        <td style="text-align:left">我了解沐浴露的相关信息。</td>
+                        <td>我现在是心烦的。</td>
                         <td><label for="question28_value1"></label><input type="radio" name="question28" value="1"  id="question28_value1"></td>
                         <td><label for="question28_value2"></label><input type="radio" name="question28" value="2"  id="question28_value2"></td>
                         <td><label for="question28_value3"></label><input type="radio" name="question28" value="3"  id="question28_value3"></td>
@@ -979,11 +1006,11 @@
                         <td><label for="question28_value5"></label><input type="radio" name="question28" value="5"  id="question28_value5"></td>
                         <td><label for="question28_value6"></label><input type="radio" name="question28" value="6"  id="question28_value6"></td>
                         <td><label for="question28_value7"></label><input type="radio" name="question28" value="7"  id="question28_value7"></td>
+
                     </tr>
 
                     <tr id="question29">
-                        <td>9</td>
-                        <td style="text-align:left">我了解有关沐浴露香味情况。</td>
+                        <td>我现在是沮丧的。</td>
                         <td><label for="question29_value1"></label><input type="radio" name="question29" value="1"  id="question29_value1"></td>
                         <td><label for="question29_value2"></label><input type="radio" name="question29" value="2"  id="question29_value2"></td>
                         <td><label for="question29_value3"></label><input type="radio" name="question29" value="3"  id="question29_value3"></td>
@@ -996,30 +1023,32 @@
 
 
                 </table>
-                <!--</form>-->
+
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
         <div class="swiper-slide">
             <div  style="margin-top: 10px" >
                 <p>以下是一些陈述，请根据自身情况进行评价<p>
-                <!--<form class="question11">-->
-                <table class="question"  border="1px">
+                <table class="question"  style="border-collapse:separate; border-spacing:0px 10px; padding: 0 5px;">
                     <tr>
-                        <td>序号</td>
-                        <td>陈述内容</td>
-                        <td>完全不同意</td>
-                        <td>不同意</td>
-                        <td>有点不同意</td>
-                        <td>中立</td>
-                        <td> 有点同意 </td>
-                        <td> 同意 </td>
-                        <td> 完全同意 </td>
+                        <td>描述</td>
+                        <td>非<br>常<br>不<br>同<br>意</td>
+                        <td>基<br>本<br>不<br>同<br>意</td>
+                        <td>有<br>点<br>不<br>同<br>意</td>
+                        <td>中<br>立</td>
+                        <td> 有<br>点<br>同<br>意 </td>
+                        <td> 基<br>本<br>同<br>意 </td>
+                        <td> 非<br>常<br>同<br>意 </td>
                     </tr>
 
                     <tr id="question30">
-                        <td>10</td>
-                        <td style="text-align:left">我了解沐浴露相关知识。</td>
+                        <td style="text-align:left">通常我会付出很多时间和精力去对比产品价格，之后再决定购买。</td>
                         <td><label for="question30_value1"></label><input type="radio" name="question30" value="1"  id="question30_value1"></td>
                         <td><label for="question30_value2"></label><input type="radio" name="question30" value="2"  id="question30_value2"></td>
                         <td><label for="question30_value3"></label><input type="radio" name="question30" value="3"  id="question30_value3"></td>
@@ -1031,8 +1060,7 @@
                     </tr>
 
                     <tr id="question31">
-                        <td>11</td>
-                        <td style="text-align:left">我经常购买沐浴露。</td>
+                        <td style="text-align:left">价格是我选择沐浴露的主要影响因素。</td>
                         <td><label for="question31_value1"></label><input type="radio" name="question31" value="1"  id="question31_value1"></td>
                         <td><label for="question31_value2"></label><input type="radio" name="question31" value="2"  id="question31_value2"></td>
                         <td><label for="question31_value3"></label><input type="radio" name="question31" value="3"  id="question31_value3"></td>
@@ -1045,8 +1073,7 @@
 
 
                     <tr id="question32">
-                        <td>12</td>
-                        <td style="text-align:left">我经常使用沐浴露。</td>
+                        <td style="text-align:left">我愿意支付更高的价格去选择我喜欢的味道的沐浴露。</td>
                         <td><label for="question32_value1"></label><input type="radio" name="question32" value="1"  id="question32_value1"></td>
                         <td><label for="question32_value2"></label><input type="radio" name="question32" value="2"  id="question32_value2"></td>
                         <td><label for="question32_value3"></label><input type="radio" name="question32" value="3"  id="question32_value3"></td>
@@ -1056,41 +1083,164 @@
                         <td><label for="question32_value7"></label><input type="radio" name="question32" value="7"  id="question32_value7"></td>
                     </tr>
 
+                    <tr id="question33">
+                        <td style="text-align:left">如果我喜欢的那款香味的沐浴露比其他香味更贵，我会很在意。</td>
+                        <td><label for="question33_value1"></label><input type="radio" name="question33" value="1"  id="question33_value1"></td>
+                        <td><label for="question33_value2"></label><input type="radio" name="question33" value="2"  id="question33_value2"></td>
+                        <td><label for="question33_value3"></label><input type="radio" name="question33" value="3"  id="question33_value3"></td>
+                        <td><label for="question33_value4"></label><input type="radio" name="question33" value="4"  id="question33_value4"></td>
+                        <td><label for="question33_value5"></label><input type="radio" name="question33" value="5"  id="question33_value5"></td>
+                        <td><label for="question33_value6"></label><input type="radio" name="question33" value="6"  id="question33_value6"></td>
+                        <td><label for="question33_value7"></label><input type="radio" name="question33" value="7"  id="question33_value7"></td>
+                    </tr>
+
+                    <tr id="question34">
+                        <td style="text-align:left">我不愿意为自己喜欢的香味的沐浴露支付更高的价格。</td>
+                        <td><label for="question34_value1"></label><input type="radio" name="question34" value="1"  id="question34_value1"></td>
+                        <td><label for="question34_value2"></label><input type="radio" name="question34" value="2"  id="question34_value2"></td>
+                        <td><label for="question34_value3"></label><input type="radio" name="question34" value="3"  id="question34_value3"></td>
+                        <td><label for="question34_value4"></label><input type="radio" name="question34" value="4"  id="question34_value4"></td>
+                        <td><label for="question34_value5"></label><input type="radio" name="question34" value="5"  id="question34_value5"></td>
+                        <td><label for="question34_value6"></label><input type="radio" name="question34" value="6"  id="question34_value6"></td>
+                        <td><label for="question34_value7"></label><input type="radio" name="question34" value="7"  id="question34_value7"></td>
+                    </tr>
+
+                    <tr id="question35">
+                        <td style="text-align:left">我会付出很多时间和精力来对比不同香味沐浴露的价格。</td>
+                        <td><label for="question35_value1"></label><input type="radio" name="question35" value="1"  id="question35_value1"></td>
+                        <td><label for="question35_value2"></label><input type="radio" name="question35" value="2"  id="question35_value2"></td>
+                        <td><label for="question35_value3"></label><input type="radio" name="question35" value="3"  id="question35_value3"></td>
+                        <td><label for="question35_value4"></label><input type="radio" name="question35" value="4"  id="question35_value4"></td>
+                        <td><label for="question35_value5"></label><input type="radio" name="question35" value="5"  id="question35_value5"></td>
+                        <td><label for="question35_value6"></label><input type="radio" name="question35" value="6"  id="question35_value6"></td>
+                        <td><label for="question35_value7"></label><input type="radio" name="question35" value="7"  id="question35_value7"></td>
+                    </tr>
+
+                    <tr id="question36">
+                        <td style="text-align:left">请选择“中立”选项。</td>
+                        <td><label for="question36_value1"></label><input type="radio" name="question36" value="1"  id="question36_value1"></td>
+                        <td><label for="question36_value2"></label><input type="radio" name="question36" value="2"  id="question36_value2"></td>
+                        <td><label for="question36_value3"></label><input type="radio" name="question36" value="3"  id="question36_value3"></td>
+                        <td><label for="question36_value4"></label><input type="radio" name="question36" value="4"  id="question36_value4"></td>
+                        <td><label for="question36_value5"></label><input type="radio" name="question36" value="5"  id="question36_value5"></td>
+                        <td><label for="question36_value6"></label><input type="radio" name="question36" value="6"  id="question36_value6"></td>
+                        <td><label for="question36_value7"></label><input type="radio" name="question36" value="7"  id="question36_value7"></td>
+                    </tr>
+
+                    <tr id="question37">
+                        <td style="text-align:left">我了解沐浴露的相关信息。</td>
+                        <td><label for="question37_value1"></label><input type="radio" name="question37" value="1"  id="question37_value1"></td>
+                        <td><label for="question37_value2"></label><input type="radio" name="question37" value="2"  id="question37_value2"></td>
+                        <td><label for="question37_value3"></label><input type="radio" name="question37" value="3"  id="question37_value3"></td>
+                        <td><label for="question37_value4"></label><input type="radio" name="question37" value="4"  id="question37_value4"></td>
+                        <td><label for="question37_value5"></label><input type="radio" name="question37" value="5"  id="question37_value5"></td>
+                        <td><label for="question37_value6"></label><input type="radio" name="question37" value="6"  id="question37_value6"></td>
+                        <td><label for="question37_value7"></label><input type="radio" name="question37" value="7"  id="question37_value7"></td>
+                    </tr>
+
+                    <tr id="question38">
+                        <td style="text-align:left">我了解有关沐浴露香味情况。</td>
+                        <td><label for="question38_value1"></label><input type="radio" name="question38" value="1"  id="question38_value1"></td>
+                        <td><label for="question38_value2"></label><input type="radio" name="question38" value="2"  id="question38_value2"></td>
+                        <td><label for="question38_value3"></label><input type="radio" name="question38" value="3"  id="question38_value3"></td>
+                        <td><label for="question38_value4"></label><input type="radio" name="question38" value="4"  id="question38_value4"></td>
+                        <td><label for="question38_value5"></label><input type="radio" name="question38" value="5"  id="question38_value5"></td>
+                        <td><label for="question38_value6"></label><input type="radio" name="question38" value="6"  id="question38_value6"></td>
+                        <td><label for="question38_value7"></label><input type="radio" name="question38" value="7"  id="question38_value7"></td>
+                    </tr>
+
+
+                    <tr id="question39">
+                        <td style="text-align:left">我了解沐浴露相关知识。</td>
+                        <td><label for="question39_value1"></label><input type="radio" name="question39" value="1"  id="question39_value1"></td>
+                        <td><label for="question39_value2"></label><input type="radio" name="question39" value="2"  id="question39_value2"></td>
+                        <td><label for="question39_value3"></label><input type="radio" name="question39" value="3"  id="question39_value3"></td>
+                        <td><label for="question39_value4"></label><input type="radio" name="question39" value="4"  id="question39_value4"></td>
+                        <td><label for="question39_value5"></label><input type="radio" name="question39" value="5"  id="question39_value5"></td>
+                        <td><label for="question39_value6"></label><input type="radio" name="question39" value="6"  id="question39_value6"></td>
+                        <td><label for="question39_value7"></label><input type="radio" name="question39" value="7"  id="question39_value7"></td>
+                    </tr>
+
+                    <tr id="question40">
+                        <td style="text-align:left">我经常使用沐浴露。</td>
+                        <td><label for="question40_value1"></label><input type="radio" name="question40" value="1"  id="question40_value1"></td>
+                        <td><label for="question40_value2"></label><input type="radio" name="question40" value="2"  id="question40_value2"></td>
+                        <td><label for="question40_value3"></label><input type="radio" name="question40" value="3"  id="question40_value3"></td>
+                        <td><label for="question40_value4"></label><input type="radio" name="question40" value="4"  id="question40_value4"></td>
+                        <td><label for="question40_value5"></label><input type="radio" name="question40" value="5"  id="question40_value5"></td>
+                        <td><label for="question40_value6"></label><input type="radio" name="question40" value="6"  id="question40_value6"></td>
+                        <td><label for="question40_value7"></label><input type="radio" name="question40" value="7"  id="question40_value7"></td>
+                    </tr>
+
+
                 </table>
+
                 <!--</form>-->
+            </div>
+            <br>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
         <div class="swiper-slide">
             <div class = "label_horizen">
-                <p>以下的问题有关您个人的基本资料，您所提供的资料仅供本研究分析之用，绝不对外公开，请您放心填写！<p>
-                <p id="question35"> 性别：<input type="radio" name="question35" value="0"  id="question35_value1"/><label for="question35_value1">女</label>
-                    &nbsp;&nbsp;
-                    <input type="radio" name="question35" value="1"  id="question35_value2"/><label for="question35_value2">男</label></p>
-                <p><label>年龄：</label><input type="text"  id="question36" style="width: 150px;height: 15px;border-color: #878787;
+                <p>五、你认为这个研究的目的是什么？</p>
+                <p>&nbsp;
+                    <input type="text"  id="question41" style="width: 150px;height: 15px;
+                                                border-color: black;
                                                 border-style: solid;
                                                 border-top-width: 0px;
                                                  border-right-width: 0px;
                                                 border-bottom-width: 1px;
+                                                 border-left-width: 0px;
+                                                 background: white;
+                                                 font-size: 13px;">
+                </p>
+                <br>
+                <p>六、以下的问题有关您个人的基本资料，您所提供的资料仅供本研究分析之用，绝不对外公开，请您放心填写！<p>
+
+                <p id="question42">
+                    性别：
+                    <input type="radio" name="question42" value="0"  id="question42_value1"/><label for="question42_value1">女</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" name="question42" value="1"  id="question42_value2"/><label for="question42_value2">男</label>
+                </p>
+
+
+                <p>
+                <p><label>年龄（周岁）：</label><input type="text"  id="question43" style="width: 40px;height: 15px;border-color: #878787;
+                                                border-style: solid;
+                                                borFer-top-width: 0px;
+                                                 border-right-width: 0px;
+                                                border-bottom-width: 1px;
                                                  border-left-width: 0px;background: white;"></p>
+
+
                 <p>学历：</p>
-                <div style="margin-left: 8%;"  class="question_last_page" id="question37">
+                <div style="margin-left: 8%;"  class="question_last_page" id="question44">
                     <p style="font-size: 13px;margin-top:10px">
-                        <input type="radio" name="question37" value="0"  id="question37_value1"><label for="question37_value1">高中或中专及以下</label>
+                        <input type="radio" name="question44" value="0"  id="question44_value1"><label for="question44_value1">高中或中专及以下</label>
                     </p>
                     <p style="font-size: 13px;margin-top:10px">
-                        <input type="radio" name="question37" value="1"  id="question37_value2"><label for="question37_value2">大专或本科</label>
+                        <input type="radio" name="question44" value="1"  id="question44_value2"><label for="question44_value2">大专或本科</label>
                     </p>
                     <p style="font-size: 13px">
-                        <input type="radio" name="question37" value="2"  id="question37_value3"><label for="question37_value3">硕士</label>
+                        <input type="radio" name="question44" value="2"  id="question44_value3"><label for="question44_value3">硕士</label>
                     </p>
                     <p style="font-size: 13px">
-                        <input type="radio" name="question37" value="3"  id="question37_value4"><label for="question37_value4">博士</label>
+                        <input type="radio" name="question44" value="3"  id="question44_value4"><label for="question44_value4">博士</label>
                     </p>
                     <p style="font-size: 13px">
-                        <input type="radio" name="question37" value="4"  id="question37_value5"><label for="question37_value5">其他</label>
+                        <input type="radio" name="question44" value="4"  id="question44_value5"><label for="question44_value5">其他</label>
                     </p>
                 </div>
+
+            </div>
+            <div>
+                <p  style="text-align:center;font-size: 12px;line-height:0px;">点击翻到下一页</p>
+                <p  class="swiper-button-next" onclick="valueDetectStore()" style="margin:0 auto;line-height:0px;"></p>
             </div>
         </div>
 
@@ -1104,11 +1254,12 @@
         </div>
 
     </div>
-    <div class="swiper-button-next" onclick="valueDetectStore()">
-        <div style="position: relative;bottom: 10px;height: 50px;right: 55px;">
-            <p style="transform: rotate(270deg); font-size: 10px; width: 100px;">点击翻到下一页</p>
-        </div>
-    </div>
+
+
+    <!--<div style="position: relative;bottom: 10px;height: 50px;right: 55px;">-->
+    <!--<p style="transform: rotate(270deg); font-size: 10px; width: 100px;">点击翻到下一页</p>-->
+    <!--</div>-->
+
 </div>
 
 
@@ -1148,13 +1299,16 @@
     var prefer_result = [];
     var result = {};
     var swiper = new Swiper('.swiper-container', {
-        //pagination: '.swiper-pagination',
         // 设置方向 up
         paginationClickable: true,
         direction: 'vertical',
         allowSwipeToPrev: false,
         onlyExternal:true,
         nextButton:'.swiper-button-next',
+
+        autoHeight:true,
+
+
 
         // 拖拽触发函数
         onSlideChangeStart: function (swiper) {
@@ -1200,6 +1354,27 @@
         }
 
     });
+
+    var startScroll, touchStart, touchCurrent;
+    swiper.slides.on('touchstart', function (e) {
+        startScroll = this.scrollTop;
+        touchStart = e.targetTouches[0].pageY;
+    }, true);
+    swiper.slides.on('touchmove', function (e) {
+        touchCurrent = e.targetTouches[0].pageY;
+        var touchesDiff = touchCurrent - touchStart;
+        var slide = this;
+        var onlyScrolling =
+            ( slide.scrollHeight > slide.offsetHeight ) && //allow only when slide is scrollable
+            (
+                ( touchesDiff < 0 && startScroll === 0 ) || //start from top edge to scroll bottom
+                ( touchesDiff > 0 && startScroll === ( slide.scrollHeight - slide.offsetHeight ) ) || //start from bottom edge to scroll top
+                ( startScroll > 0 && startScroll < ( slide.scrollHeight - slide.offsetHeight ) ) //start from the middle
+            );
+        if (onlyScrolling) {
+            e.stopPropagation();
+        }
+    }, true);
 
     // 每一页值检测
     function valueDetectStore() {
@@ -1315,149 +1490,164 @@
                         }
                     }
                     // result['high_or_low'] = high_or_low.join("-");
+                    // 分别获取间隔 1 2 3 4 选则价格高低
+                    var interval_processing = result["sort_value_interval"].split("-");
+                    console.log("interval_processing ");
+                    console.log(interval_processing);
+                    var interval_one = [];
+                    var prefer_result_one = [];
+                    var interval_two = [];
+                    var prefer_result_two = [];
+                    var interval_three = [];
+                    var prefer_result_three = [];
+                    var interval_four = [];
+                    var prefer_result_four = [];
+                    for(i=0; i<interval_processing.length; i++){
+                        switch (interval_processing[i]){
+                            case "1":
+                                interval_one.push(interval_processing[i]);
+                                prefer_result_one.push(high_or_low[i]);
+                                break;
+                            case "2":
+                                interval_two.push(interval_processing[i]);
+                                prefer_result_two.push(high_or_low[i]);
+                                break;
+                            case "3":
+                                interval_three.push(interval_processing[i]);
+                                prefer_result_three.push(high_or_low[i]);
+                                break;
+                            case "4":
+                                interval_four.push(interval_processing[i]);
+                                prefer_result_four.push(high_or_low[i]);
+                                break;
+                            default:
+                                alert(interval_processing[i]);
+                                break;
+                        }
+                    }
+                    result['one_interval_choice'] = interval_one.join("-") + "****" + prefer_result_one.join("-");
+                    result['two_interval_choice'] = interval_two.join("-") + "****" + prefer_result_two.join("-");
+                    result['three_interval_choice'] = interval_three.join("-") + "****" + prefer_result_three.join("-");
+                    result['four_interval_choice'] = interval_four.join("-") + "****" + prefer_result_four.join("-");
                     result['prefer_result'] = high_or_low.join("-");
                 }
 
                 break;
 
             case 12:
-                console.log("page index is 12");
                 var form1_value11 = $('#question11').find(':radio:checked').val();
                 var form1_value12 = $('#question12').find(':radio:checked').val();
                 var form1_value13 = $('#question13').find(':radio:checked').val();
 
                 detectPageArrValue([form1_value11, form1_value12, form1_value13]);
-                result['involvement_measure'] = [form1_value11, form1_value12, form1_value13];
+                if(form1_value11 != undefined && form1_value12 != undefined && form1_value13){
+                    result['product_feeling'] = [form1_value11, form1_value12, form1_value13];
+                    result['product_feeling'] = result['product_feeling'].join("-");
+                }
 
                 break;
 
             case 13:
-                console.log("page index is 13");
                 var form1_value14 = $('#question14').find(':radio:checked').val();
                 var form1_value15 = $('#question15').find(':radio:checked').val();
                 var form1_value16 = $('#question16').find(':radio:checked').val();
-                detectPageArrValue([ form1_value14, form1_value15, form1_value16]);
-                console.log(form1_value14);
+                var form1_value17 = $('#question17').find(':radio:checked').val();
+                var form1_value18 = $('#question18').find(':radio:checked').val();
+                var form1_value19 = $('#question19').find(':radio:checked').val();
+                detectPageArrValue([ form1_value14, form1_value15, form1_value16, form1_value17, form1_value18, form1_value19]);
 
-                if(form1_value14 != undefined){
-                    result['involvement_measure'].push(form1_value14);
-                    result['involvement_measure'] = result['involvement_measure'].join("-");
-                    console.log("result['involvement_measure'] is");
-                    console.log( result['involvement_measure']);
+                if(form1_value14 != undefined && form1_value15 != undefined && form1_value16 != undefined && form1_value17 != undefined && form1_value18 != undefined && form1_value19 != undefined){
+                    result['now_status'] = [form1_value14, form1_value15, form1_value16, form1_value17, form1_value18, form1_value19];
+                    result['now_status'] = result['now_status'].join("-");
+                    console.log("result['now_status'] is");
+                    console.log( result['now_status']);
                 }
-                if(form1_value15 != undefined && form1_value16 != undefined){
-                    console.log("mood_measure_value 1");
-                    result['mood_measure_value'] = [form1_value15, form1_value16];
-                    console.log(result['mood_measure_value']);
-                }
+
 
                 break;
 
             case 14:
-                var form1_value17 = $('#question17').find(':radio:checked').val();
-                var form1_value18 = $('#question18').find(':radio:checked').val();
-                var form1_value19 = $('#question19').find(':radio:checked').val();
+
                 var form1_value20 = $('#question20').find(':radio:checked').val();
-                detectPageArrValue([ form1_value17, form1_value18, form1_value19, form1_value20]);
-                if(form1_value17 != undefined && form1_value18 != undefined && form1_value19 != undefined && form1_value20 != undefined ) {
-                    console.log("mood_measure_value 2");
-                    result['mood_measure_value'].push(form1_value17);
-                    result['mood_measure_value'].push(form1_value18);
-                    result['mood_measure_value'].push(form1_value19);
-                    result['mood_measure_value'].push(form1_value20);
-                    result['mood_measure_value'] = result['mood_measure_value'].join("-");
-                    console.log(result['mood_measure_value']);
+                var form1_value21 = $('#question21').find(':radio:checked').val();
+                var form1_value22 = $('#question22').find(':radio:checked').val();
+                var form1_value23 = $('#question23').find(':radio:checked').val();
+
+                var form1_value24 = $('#question24').find(':radio:checked').val();
+                var form1_value25 = $('#question25').find(':radio:checked').val();
+                var form1_value26 = $('#question26').find(':radio:checked').val();
+                var form1_value27 = $('#question27').find(':radio:checked').val();
+                var form1_value28 = $('#question28').find(':radio:checked').val();
+                var form1_value29 = $('#question29').find(':radio:checked').val();
+                detectPageArrValue([form1_value20, form1_value21, form1_value22, form1_value23, form1_value24, form1_value25, form1_value26, form1_value27, form1_value28, form1_value29]);
+                if(form1_value20 != undefined && form1_value21 != undefined && form1_value22 != undefined && form1_value23 != undefined && form1_value24 != undefined && form1_value25 != undefined && form1_value26 != undefined && form1_value27 != undefined && form1_value28 != undefined && form1_value29 != undefined) {
+                    result['involvement_measure'] = [form1_value20, form1_value21, form1_value22, form1_value23];
+                    result['involvement_measure'] = result['involvement_measure'].join("-");
+                    result['mood_measure']=[form1_value24, form1_value25, form1_value26, form1_value27, form1_value28, form1_value29];
+                    result['mood_measure'] = result['mood_measure'].join("-");
                 }
                 break;
 
 
             case 15:
-                console.log(page_index);
-                var form1_value21 = $('#question21').find(':radio:checked').val();
-                var form1_value22 = $('#question22').find(':radio:checked').val();
+                var form1_value30 = $('#question30').find(':radio:checked').val();
+                var form1_value31 = $('#question31').find(':radio:checked').val();
+                var form1_value32 = $('#question32').find(':radio:checked').val();
+                var form1_value33 = $('#question33').find(':radio:checked').val();
+                var form1_value34 = $('#question34').find(':radio:checked').val();
+                var form1_value35 = $('#question35').find(':radio:checked').val();
 
-                detectPageArrValue([form1_value21, form1_value22]);
+                var form1_value36 = $('#question36').find(':radio:checked').val();
+                var form1_value37 = $('#question37').find(':radio:checked').val();
+                var form1_value38 = $('#question38').find(':radio:checked').val();
+                var form1_value39 = $('#question39').find(':radio:checked').val();
+                var form1_value40 = $('#question40').find(':radio:checked').val();
+                detectPageArrValue([form1_value30, form1_value31, form1_value32, form1_value33, form1_value34, form1_value35, form1_value36, form1_value37, form1_value38, form1_value39, form1_value40]);
+                if(form1_value30 != undefined && form1_value31 != undefined && form1_value32 != undefined && form1_value33 != undefined && form1_value34 != undefined && form1_value35 != undefined && form1_value36 != undefined && form1_value37 != undefined && form1_value38 != undefined && form1_value39 != undefined && form1_value40 != undefined) {
 
-                if(form1_value21 != undefined && form1_value22 != undefined) {
-                    result['price_sensitivity_value'] = [form1_value21, form1_value22];
+                    result['price_sensitivity'] =  [form1_value30, form1_value31, form1_value32, form1_value33, form1_value34, form1_value35];
+                    result['price_sensitivity'] = result['price_sensitivity'].join("-");
+
+                    console.log("self_confidence");
+                    result['self_confidence'] =  [form1_value36, form1_value37, form1_value38, form1_value39, form1_value40];
+                    result['self_confidence'] = result['self_confidence'].join("-");
+                    console.log(result['self_confidence']);
                 }
+
 
                 break;
 
             case 16:
-                var form1_value23 = $('#question23').find(':radio:checked').val();
-                var form1_value24 = $('#question24').find(':radio:checked').val();
-                detectPageArrValue([form1_value23, form1_value24]);
+                var form1_value41 = document.getElementById("question41").value;
+                var form1_value42 = $('#question42').find(':radio:checked').val();
+                var form1_value43 = document.getElementById("question43").value;
+                var form1_value44 = $('#question44').find(':radio:checked').val();
 
-                if(form1_value23 != undefined && form1_value24 != undefined) {
-                    result['price_sensitivity_value'].push(form1_value23, form1_value24);
-                }
-
-                break;
-            case 17:
-                var form1_value25 = $('#question25').find(':radio:checked').val();
-                var form1_value26 = $('#question26').find(':radio:checked').val();
-                detectPageArrValue([form1_value25, form1_value26]);
-
-                if(form1_value25 != undefined && form1_value26 != undefined) {
-                    result['price_sensitivity_value'].push(form1_value25, form1_value26);
-                    result['price_sensitivity_value'] = result['price_sensitivity_value'].join("-");
-                }
-
-                break;
-            case 18:
-                var form1_value27 = $('#question27').find(':radio:checked').val();
-                var form1_value28 = $('#question28').find(':radio:checked').val();
-                var form1_value29 = $('#question29').find(':radio:checked').val();
-
-                detectPageArrValue([form1_value27, form1_value28, form1_value29]);
-
-                if(form1_value27 != undefined && form1_value28 != undefined && form1_value29 != undefined) {
-                    result['self_confidence'] = [form1_value27, form1_value28, form1_value29];
-                }
-
-                break;
-
-            case 19:
-                console.log("page index is 19");
-
-                var form1_value30 = $('#question30').find(':radio:checked').val();
-                var form1_value31 = $('#question31').find(':radio:checked').val();
-                var form1_value32 = $('#question32').find(':radio:checked').val();
-
-                detectPageArrValue([form1_value32, form1_value30, form1_value31]);
-
-                if(form1_value30 != undefined && form1_value31 != undefined && form1_value32 != undefined) {
-                    result['self_confidence'].push(form1_value30, form1_value31, form1_value32);
-                    result['self_confidence'] = result['self_confidence'].join("-");
-                }
-                break;
-
-
-
-            case 20:
-                console.log("page index is 21");
-                var form1_value35 = $('#question35').find(':radio:checked').val();
-                var form1_value36 = document.getElementById("question36").value;
-                var form1_value37 = $('#question37').find(':radio:checked').val();
-
-                if(form1_value35 == undefined || form1_value37==undefined || form1_value36==""){
-                    alert("您有选项未答或者年龄未填写");
+                if(form1_value41 == undefined || form1_value42 == undefined || form1_value44==undefined || form1_value43==""){
+                    alert("您有选项或题目未答");
                     swiper.lockSwipes();
-                }else if(form1_value36 > 100 || form1_value36 < 0){
+                }else if(form1_value43 > 100 || form1_value43 < 0){
                     alert("输入的年龄不符合规则，年龄在0~100之间");
                     swiper.lockSwipes();
                 }
                 else {
-                    result["basic_info"] = [form1_value35, form1_value36, form1_value37].join("-");
+                    result["basic_info"] = [form1_value41, form1_value42, form1_value43, form1_value44].join("-");
                     result["type"] = "showerGel price different  phone";
-                    console.log(page_index);
                     console.log("result：");
                     console.log(result);
                     swiper.unlockSwipes();
                     sendResult(result);
                     swiper.slideNext();
                 }
+
+
+
+                break;
+
+
+
+            case 20:
+
 
                 break;
 
@@ -1479,6 +1669,7 @@
     function  sendResult(result) {
         $.ajax({
             url:"/researchProcedure2/resources/jsp/datastore_drag_five.jsp",
+//            url:"http://localhost:8080/resources/jsp/datastore_drag_five.jsp",
             type:"post",
             data: result,
             dataType: 'json',
