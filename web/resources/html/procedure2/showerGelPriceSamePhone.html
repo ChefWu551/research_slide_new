@@ -1623,7 +1623,7 @@
                 var form1_value43 = document.getElementById("question43").value;
                 var form1_value44 = $('#question44').find(':radio:checked').val();
 
-                if(form1_value41 == undefined || form1_value42 == undefined || form1_value44==undefined || form1_value43==""){
+                if(form1_value41 == "" || form1_value42 == undefined || form1_value44==undefined || form1_value43==""){
                     alert("您有选项或题目未答");
                     swiper.lockSwipes();
                 }else if(form1_value43 > 100 || form1_value43 < 0){
